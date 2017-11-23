@@ -1,0 +1,161 @@
+%col {
+  position: relative;
+  display: block; 
+  float: left;
+  min-height: 1px;
+}
+
+
+.container-full {
+  position: relative; width: 100%;
+  display: table;
+}
+.container {
+  position: relative; width: 1170px;
+
+  padding-right: .9375rem;
+  padding-left: .9375rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container:before, .container:after,
+.container-full:before, .container-full:after,
+.row:before , .row:after {
+  content: "";
+  display: table
+}
+.container:after,
+.container-full:after,
+.row:after {clear: both}
+
+.row {
+  width: 100%; 
+  position: relative; float: left;
+  clear: both;
+}
+
+.container-main , .container-left , .container-right ,
+.container-main-left , .container-main-right ,
+.col {
+  @extend %col;
+}
+
+@for $i from 1 through 24 {  
+  .col-#{$i} {
+    @extend %col;
+    width: (100% * $i) / 24;
+  }
+}
+
+@each $name, $size in $media-size {
+  @media only screen and (max-width: $size) {
+    @for $i from 1 through 24 {  
+      .#{$name}-#{$i} { width: (100% * $i) / 24; }
+    }
+    .#{$name}-none {display: none}
+    .#{$name}-table-none {display: block!important}
+    .#{$name}-table__cell-none {display: inline-block!important}
+
+    .#{$name}-css-text-left {text-align: left!important}
+    .#{$name}-css-text-right {text-align: right!important}
+    .#{$name}-css-text-center {text-align: center!important}
+
+    .#{$name}-css-padding {padding: 20px!important}
+    
+    .#{$name}-css-margin {margin: 20px!important}
+    .#{$name}-css-margin-none {margin: 0!important}
+
+    .#{$name}-css-padding-none {padding: 0!important}
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {width: 955px;}
+
+  .container-main {width: 615px;}
+  .container-right, .container-left {}
+}
+@media only screen and (max-width: 1000px) {
+  .container {width: 768px;}
+
+  .container-main {width: 100%;}
+  .container-right, .container-left {width: 100%; margin: 0;}
+
+}
+
+
+@media only screen and (max-width: 790px) {
+  .container {
+    width: 100%!important;
+    padding: 20px;
+  }
+}
+
+
+
+.table {
+  display: table; 
+  width: 100%;
+  &__cell {
+    display: table-cell; vertical-align: top; float: none;
+  }
+  &__middle, &__middle > *{
+    vertical-align: middle;
+  }
+  &__bottom, &__bottom > *{
+    vertical-align: mbottomiddle;
+  }
+}
+
+
+// #body position: relative
+
+// .container-main , .container-left , .container-right ,
+// .container-main-left , .container-main-right ,
+// .col,
+// .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+// .col-7, .col-8, .col-9, .col-10, .col-11,.col-12,
+// .col-13, .col-14, .col-15, .col-16, .col-17, .col-18,
+// .col-19, .col-20, .col-21, .col-22, .col-23, .col-24 
+//     position: relative display: block float: left
+//     vertical-align: top
+//     min-height: 1px
+
+// .container-full position: relative display: table width: 100%
+// .container width: 1170px margin: auto
+//     position: relative display: block
+
+// .container-right width: 300px
+// .container-left width: 300px
+
+// .container-main width: 840px
+// .container-main-left width: 570px height: 100% padding: 0 20px
+//     -ms-touch-action: auto
+//     touch-action: auto
+//     border-right: 1px solid #ebebeb
+// .container-main-right width: 250px
+
+// @media only screen and (max-width: 1200px) 
+//     .container width: 955px
+
+//     .container-main width: 615px
+//     .container-right, .container-left 
+
+// @media only screen and (max-width: 1000px) 
+//     .container width: 768px
+
+//     .container-main width: 100%
+//     .container-right, .container-left width: 100% margin: 0
+
+
+// @media only screen and (max-width: 790px) 
+//     .container width: 100% padding: 20px
+//     .container.-not-mobile padding: 0
+
+
+// .mobile width: auto
+// .row width: 100% clear: both float: left position: relative
+
+// .container:before, .container:after,
+

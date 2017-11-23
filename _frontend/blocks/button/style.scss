@@ -1,0 +1,167 @@
+.button-white, 
+.button-orange, 
+.button-cheese {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 11px;
+    padding: 0 8px;
+    height: 40px;
+    //box-shadow: 0 0 35px 3px rgba(0, 0, 0, 0.15), 0 15px 11px rgba(0, 0, 0, 0.2);
+
+    span {
+        background: url("../images/button/button-white.png");
+        position: relative;
+        top: -4px;
+        display: inline-block;
+        height: 44px;
+        text-align: center;
+        font-weight: 800;
+        color: #000;
+        line-height: 46px;
+        padding: 0 32px;
+        cursor: pointer;
+        user-select: none;
+        font-size: 15px;
+        text-shadow: 0 0 1px rgba(35, 35, 35, 0.5);
+        border: none;
+        @include media(lg){
+            padding: 0 12px;
+        }
+        &:before, &:after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 10px;
+            height: 44px;
+        }
+    }
+    &:hover {
+        box-shadow: 0 0 35px 3px rgba(0, 0, 0, 0.15), 0 5px 11px rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+
+.button-white span:before, .button-orange span:before, .button-cheese span:before {
+    background: url("../images/button/button-white_left.png");
+    left: -9px;
+}
+
+.button-white span:after, .button-orange span:after, .button-cheese span:after {
+    background: url("../images/button/button-white_right.png");
+    right: -9px;
+}
+
+.button-white span:hover, .button-orange span:hover, .button-cheese span:hover {
+    background: url("../images/button/button-white-hover.png");
+}
+
+.button-white span:hover:before, .button-orange span:hover:before, .button-cheese span:hover:before {
+    background: url("../images/button/button-white-hover_left.png");
+}
+
+.button-white span:hover:after, .button-orange span:hover:after, .button-cheese span:hover:after {
+    background: url("../images/button/button-white-hover_right.png");
+}
+
+.button-orange span {
+    background: url("../images/button/button-orange.png");
+    text-shadow: 0px 0px 1px rgba(35, 35, 35, 0.5);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0 49px;
+    @include media(lg){
+        padding: 0 12px;
+    }
+}
+
+.button-orange span:before {
+    background: url("../images/button/button-orange_left.png");
+}
+
+.button-orange span:after {
+    background: url("../images/button/button-orange_right.png");
+}
+
+.button-orange span:hover {
+    background: url("../images/button/button-orange-hover.png");
+}
+
+.button-orange span:hover:before {
+    background: url("../images/button/button-orange-hover_left.png");
+}
+
+.button-orange span:hover:after {
+    background: url("../images/button/button-orange-hover_right.png");
+}
+
+.button-cheese {
+    font-family: $font-2;
+    height: 39px;
+    box-shadow: 0 14px 35px 3px rgba(0, 0, 0, 0.15), 0 13px 4px rgba(0, 0, 0, 0.4);
+
+    &:before, &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        height: 44px;
+        top: -5px;
+        z-index: 1;
+        border-radius: 100%;
+        background: -moz-radial-gradient(center, ellipse cover, rgba(252,252,252,0.7) 11%, rgba(96,136,183,0) 65%, rgba(30,87,153,0) 88%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(252,252,252,0.7) 11%,rgba(96,136,183,0) 65%,rgba(30,87,153,0) 88%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, rgba(252,252,252,0.7) 11%,rgba(96,136,183,0) 65%,rgba(30,87,153,0) 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3fcfcfc', endColorstr='#001e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+   
+    }
+    &:before {
+        width: 127px;
+        height: 8px;
+        left: 0;
+    }
+    &::after{
+        width: 77px;
+        height: 10px;
+        left: -15px;
+    }
+}
+
+.button-cheese:hover {
+    box-shadow: 0 12px 27px 6px rgba(173, 147, 43, 0.4);
+}
+
+.button-cheese span {
+    height: 53px;
+    padding: 0 18px;
+    background: url("../images/button/button-chees.png");
+    color: #fff;
+    font-size: 15px;
+    text-shadow: none;
+}
+
+.button-cheese span:before, .button-cheese span:after {
+    height: 53px;
+}
+
+.button-cheese span:before {
+    background: url("../images/button/button-chees-left.png");
+}
+
+.button-cheese span:after {
+    background: url("../images/button/button-chees-right.png");
+}
+
+.button-cheese span:hover {
+    text-shadow: 1px 1.3px #daae40, 1px 2px 3px #daae40;
+    background: url("../images/button/button-chees-hover.png");
+}
+
+.button-cheese span:hover:before {
+    background: url("../images/button/button-chees-hover-left.png");
+}
+
+.button-cheese span:hover:after {
+    background: url("../images/button/button-chees-hover-right.png");
+}

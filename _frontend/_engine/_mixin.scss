@@ -1,0 +1,39 @@
+
+// Изменения размера 
+
+@mixin media($size) {
+    @media only screen and (max-width: map-get($media-size, $size)) {@content;}
+}
+@mixin media-custom($size) {
+    @media only screen and (max-width: $size+px) { @content; }
+}
+
+// bg
+@mixin bg($horizotal: center, $vertical: false, $size: cover, $color: transparent, $repeat: no-repeat) {
+
+    @if $horizotal != false and $vertical == false {
+            background-position: $horizotal $horizotal;
+        } @else {
+            background-position: $horizotal $vertical;
+    }
+    @if $size != false {
+        -webkit-background-size: $size;
+        -moz-background-size: $size;
+        -o-background-size: $size;
+        background-size: $size;
+      }
+    
+    @if $color != false {
+        background-color: $color;
+    }
+
+    background-repeat: $repeat;
+}
+  
+// shadow
+@mixin shadow($inset: false, $x: 0px, $y: 0px, $blur: 4px, $spread: 0, $color: black, $opacity: 0.5) {
+    @if $inset != false {$inset: 'inset'}
+    -webkit-box-shadow: $inset $x $y $blur $spread rgba(red($color), green($color), blue($color), $opacity);
+       -moz-box-shadow: $inset $x $y $blur $spread rgba(red($color), green($color), blue($color), $opacity);
+            box-shadow: $inset $x $y $blur $spread rgba(red($color), green($color), blue($color), $opacity);
+}

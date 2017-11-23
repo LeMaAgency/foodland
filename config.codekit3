@@ -1,0 +1,6248 @@
+{
+"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
+"buildSteps": [
+	{
+		"name": "Process All Remaining Files and Folders",
+		"stepType": 1,
+		"uuidString": "6BA01151-7CB7-43EC-A8A4-980C0073C54D"
+		}
+	],
+"creatorBuild": "25900",
+"files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
+	"\/.idea\/deployment.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.idea\/deployment.xml",
+		"oF": 0
+		},
+	"\/.idea\/foodland.iml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.idea\/foodland.iml",
+		"oF": 0
+		},
+	"\/.idea\/modules.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.idea\/modules.xml",
+		"oF": 0
+		},
+	"\/.idea\/vcs.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.idea\/vcs.xml",
+		"oF": 0
+		},
+	"\/.idea\/webServers.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.idea\/webServers.xml",
+		"oF": 0
+		},
+	"\/.idea\/workspace.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.idea\/workspace.xml",
+		"oF": 0
+		},
+	"\/_frontend\/_engine\/_container.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/css\/_container.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/_engine\/_css.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/css\/_css.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/_engine\/_mixin.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/css\/_mixin.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/_engine\/_standart.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/css\/_standart.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/_engine\/blocks\/icon.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/_engine\/css\/icon.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/_engine\/blocks\/nav.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/_engine\/css\/nav.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/_engine\/blocks\/scroll.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/_engine\/css\/scroll.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/_engine\/blocks\/select.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/_engine\/css\/select.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/_engine\/blocks\/slick.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/_engine\/css\/slick.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/_engine\/css\/scroll.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_frontend\/_engine\/css\/scroll-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/_frontend\/_engine\/style.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/_fonts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_fonts.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/_standart.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_standart.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_variables.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/_element\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/analog-carousel\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/aside-category-carousel\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/back-img\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/background-page-catalog-category\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/background-page-product\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/background-page\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/block-product-img\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/block-product-text\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/bread-crumbs\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/button\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/category-carousel\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/cheese\/style.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/clients-carousel\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/contacts\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/direct-action\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/event-inn\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/events\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/filter\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/footer\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/header-background\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/header\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/map\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/menu-site-map\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/one-recipe\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/photo-product-recipe\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/popular\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/product-day\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/product-pagination\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/product-spinner\/style.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/product-use-carousel\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/product\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/production-spinner_about\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/products-block\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/random\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/recipe-category\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/recommendation\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/route\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/search\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/slider\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/structure-company\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/text-about-company\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/text-brand\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/text-one-recipe\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/tm-carousel\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/blocks\/trade-marks\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_frontend\/blocks\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_frontend\/style.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/about.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/about.html",
+		"oF": 0
+		},
+	"\/brands.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/brands.html",
+		"oF": 0
+		},
+	"\/contacts.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/contacts.html",
+		"oF": 0
+		},
+	"\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/style.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/style.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/direction.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/direction.html",
+		"oF": 0
+		},
+	"\/event.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/event.html",
+		"oF": 0
+		},
+	"\/event_inn.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/event_inn.html",
+		"oF": 0
+		},
+	"\/exclusive.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/exclusive.html",
+		"oF": 0
+		},
+	"\/find_recipes.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/find_recipes.html",
+		"oF": 0
+		},
+	"\/fonts\/FontAwesome\/font-awesome.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/fonts\/FontAwesome\/font-awesome.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/fonts\/FontAwesome\/fontawesome-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/FontAwesome\/fontawesome-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/FontAwesome\/fontawesome-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/FontAwesome\/fontawesome-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/FontAwesome\/fontawesome-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/FontAwesome\/fontawesome-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/FontAwesome\/fontawesome-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/FontAwesome\/fontawesome-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/FontAwesome\/fontawesome-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/FontAwesome\/fontawesome-webfont.woff2",
+		"oF": 0
+		},
+	"\/fonts\/FontAwesome\/FontAwesome.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/FontAwesome\/FontAwesome.otf",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 100 Italic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 100 Italic.otf",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 100.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 100.otf",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 300 Italic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 300 Italic.otf",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 300.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 300.otf",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 500 Italic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 500 Italic.otf",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 500.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 500.otf",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 700 Italic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 700 Italic.otf",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 700.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 700.otf",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 900 Italic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 900 Italic.otf",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 900.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris - Museo Cyrl 900.otf",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris_-_museo_cyrl_900-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris_-_museo_cyrl_900-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris_-_museo_cyrl_900-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris_-_museo_cyrl_900-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/MuseoCyrl\/exljbris_-_museo_cyrl_900-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MuseoCyrl\/exljbris_-_museo_cyrl_900-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProBold\/MyriadProBold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProBold\/MyriadProBold.eot",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProBold\/MyriadProBold.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProBold\/MyriadProBold.otf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProBold\/MyriadProBold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProBold\/MyriadProBold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProBold\/MyriadProBold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProBold\/MyriadProBold.woff",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProBoldItalic\/MyriadProBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProBoldItalic\/MyriadProBoldItalic.eot",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProBoldItalic\/MyriadProBoldItalic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProBoldItalic\/MyriadProBoldItalic.otf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProBoldItalic\/MyriadProBoldItalic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProBoldItalic\/MyriadProBoldItalic.ttf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProBoldItalic\/MyriadProBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProBoldItalic\/MyriadProBoldItalic.woff",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProItalic\/MyriadProItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProItalic\/MyriadProItalic.eot",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProItalic\/MyriadProItalic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProItalic\/MyriadProItalic.otf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProItalic\/MyriadProItalic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProItalic\/MyriadProItalic.ttf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProItalic\/MyriadProItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProItalic\/MyriadProItalic.woff",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProRegular\/MyriadProRegular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProRegular\/MyriadProRegular.eot",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProRegular\/MyriadProRegular.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProRegular\/MyriadProRegular.otf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProRegular\/MyriadProRegular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProRegular\/MyriadProRegular.ttf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProRegular\/MyriadProRegular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProRegular\/MyriadProRegular.woff",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProSemiBold\/MyriadProSemiBold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProSemiBold\/MyriadProSemiBold.eot",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProSemiBold\/MyriadProSemiBold.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProSemiBold\/MyriadProSemiBold.otf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProSemiBold\/MyriadProSemiBold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProSemiBold\/MyriadProSemiBold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProSemiBold\/MyriadProSemiBold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProSemiBold\/MyriadProSemiBold.woff",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProSemiBoldItalic\/MyriadProSemiBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProSemiBoldItalic\/MyriadProSemiBoldItalic.eot",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProSemiBoldItalic\/MyriadProSemiBoldItalic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProSemiBoldItalic\/MyriadProSemiBoldItalic.otf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProSemiBoldItalic\/MyriadProSemiBoldItalic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProSemiBoldItalic\/MyriadProSemiBoldItalic.ttf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadProSemiBoldItalic\/MyriadProSemiBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadProSemiBoldItalic\/MyriadProSemiBoldItalic.woff",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-black-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-black-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-black-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-black-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-black-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-black-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-black-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-black-webfont.woff2",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-black.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-black.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-bold-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-bold-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-bold-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-bold-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-bold-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-bold-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-bold-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-bold-webfont.woff2",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-bold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-bold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-bolditalic-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-bolditalic-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-bolditalic-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-bolditalic-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-bolditalic-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-bolditalic-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-bolditalic-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-bolditalic-webfont.woff2",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-bolditalic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-bolditalic.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-book-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-book-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-book-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-book-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-book-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-book-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-book-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-book-webfont.woff2",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-book.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-book.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-light-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-light-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-light-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-light-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-light-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-light-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-light-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-light-webfont.woff2",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-light.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-light.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-reg-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-reg-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-reg-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-reg-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-reg-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-reg-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-reg-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-reg-webfont.woff2",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-reg.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-reg.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-sebold-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-sebold-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-sebold-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-sebold-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-sebold-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-sebold-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-sebold-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-sebold-webfont.woff2",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-sebold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-sebold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-seboldital-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-seboldital-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-seboldital-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-seboldital-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-seboldital-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-seboldital-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-seboldital-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-seboldital-webfont.woff2",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-seboldital.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-seboldital.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-thin-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-thin-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-thin-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-thin-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-thin-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-thin-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-thin-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-thin-webfont.woff2",
+		"oF": 0
+		},
+	"\/fonts\/pfbeausanspro\/pfbeausanspro-thin.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/pfbeausanspro\/pfbeausanspro-thin.ttf",
+		"oF": 0
+		},
+	"\/images\/background\/2-layers.png": {
+		"ft": 32768,
+		"iS": 142081,
+		"oA": 0,
+		"oAP": "\/images\/background\/2-layers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/bottom.png": {
+		"ft": 32768,
+		"iS": 870691,
+		"oA": 0,
+		"oAP": "\/images\/background\/bottom.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/butter-about.png": {
+		"ft": 32768,
+		"iS": 158143,
+		"oA": 0,
+		"oAP": "\/images\/background\/butter-about.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/butter-contact.png": {
+		"ft": 32768,
+		"iS": 189669,
+		"oA": 0,
+		"oAP": "\/images\/background\/butter-contact.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/butter-right_event.png": {
+		"ft": 32768,
+		"iS": 148278,
+		"oA": 0,
+		"oAP": "\/images\/background\/butter-right_event.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cheese-green.png": {
+		"ft": 32768,
+		"iS": 164022,
+		"oA": 0,
+		"oAP": "\/images\/background\/cheese-green.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cheese-left-about.png": {
+		"ft": 32768,
+		"iS": 179765,
+		"oA": 0,
+		"oAP": "\/images\/background\/cheese-left-about.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cheese-left-bottom_direction.png": {
+		"ft": 32768,
+		"iS": 134682,
+		"oA": 0,
+		"oAP": "\/images\/background\/cheese-left-bottom_direction.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cheese-left-page-cetegory-2.png": {
+		"ft": 32768,
+		"iS": 99196,
+		"oA": 0,
+		"oAP": "\/images\/background\/cheese-left-page-cetegory-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cheese-left-page-cetegory.png": {
+		"ft": 32768,
+		"iS": 273513,
+		"oA": 0,
+		"oAP": "\/images\/background\/cheese-left-page-cetegory.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cheese-left_direction.png": {
+		"ft": 32768,
+		"iS": 142081,
+		"oA": 0,
+		"oAP": "\/images\/background\/cheese-left_direction.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cheese-left_event.png": {
+		"ft": 32768,
+		"iS": 148581,
+		"oA": 0,
+		"oAP": "\/images\/background\/cheese-left_event.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cheese-left_recipe.png": {
+		"ft": 32768,
+		"iS": 206408,
+		"oA": 0,
+		"oAP": "\/images\/background\/cheese-left_recipe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cheese-right-about.png": {
+		"ft": 32768,
+		"iS": 190572,
+		"oA": 0,
+		"oAP": "\/images\/background\/cheese-right-about.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cheese-right-page-category.png": {
+		"ft": 32768,
+		"iS": 141111,
+		"oA": 0,
+		"oAP": "\/images\/background\/cheese-right-page-category.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cheese-right-page-product.png": {
+		"ft": 32768,
+		"iS": 206644,
+		"oA": 0,
+		"oAP": "\/images\/background\/cheese-right-page-product.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cheese-right_direction.png": {
+		"ft": 32768,
+		"iS": 198740,
+		"oA": 0,
+		"oAP": "\/images\/background\/cheese-right_direction.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cow-right.png": {
+		"ft": 32768,
+		"iS": 175774,
+		"oA": 0,
+		"oAP": "\/images\/background\/cow-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/cow.png": {
+		"ft": 32768,
+		"iS": 190359,
+		"oA": 0,
+		"oAP": "\/images\/background\/cow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/maslo.png": {
+		"ft": 32768,
+		"iS": 127144,
+		"oA": 0,
+		"oAP": "\/images\/background\/maslo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/milk-right_exclusive.png": {
+		"ft": 32768,
+		"iS": 114424,
+		"oA": 0,
+		"oAP": "\/images\/background\/milk-right_exclusive.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/milk.png": {
+		"ft": 32768,
+		"iS": 106429,
+		"oA": 0,
+		"oAP": "\/images\/background\/milk.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/3-layers.png": {
+		"ft": 32768,
+		"iS": 5548792,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/3-layers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/cheese-green.png": {
+		"ft": 32768,
+		"iS": 5105388,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/cheese-green.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/cheese-green1.png": {
+		"ft": 32768,
+		"iS": 96922,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/cheese-green1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/cheese-left-page-cetegory.png": {
+		"ft": 32768,
+		"iS": 5548792,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/cheese-left-page-cetegory.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/cheese-left-page-cetegory1.png": {
+		"ft": 32768,
+		"iS": 130383,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/cheese-left-page-cetegory1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/cheese-left_event.png": {
+		"ft": 32768,
+		"iS": 7739133,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/cheese-left_event.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/cheese-left_event1.png": {
+		"ft": 32768,
+		"iS": 94005,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/cheese-left_event1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/cheese-right-page-category.png": {
+		"ft": 32768,
+		"iS": 7716491,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/cheese-right-page-category.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/cheese-right-page-category1.png": {
+		"ft": 32768,
+		"iS": 181747,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/cheese-right-page-category1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/cheese-right-page-product.png": {
+		"ft": 32768,
+		"iS": 10689947,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/cheese-right-page-product.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/cheese-right-page-product1.png": {
+		"ft": 32768,
+		"iS": 194311,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/cheese-right-page-product1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/milk.png": {
+		"ft": 32768,
+		"iS": 3952478,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/milk.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/new\/milk1.png": {
+		"ft": 32768,
+		"iS": 80359,
+		"oA": 0,
+		"oAP": "\/images\/background\/new\/milk1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/parsley-left.png": {
+		"ft": 32768,
+		"iS": 152446,
+		"oA": 0,
+		"oAP": "\/images\/background\/parsley-left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/parsley-right.png": {
+		"ft": 32768,
+		"iS": 130635,
+		"oA": 0,
+		"oAP": "\/images\/background\/parsley-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/tomat-contact.png": {
+		"ft": 32768,
+		"iS": 215232,
+		"oA": 0,
+		"oAP": "\/images\/background\/tomat-contact.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/tomat-left_one-recipe.png": {
+		"ft": 32768,
+		"iS": 217752,
+		"oA": 0,
+		"oAP": "\/images\/background\/tomat-left_one-recipe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/tomat.png": {
+		"ft": 32768,
+		"iS": 156176,
+		"oA": 0,
+		"oAP": "\/images\/background\/tomat.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/tomat_exclusive.png": {
+		"ft": 32768,
+		"iS": 135396,
+		"oA": 0,
+		"oAP": "\/images\/background\/tomat_exclusive.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/tomato-about-2.png": {
+		"ft": 32768,
+		"iS": 191650,
+		"oA": 0,
+		"oAP": "\/images\/background\/tomato-about-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/tomato-about.png": {
+		"ft": 32768,
+		"iS": 203352,
+		"oA": 0,
+		"oAP": "\/images\/background\/tomato-about.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/background\/top.png": {
+		"ft": 32768,
+		"iS": 221709,
+		"oA": 0,
+		"oAP": "\/images\/background\/top.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/blud.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/blud.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/board.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/board.jpg",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"q": 90
+		},
+	"\/images\/button\/button-chees-hover-left.png": {
+		"ft": 32768,
+		"iS": 1601,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-chees-hover-left.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-chees-hover-right.png": {
+		"ft": 32768,
+		"iS": 1564,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-chees-hover-right.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-chees-hover.png": {
+		"ft": 32768,
+		"iS": 2681,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-chees-hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-chees-left.png": {
+		"ft": 32768,
+		"iS": 1707,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-chees-left.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-chees-right.png": {
+		"ft": 32768,
+		"iS": 1641,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-chees-right.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-chees.png": {
+		"ft": 32768,
+		"iS": 2746,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-chees.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-one-recipe.png": {
+		"ft": 32768,
+		"iS": 978,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-one-recipe.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-orange-hover.png": {
+		"ft": 32768,
+		"iS": 1832,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-orange-hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-orange-hover_left.png": {
+		"ft": 32768,
+		"iS": 1170,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-orange-hover_left.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-orange-hover_right.png": {
+		"ft": 32768,
+		"iS": 1184,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-orange-hover_right.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-orange.png": {
+		"ft": 32768,
+		"iS": 1484,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-orange.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-orange_left.png": {
+		"ft": 32768,
+		"iS": 1172,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-orange_left.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-orange_right.png": {
+		"ft": 32768,
+		"iS": 1186,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-orange_right.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-white-hover.png": {
+		"ft": 32768,
+		"iS": 1853,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-white-hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-white-hover_left.png": {
+		"ft": 32768,
+		"iS": 1171,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-white-hover_left.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-white-hover_right.png": {
+		"ft": 32768,
+		"iS": 1184,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-white-hover_right.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-white.png": {
+		"ft": 32768,
+		"iS": 1469,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-white.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-white_left.png": {
+		"ft": 32768,
+		"iS": 1151,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-white_left.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/button-white_right.png": {
+		"ft": 32768,
+		"iS": 1152,
+		"oA": 0,
+		"oAP": "\/images\/button\/button-white_right.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/button\/paginat-button.png": {
+		"ft": 32768,
+		"iS": 7106,
+		"oA": 0,
+		"oAP": "\/images\/button\/paginat-button.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/images\/cheese\/1.png": {
+		"ft": 32768,
+		"iS": 9087,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/1_hover.png": {
+		"ft": 32768,
+		"iS": 44221,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/1_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/2.png": {
+		"ft": 32768,
+		"iS": 9026,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/2_hover.png": {
+		"ft": 32768,
+		"iS": 7197,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/2_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/3.png": {
+		"ft": 32768,
+		"iS": 30852,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/3.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/3_hover.png": {
+		"ft": 32768,
+		"iS": 7395,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/3_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/cheese.png": {
+		"ft": 32768,
+		"iS": 569862,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/cheese.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/green.png": {
+		"ft": 32768,
+		"iS": 25799,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/green.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/icons.png": {
+		"ft": 32768,
+		"iS": 86835,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/icons.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/icons2.png": {
+		"ft": 32768,
+		"iS": 36069,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/icons2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/piece1.png": {
+		"ft": 32768,
+		"iS": 51950,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/piece1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/piece2.png": {
+		"ft": 32768,
+		"iS": 52581,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/piece2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/piece3.png": {
+		"ft": 32768,
+		"iS": 51790,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/piece3.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/cheese\/shadow.png": {
+		"ft": 32768,
+		"iS": 120374,
+		"oA": 0,
+		"oAP": "\/images\/cheese\/shadow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/clients\/azbuka.png": {
+		"ft": 32768,
+		"iS": 11704,
+		"oA": 0,
+		"oAP": "\/images\/clients\/azbuka.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/eggs.png": {
+		"ft": 32768,
+		"iS": 548943,
+		"oA": 0,
+		"oAP": "\/images\/eggs.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/event-inn.png": {
+		"ft": 32768,
+		"iS": 925839,
+		"oA": 0,
+		"oAP": "\/images\/event-inn.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/footer-bg.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/footer-bg.jpg",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"q": 90
+		},
+	"\/images\/icons\/bonfesto.png": {
+		"ft": 32768,
+		"iS": 15275,
+		"oA": 0,
+		"oAP": "\/images\/icons\/bonfesto.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/bus.png": {
+		"ft": 32768,
+		"iS": 1830,
+		"oA": 0,
+		"oAP": "\/images\/icons\/bus.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/car.png": {
+		"ft": 32768,
+		"iS": 1396,
+		"oA": 0,
+		"oAP": "\/images\/icons\/car.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/fact-sh.png": {
+		"ft": 32768,
+		"iS": 1713,
+		"oA": 0,
+		"oAP": "\/images\/icons\/fact-sh.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/fact.png": {
+		"ft": 32768,
+		"iS": 325,
+		"oA": 0,
+		"oAP": "\/images\/icons\/fact.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/filial-sh.png": {
+		"ft": 32768,
+		"iS": 1585,
+		"oA": 0,
+		"oAP": "\/images\/icons\/filial-sh.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/filial.png": {
+		"ft": 32768,
+		"iS": 325,
+		"oA": 0,
+		"oAP": "\/images\/icons\/filial.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/info-product-2.png": {
+		"ft": 32768,
+		"iS": 2007,
+		"oA": 0,
+		"oAP": "\/images\/icons\/info-product-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/info-product.png": {
+		"ft": 32768,
+		"iS": 1707,
+		"oA": 0,
+		"oAP": "\/images\/icons\/info-product.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/like.png": {
+		"ft": 32768,
+		"iS": 1852,
+		"oA": 0,
+		"oAP": "\/images\/icons\/like.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/man-hover.png": {
+		"ft": 32768,
+		"iS": 1347,
+		"oA": 0,
+		"oAP": "\/images\/icons\/man-hover.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/man.png": {
+		"ft": 32768,
+		"iS": 1873,
+		"oA": 0,
+		"oAP": "\/images\/icons\/man.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/meal.png": {
+		"ft": 32768,
+		"iS": 2608,
+		"oA": 0,
+		"oAP": "\/images\/icons\/meal.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/office-sh.png": {
+		"ft": 32768,
+		"iS": 1679,
+		"oA": 0,
+		"oAP": "\/images\/icons\/office-sh.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/office.png": {
+		"ft": 32768,
+		"iS": 325,
+		"oA": 0,
+		"oAP": "\/images\/icons\/office.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/print.png": {
+		"ft": 32768,
+		"iS": 1267,
+		"oA": 0,
+		"oAP": "\/images\/icons\/print.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/search.png": {
+		"ft": 32768,
+		"iS": 1442,
+		"oA": 0,
+		"oAP": "\/images\/icons\/search.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/star-no.png": {
+		"ft": 32768,
+		"iS": 595,
+		"oA": 0,
+		"oAP": "\/images\/icons\/star-no.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/star.png": {
+		"ft": 32768,
+		"iS": 1827,
+		"oA": 0,
+		"oAP": "\/images\/icons\/star.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/star_active.png": {
+		"ft": 32768,
+		"iS": 231,
+		"oA": 0,
+		"oAP": "\/images\/icons\/star_active.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/icons\/time.png": {
+		"ft": 32768,
+		"iS": 1899,
+		"oA": 0,
+		"oAP": "\/images\/icons\/time.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/images-1.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/images-1.jpg",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"q": 90
+		},
+	"\/images\/images-2.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/images-2.jpg",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"q": 90
+		},
+	"\/images\/lamber.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/lamber.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/logo.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/logo.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/plate.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/plate.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/point-line.png": {
+		"ft": 32768,
+		"iS": 1123,
+		"oA": 0,
+		"oAP": "\/images\/point-line.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/popular\/br.png": {
+		"ft": 32768,
+		"iS": 17260,
+		"oA": 0,
+		"oAP": "\/images\/popular\/br.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/popular\/chees.png": {
+		"ft": 32768,
+		"iS": 23204,
+		"oA": 0,
+		"oAP": "\/images\/popular\/chees.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/popular\/lamber.png": {
+		"ft": 32768,
+		"iS": 51142,
+		"oA": 0,
+		"oAP": "\/images\/popular\/lamber.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/popular\/mas.png": {
+		"ft": 32768,
+		"iS": 25562,
+		"oA": 0,
+		"oAP": "\/images\/popular\/mas.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/popular\/popular.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/images\/popular\/popular.psd",
+		"oF": 0
+		},
+	"\/images\/popular\/viola.png": {
+		"ft": 32768,
+		"iS": 20571,
+		"oA": 0,
+		"oAP": "\/images\/popular\/viola.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category-for-slider\/cat1.png": {
+		"ft": 32768,
+		"iS": 7982,
+		"oA": 0,
+		"oAP": "\/images\/product\/category-for-slider\/cat1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category-for-slider\/cat2.png": {
+		"ft": 32768,
+		"iS": 6436,
+		"oA": 0,
+		"oAP": "\/images\/product\/category-for-slider\/cat2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category-for-slider\/cat3.png": {
+		"ft": 32768,
+		"iS": 7782,
+		"oA": 0,
+		"oAP": "\/images\/product\/category-for-slider\/cat3.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category-for-slider\/cat4.png": {
+		"ft": 32768,
+		"iS": 8081,
+		"oA": 0,
+		"oAP": "\/images\/product\/category-for-slider\/cat4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category-for-slider\/cat5.png": {
+		"ft": 32768,
+		"iS": 8841,
+		"oA": 0,
+		"oAP": "\/images\/product\/category-for-slider\/cat5.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/1.png": {
+		"ft": 32768,
+		"iS": 9416,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/10.png": {
+		"ft": 32768,
+		"iS": 8796,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/10.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/10_hover.png": {
+		"ft": 32768,
+		"iS": 20550,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/10_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/11.png": {
+		"ft": 32768,
+		"iS": 7393,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/11.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/11_hover.png": {
+		"ft": 32768,
+		"iS": 17311,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/11_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/12.png": {
+		"ft": 32768,
+		"iS": 7495,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/12.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/12_hover.png": {
+		"ft": 32768,
+		"iS": 16976,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/12_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/1_hover.png": {
+		"ft": 32768,
+		"iS": 21644,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/1_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/2.png": {
+		"ft": 32768,
+		"iS": 6874,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/2_hover.png": {
+		"ft": 32768,
+		"iS": 15712,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/2_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/3.png": {
+		"ft": 32768,
+		"iS": 8633,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/3.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/3_hover.png": {
+		"ft": 32768,
+		"iS": 19920,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/3_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/4.png": {
+		"ft": 32768,
+		"iS": 8973,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/4.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/4_hover.png": {
+		"ft": 32768,
+		"iS": 20494,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/4_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/5.png": {
+		"ft": 32768,
+		"iS": 7983,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/5.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/5_hover.png": {
+		"ft": 32768,
+		"iS": 18534,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/5_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/6.png": {
+		"ft": 32768,
+		"iS": 8550,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/6.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/6_hover.png": {
+		"ft": 32768,
+		"iS": 20553,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/6_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/7.png": {
+		"ft": 32768,
+		"iS": 6894,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/7.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/7_hover.png": {
+		"ft": 32768,
+		"iS": 16110,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/7_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/8.png": {
+		"ft": 32768,
+		"iS": 7918,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/8.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/8_hover.png": {
+		"ft": 32768,
+		"iS": 18415,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/8_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/9.png": {
+		"ft": 32768,
+		"iS": 9552,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/9.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/9_hover.png": {
+		"ft": 32768,
+		"iS": 21803,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/9_hover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/layer-19.png": {
+		"ft": 32768,
+		"iS": 24847,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/layer-19.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/text__block-1.png": {
+		"ft": 32768,
+		"iS": 43500,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/text__block-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/text__block-1_hover.png": {
+		"ft": 32768,
+		"iS": 42305,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/text__block-1_hover.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/text__block-2.png": {
+		"ft": 32768,
+		"iS": 23879,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/text__block-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/text__block-2_hover.png": {
+		"ft": 32768,
+		"iS": 23045,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/text__block-2_hover.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/text__block-3.png": {
+		"ft": 32768,
+		"iS": 25491,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/text__block-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/category\/text__block-3_hover.png": {
+		"ft": 32768,
+		"iS": 24493,
+		"oA": 0,
+		"oAP": "\/images\/product\/category\/text__block-3_hover.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/header-product-category.png": {
+		"ft": 32768,
+		"iS": 242360,
+		"oA": 0,
+		"oAP": "\/images\/product\/header-product-category.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/header-product-category2.png": {
+		"ft": 32768,
+		"iS": 286593,
+		"oA": 0,
+		"oAP": "\/images\/product\/header-product-category2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/header-product-category3.png": {
+		"ft": 32768,
+		"iS": 305313,
+		"oA": 0,
+		"oAP": "\/images\/product\/header-product-category3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/header-product-category4.png": {
+		"ft": 32768,
+		"iS": 474,
+		"oA": 0,
+		"oAP": "\/images\/product\/header-product-category4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/product-page\/3-layers.png": {
+		"ft": 32768,
+		"iS": 2984,
+		"oA": 0,
+		"oAP": "\/images\/product\/product-page\/3-layers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/product-page\/carousel-item-1.png": {
+		"ft": 32768,
+		"iS": 6690,
+		"oA": 0,
+		"oAP": "\/images\/product\/product-page\/carousel-item-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/product-page\/carousel-item-2.png": {
+		"ft": 32768,
+		"iS": 8470,
+		"oA": 0,
+		"oAP": "\/images\/product\/product-page\/carousel-item-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/product-page\/carousel-item-3.png": {
+		"ft": 32768,
+		"iS": 13405,
+		"oA": 0,
+		"oAP": "\/images\/product\/product-page\/carousel-item-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/product-page\/carousel-item-4.png": {
+		"ft": 32768,
+		"iS": 10701,
+		"oA": 0,
+		"oAP": "\/images\/product\/product-page\/carousel-item-4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/product-page\/line__dot.png": {
+		"ft": 32768,
+		"iS": 135,
+		"oA": 0,
+		"oAP": "\/images\/product\/product-page\/line__dot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/product-page\/main-img--product.png": {
+		"ft": 32768,
+		"iS": 67175,
+		"oA": 0,
+		"oAP": "\/images\/product\/product-page\/main-img--product.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/product-page\/product-use-1.png": {
+		"ft": 32768,
+		"iS": 178596,
+		"oA": 0,
+		"oAP": "\/images\/product\/product-page\/product-use-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/product-page\/product-use-2.png": {
+		"ft": 32768,
+		"iS": 137284,
+		"oA": 0,
+		"oAP": "\/images\/product\/product-page\/product-use-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/products\/layer-19.png": {
+		"ft": 32768,
+		"iS": 40821,
+		"oA": 0,
+		"oAP": "\/images\/product\/products\/layer-19.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/products\/main-img--product.png": {
+		"ft": 32768,
+		"iS": 67175,
+		"oA": 0,
+		"oAP": "\/images\/product\/products\/main-img--product.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/products\/product-item-2.png": {
+		"ft": 32768,
+		"iS": 39347,
+		"oA": 0,
+		"oAP": "\/images\/product\/products\/product-item-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/products\/product-item-3.png": {
+		"ft": 32768,
+		"iS": 45050,
+		"oA": 0,
+		"oAP": "\/images\/product\/products\/product-item-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/product\/products\/product-item.png": {
+		"ft": 32768,
+		"iS": 29270,
+		"oA": 0,
+		"oAP": "\/images\/product\/products\/product-item.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/recipes\/rec-1.png": {
+		"ft": 32768,
+		"iS": 6109,
+		"oA": 0,
+		"oAP": "\/images\/recipes\/rec-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/recipes\/rec-2.png": {
+		"ft": 32768,
+		"iS": 6668,
+		"oA": 0,
+		"oAP": "\/images\/recipes\/rec-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/recipes\/rec-3.png": {
+		"ft": 32768,
+		"iS": 6715,
+		"oA": 0,
+		"oAP": "\/images\/recipes\/rec-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/recipes\/rec-4.png": {
+		"ft": 32768,
+		"iS": 6711,
+		"oA": 0,
+		"oAP": "\/images\/recipes\/rec-4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/recipes\/rec-5.png": {
+		"ft": 32768,
+		"iS": 8272,
+		"oA": 0,
+		"oAP": "\/images\/recipes\/rec-5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/recipes\/rec-6.png": {
+		"ft": 32768,
+		"iS": 6463,
+		"oA": 0,
+		"oAP": "\/images\/recipes\/rec-6.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/recipes\/rec-7.png": {
+		"ft": 32768,
+		"iS": 5954,
+		"oA": 0,
+		"oAP": "\/images\/recipes\/rec-7.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/recipes\/rec-8.png": {
+		"ft": 32768,
+		"iS": 5518,
+		"oA": 0,
+		"oAP": "\/images\/recipes\/rec-8.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/recommendation\/bondesto.jpg": {
+		"ft": 16384,
+		"iS": 71403,
+		"oA": 0,
+		"oAP": "\/images\/recommendation\/bondesto.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 90
+		},
+	"\/images\/recommendation\/cheese-par.jpg": {
+		"ft": 16384,
+		"iS": 54195,
+		"oA": 0,
+		"oAP": "\/images\/recommendation\/cheese-par.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 90
+		},
+	"\/images\/recommendation\/cheese.jpg": {
+		"ft": 16384,
+		"iS": 17052,
+		"oA": 0,
+		"oAP": "\/images\/recommendation\/cheese.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 90
+		},
+	"\/images\/recommendation\/heidi.jpg": {
+		"ft": 16384,
+		"iS": 36141,
+		"oA": 0,
+		"oAP": "\/images\/recommendation\/heidi.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 90
+		},
+	"\/images\/recommendation\/mlekara.jpg": {
+		"ft": 16384,
+		"iS": 43521,
+		"oA": 0,
+		"oAP": "\/images\/recommendation\/mlekara.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 90
+		},
+	"\/images\/recommendation\/ras.jpg": {
+		"ft": 16384,
+		"iS": 35843,
+		"oA": 0,
+		"oAP": "\/images\/recommendation\/ras.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 90
+		},
+	"\/images\/recommendation\/recommendation.psb": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/images\/recommendation\/recommendation.psb",
+		"oF": 0
+		},
+	"\/images\/recommendation\/test.jpg": {
+		"ft": 16384,
+		"iS": 29101,
+		"oA": 0,
+		"oAP": "\/images\/recommendation\/test.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 90
+		},
+	"\/images\/slack\/cheese.png": {
+		"ft": 32768,
+		"iS": 251116,
+		"oA": 0,
+		"oAP": "\/images\/slack\/cheese.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/slack\/cheese_and_tomato.png": {
+		"ft": 32768,
+		"iS": 264452,
+		"oA": 0,
+		"oAP": "\/images\/slack\/cheese_and_tomato.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/slack\/list.png": {
+		"ft": 32768,
+		"iS": 31025,
+		"oA": 0,
+		"oAP": "\/images\/slack\/list.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/slack\/maslo.png": {
+		"ft": 32768,
+		"iS": 42994,
+		"oA": 0,
+		"oAP": "\/images\/slack\/maslo.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/slack\/petro-left-1.png": {
+		"ft": 32768,
+		"iS": 233739,
+		"oA": 0,
+		"oAP": "\/images\/slack\/petro-left-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/slack\/petro.png": {
+		"ft": 32768,
+		"iS": 331876,
+		"oA": 0,
+		"oAP": "\/images\/slack\/petro.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/slack\/tomato.png": {
+		"ft": 32768,
+		"iS": 233766,
+		"oA": 0,
+		"oAP": "\/images\/slack\/tomato.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/slider\/1-logo.png": {
+		"ft": 32768,
+		"iS": 16386,
+		"oA": 0,
+		"oAP": "\/images\/slider\/1-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/slider\/1-text.png": {
+		"ft": 32768,
+		"iS": 2762,
+		"oA": 0,
+		"oAP": "\/images\/slider\/1-text.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/slider\/imagas-1.jpg": {
+		"ft": 16384,
+		"iS": 352706,
+		"oA": 0,
+		"oAP": "\/images\/slider\/imagas-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 90
+		},
+	"\/images\/slider\/imagas-2.jpg": {
+		"ft": 16384,
+		"iS": 295519,
+		"oA": 0,
+		"oAP": "\/images\/slider\/imagas-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 90
+		},
+	"\/images\/spinner\/manufacturies.png": {
+		"ft": 32768,
+		"iS": 31165,
+		"oA": 0,
+		"oAP": "\/images\/spinner\/manufacturies.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/spinner\/products.png": {
+		"ft": 32768,
+		"iS": 23773,
+		"oA": 0,
+		"oAP": "\/images\/spinner\/products.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/spinner\/technologies.png": {
+		"ft": 32768,
+		"iS": 26176,
+		"oA": 0,
+		"oAP": "\/images\/spinner\/technologies.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/structure-company\/distrib.png": {
+		"ft": 32768,
+		"iS": 15374,
+		"oA": 0,
+		"oAP": "\/images\/structure-company\/distrib.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/structure-company\/logist.png": {
+		"ft": 32768,
+		"iS": 16999,
+		"oA": 0,
+		"oAP": "\/images\/structure-company\/logist.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/structure-company\/made.png": {
+		"ft": 32768,
+		"iS": 15026,
+		"oA": 0,
+		"oAP": "\/images\/structure-company\/made.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/structure-company\/shape-1.png": {
+		"ft": 32768,
+		"iS": 494,
+		"oA": 0,
+		"oAP": "\/images\/structure-company\/shape-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/tm\/layer-16.png": {
+		"ft": 32768,
+		"iS": 13433,
+		"oA": 0,
+		"oAP": "\/images\/tm\/layer-16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/tm\/layer-17.png": {
+		"ft": 32768,
+		"iS": 12479,
+		"oA": 0,
+		"oAP": "\/images\/tm\/layer-17.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/tm\/slice-1.png": {
+		"ft": 32768,
+		"iS": 8157,
+		"oA": 0,
+		"oAP": "\/images\/tm\/slice-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/Cream_nuvo-01.png": {
+		"ft": 32768,
+		"iS": 94745,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/Cream_nuvo-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/heidi-logo.png": {
+		"ft": 32768,
+		"iS": 9629,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/heidi-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/Heidi.png": {
+		"ft": 32768,
+		"iS": 235326,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/Heidi.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/La_paulina-01.png": {
+		"ft": 32768,
+		"iS": 204658,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/La_paulina-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/Lattesso-01.png": {
+		"ft": 32768,
+		"iS": 134640,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/Lattesso-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/layer-36.png": {
+		"ft": 32768,
+		"iS": 14532,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/layer-36.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/layer-37.png": {
+		"ft": 32768,
+		"iS": 12168,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/layer-37.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/layer-38.png": {
+		"ft": 32768,
+		"iS": 7174,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/layer-38.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/layer-39.png": {
+		"ft": 32768,
+		"iS": 32854,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/layer-39.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/pic05177.jpg": {
+		"ft": 16384,
+		"iS": 35229,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/pic05177.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 90
+		},
+	"\/images\/trade-marks\/wimm-bill-dann-foods-logo-svg-1024x638.png": {
+		"ft": 32768,
+		"iS": 14345,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/wimm-bill-dann-foods-logo-svg-1024x638.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/Лого (1)\/Bellanova-01.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/Лого (1)\/Bellanova-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/Лого (1)\/Bonfesto-01.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/Лого (1)\/Bonfesto-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/Лого (1)\/Cooking-01-01.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/Лого (1)\/Cooking-01-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/Лого (1)\/Cream_nuvo-01.png": {
+		"ft": 32768,
+		"iS": 94745,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/Лого (1)\/Cream_nuvo-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/Лого (1)\/Heidi.png": {
+		"ft": 32768,
+		"iS": 235326,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/Лого (1)\/Heidi.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/Лого (1)\/La_paulina-01.png": {
+		"ft": 32768,
+		"iS": 204658,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/Лого (1)\/La_paulina-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/Лого (1)\/Lattesso-01.png": {
+		"ft": 32768,
+		"iS": 134640,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/Лого (1)\/Lattesso-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 90
+		},
+	"\/images\/trade-marks\/Лого (1)\/pic05177.jpg": {
+		"ft": 16384,
+		"iS": 35229,
+		"oA": 0,
+		"oAP": "\/images\/trade-marks\/Лого (1)\/pic05177.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 90
+		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
+		},
+	"\/js\/libs\/anime.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/anime.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/js\/libs\/classie.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/classie.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/js\/libs\/fancybox.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/fancybox.min.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/js\/libs\/fancybox\/fancybox.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/js\/libs\/fancybox\/fancybox.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/js\/libs\/jquery.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/jquery.min.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/js\/libs\/scroll\/jquery.jscrollpane.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/scroll\/jquery.jscrollpane.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/js\/libs\/scroll\/jquery.jscrollpane.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/scroll\/jquery.jscrollpane.min.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/js\/libs\/scroll\/jquery.mousewheel.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/scroll\/jquery.mousewheel.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/js\/libs\/scroll\/mwheelIntent.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/scroll\/mwheelIntent.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/js\/libs\/selectFx.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/selectFx.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/js\/libs\/slick.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/slick.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/js\/scripts.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/scripts.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/one-brand.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/one-brand.html",
+		"oF": 0
+		},
+	"\/one_recipe.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/one_recipe.html",
+		"oF": 0
+		},
+	"\/product-catalog.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/product-catalog.html",
+		"oF": 0
+		},
+	"\/product-category.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/product-category.html",
+		"oF": 0
+		},
+	"\/product-page.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/product-page.html",
+		"oF": 0
+		}
+	},
+"hooks": [
+	],
+"manualImportLinks": {
+	},
+"projectAttributes": {
+	"creationDate": 527608592,
+	"displayValue": "foodland",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "meme-archer"
+	},
+"projectSettings": {
+	"abortBuildOnError": 1,
+	"alwaysUseExternalServer": 0,
+	"animateCSSInjections": 1,
+	"autoBuildNewItems": 1,
+	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"babelAuxiliaryCommentAfter": "",
+	"babelAuxiliaryCommentBefore": "",
+	"babelConfigFileHandlingType": 0,
+	"babelCustomPluginsList": "",
+	"babelCustomPresetsList": "",
+	"babelInsertModuleIDs": 0,
+	"babelModuleID": "",
+	"babelNoComments": 0,
+	"babelPlugins": {
+		"async-generator-functions": {
+			"active": 0
+			},
+		"async-to-generator": {
+			"active": 0
+			},
+		"async-to-module-method": {
+			"active": 0
+			},
+		"class-properties": {
+			"active": 0
+			},
+		"decorators": {
+			"active": 0
+			},
+		"decorators-legacy": {
+			"active": 0
+			},
+		"do-expressions": {
+			"active": 0
+			},
+		"es2015-arrow-functions": {
+			"active": 0
+			},
+		"es2015-block-scoped-functions": {
+			"active": 0
+			},
+		"es2015-block-scoping": {
+			"active": 0
+			},
+		"es2015-classes": {
+			"active": 0
+			},
+		"es2015-computed-properties": {
+			"active": 0
+			},
+		"es2015-constants": {
+			"active": 0
+			},
+		"es2015-destructuring": {
+			"active": 0
+			},
+		"es2015-duplicate-keys": {
+			"active": 0
+			},
+		"es2015-for-of": {
+			"active": 0
+			},
+		"es2015-function-name": {
+			"active": 0
+			},
+		"es2015-literals": {
+			"active": 0
+			},
+		"es2015-modules-amd": {
+			"active": 0
+			},
+		"es2015-modules-commonjs": {
+			"active": 0
+			},
+		"es2015-modules-systemjs": {
+			"active": 0
+			},
+		"es2015-modules-umd": {
+			"active": 0
+			},
+		"es2015-object-super": {
+			"active": 0
+			},
+		"es2015-parameters": {
+			"active": 0
+			},
+		"es2015-shorthand-properties": {
+			"active": 0
+			},
+		"es2015-spread": {
+			"active": 0
+			},
+		"es2015-sticky-regex": {
+			"active": 0
+			},
+		"es2015-template-literals": {
+			"active": 0
+			},
+		"es2015-typeof-symbol": {
+			"active": 0
+			},
+		"es2015-unicode-regex": {
+			"active": 0
+			},
+		"es3-member-expression-literals": {
+			"active": 0
+			},
+		"es3-property-literals": {
+			"active": 0
+			},
+		"es5-property-mutators": {
+			"active": 0
+			},
+		"eval": {
+			"active": 0
+			},
+		"exponentiation-operator": {
+			"active": 0
+			},
+		"export-extensions": {
+			"active": 0
+			},
+		"external-helpers": {
+			"active": 0
+			},
+		"flow-comments": {
+			"active": 0
+			},
+		"flow-strip-types": {
+			"active": 0
+			},
+		"function-bind": {
+			"active": 0
+			},
+		"inline-environment-variables": {
+			"active": 0
+			},
+		"jscript": {
+			"active": 0
+			},
+		"member-expression-literals": {
+			"active": 0
+			},
+		"merge-sibling-variables": {
+			"active": 0
+			},
+		"minify-booleans": {
+			"active": 0
+			},
+		"node-env-inline": {
+			"active": 0
+			},
+		"object-assign": {
+			"active": 0
+			},
+		"object-rest-spread": {
+			"active": 0
+			},
+		"object-set-prototype-of-to-assign": {
+			"active": 0
+			},
+		"property-literals": {
+			"active": 0
+			},
+		"proto-to-assign": {
+			"active": 0
+			},
+		"react-constant-elements": {
+			"active": 0
+			},
+		"react-display-name": {
+			"active": 0
+			},
+		"react-inline-elements": {
+			"active": 0
+			},
+		"react-jsx": {
+			"active": 0
+			},
+		"react-jsx-compat": {
+			"active": 0
+			},
+		"react-jsx-self": {
+			"active": 0
+			},
+		"react-jsx-source": {
+			"active": 0
+			},
+		"regenerator": {
+			"active": 0
+			},
+		"remove-console": {
+			"active": 0
+			},
+		"remove-debugger": {
+			"active": 0
+			},
+		"runtime": {
+			"active": 0
+			},
+		"simplify-comparison-operators": {
+			"active": 0
+			},
+		"strict-mode": {
+			"active": 0
+			},
+		"syntax-async-generators": {
+			"active": 0
+			},
+		"syntax-class-properties": {
+			"active": 0
+			},
+		"syntax-decorators": {
+			"active": 0
+			},
+		"syntax-do-expressions": {
+			"active": 0
+			},
+		"syntax-export-extensions": {
+			"active": 0
+			},
+		"syntax-flow": {
+			"active": 0
+			},
+		"syntax-function-bind": {
+			"active": 0
+			},
+		"syntax-function-sent": {
+			"active": 0
+			},
+		"syntax-jsx": {
+			"active": 0
+			},
+		"syntax-object-rest-spread": {
+			"active": 0
+			},
+		"undeclared-variables-check": {
+			"active": 0
+			},
+		"undefined-to-void": {
+			"active": 0
+			}
+		},
+	"babelPresetType": 193,
+	"babelRetainLines": 0,
+	"bowerAbbreviatedPath": "bower_components",
+	"bowerAutoCreateInfoFile": 1,
+	"bowerInstallDevDependencies": 0,
+	"bowerSaveDependencies": 1,
+	"bowerSaveDevDependencies": 0,
+	"bowerUseExactVersion": 0,
+	"browserRefreshDelay": 0,
+	"buildFolderActive": 0,
+	"buildFolderName": "build",
+	"cleanBuild": 1,
+	"coffeeLintFlags2": {
+		"arrow_spacing": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camel_case_classes": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"colon_assignment_spacing": {
+			"active": 0,
+			"flagValue": 1
+			},
+		"cyclomatic_complexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"duplicate_key": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indentation": {
+			"active": 1,
+			"flagValue": 2
+			},
+		"line_endings": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"max_line_length": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"missing_fat_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newlines_after_classes": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"no_backticks": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_empty_functions": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_empty_param_list": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_implicit_braces": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_implicit_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_interpolation_in_single_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_stand_alone_at": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_tabs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_throwing_strings": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_whitespace": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_unnecessary_double_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_unnecessary_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"non_empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prefer_english_operator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space_operators": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
+			}
+		},
+	"esLintConfigFileHandlingType": 0,
+	"esLintECMAVersion": 7,
+	"esLintEnvironmentsMask": 1,
+	"esLintRules": {
+		"accessor-pairs": {
+			"active": 0,
+			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
+			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
+		"array-bracket-spacing": {
+			"active": 0,
+			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
+			},
+		"array-callback-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"arrow-body-style": {
+			"active": 0,
+			"optionString": "'as-needed', {'requireReturnForObjectLiteral': false}"
+			},
+		"arrow-parens": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"arrow-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true}"
+			},
+		"block-scoped-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"block-spacing": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"brace-style": {
+			"active": 0,
+			"optionString": "'1tbs', {'allowSingleLine': true}"
+			},
+		"callback-return": {
+			"active": 0,
+			"optionString": "['callback', 'cb', 'next']"
+			},
+		"camelcase": {
+			"active": 0,
+			"optionString": "{'properties': 'always'}"
+			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
+		"class-methods-use-this": {
+			"active": 0,
+			"optionString": "{'exceptMethods': []}"
+			},
+		"comma-dangle": {
+			"active": 1,
+			"optionString": "'never'"
+			},
+		"comma-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"comma-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
+		"complexity": {
+			"active": 0,
+			"optionString": "20"
+			},
+		"computed-property-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"consistent-return": {
+			"active": 0,
+			"optionString": "{'treatUndefinedAsUnspecified': false}"
+			},
+		"consistent-this": {
+			"active": 0,
+			"optionString": "'that'"
+			},
+		"constructor-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"curly": {
+			"active": 0,
+			"optionString": "'all'"
+			},
+		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"dot-location": {
+			"active": 0,
+			"optionString": "'object'"
+			},
+		"dot-notation": {
+			"active": 0,
+			"optionString": "{'allowKeywords': false}"
+			},
+		"eol-last": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"eqeqeq": {
+			"active": 0,
+			"optionString": "'always', {'null': 'always'}"
+			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
+		"func-call-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"func-name-matching": {
+			"active": 0,
+			"optionString": "'always', {'includeCommonJSModuleExports': false}"
+			},
+		"func-names": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"func-style": {
+			"active": 0,
+			"optionString": "'expression'"
+			},
+		"generator-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
+			},
+		"global-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"guard-for-in": {
+			"active": 0,
+			"optionString": ""
+			},
+		"handle-callback-err": {
+			"active": 0,
+			"optionString": "'err'"
+			},
+		"id-blacklist": {
+			"active": 0,
+			"optionString": "'data', 'err', 'e', 'cb', 'callback'"
+			},
+		"id-length": {
+			"active": 0,
+			"optionString": "{'min': 2, 'max': 1000, 'properties': 'always', 'exceptions': ['x', 'i', 'y']}"
+			},
+		"id-match": {
+			"active": 0,
+			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"indent": {
+			"active": 0,
+			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1, }"
+			},
+		"init-declarations": {
+			"active": 0,
+			"optionString": "'always',  {'ignoreForLoopInit': true}"
+			},
+		"jsx-quotes": {
+			"active": 0,
+			"optionString": "'prefer-double'"
+			},
+		"key-spacing": {
+			"active": 0,
+			"optionString": "{'singleLine': {'beforeColon': false, 'afterColon': true, 'mode':'strict'}, 'multiLine': {'beforeColon': false, 'afterColon': true, 'align': 'value', 'mode':'minimum'}}"
+			},
+		"keyword-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true, 'overrides': {}}"
+			},
+		"line-comment-position": {
+			"active": 0,
+			"optionString": "{'position': 'above'}"
+			},
+		"linebreak-style": {
+			"active": 0,
+			"optionString": "'unix'"
+			},
+		"lines-around-comment": {
+			"active": 0,
+			"optionString": "{'beforeBlockComment': true}"
+			},
+		"lines-around-directive": {
+			"active": 0,
+			"optionString": "{'before': 'always', 'after': 'always'}"
+			},
+		"max-depth": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-len": {
+			"active": 0,
+			"optionString": "{'code': 80, 'comments': 80, 'tabWidth': 4, 'ignoreUrls': true, 'ignoreStrings': true, 'ignoreTemplateLiterals': true, 'ignoreRegExpLiterals': true}"
+			},
+		"max-lines": {
+			"active": 0,
+			"optionString": "{'max': 300, 'skipBlankLines': true, 'skipComments': true}"
+			},
+		"max-nested-callbacks": {
+			"active": 0,
+			"optionString": "{'max': 10}"
+			},
+		"max-params": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-statements": {
+			"active": 0,
+			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
+			},
+		"multiline-ternary": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"new-cap": {
+			"active": 0,
+			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
+			},
+		"new-parens": {
+			"active": 0,
+			"optionString": ""
+			},
+		"newline-after-var": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"newline-before-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"newline-per-chained-call": {
+			"active": 0,
+			"optionString": "{'ignoreChainWithDepth': 2}"
+			},
+		"no-alert": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-array-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-bitwise": {
+			"active": 0,
+			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-caller": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-case-declarations": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-catch-shadow": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-class-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-cond-assign": {
+			"active": 1,
+			"optionString": "'except-parens'"
+			},
+		"no-confusing-arrow": {
+			"active": 0,
+			"optionString": "{'allowParens': false}"
+			},
+		"no-console": {
+			"active": 1,
+			"optionString": "{'allow': ['warn', 'error']}"
+			},
+		"no-const-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-constant-condition": {
+			"active": 1,
+			"optionString": "{'checkLoops': true}"
+			},
+		"no-continue": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-control-regex": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-debugger": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-delete-var": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-div-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-dupe-args": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-keys": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-duplicate-imports": {
+			"active": 0,
+			"optionString": "{'includeExports': false}"
+			},
+		"no-else-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-empty": {
+			"active": 1,
+			"optionString": "{'allowEmptyCatch': false}"
+			},
+		"no-empty-character-class": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-empty-function": {
+			"active": 0,
+			"optionString": "{'allow': []}"
+			},
+		"no-empty-pattern": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-eq-null": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-eval": {
+			"active": 0,
+			"optionString": "{'allowIndirect': false}"
+			},
+		"no-ex-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extend-native": {
+			"active": 0,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-extra-bind": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-boolean-cast": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extra-labels": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-parens": {
+			"active": 0,
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
+			},
+		"no-extra-semi": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-fallthrough": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-floating-decimal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-func-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-global-assign": {
+			"active": 1,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-implicit-coercion": {
+			"active": 0,
+			"optionString": "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
+			},
+		"no-implicit-globals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-implied-eval": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inline-comments": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inner-declarations": {
+			"active": 1,
+			"optionString": "'functions'"
+			},
+		"no-invalid-regexp": {
+			"active": 1,
+			"optionString": "{'allowConstructorFlags': ['u', 'y']}"
+			},
+		"no-invalid-this": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-irregular-whitespace": {
+			"active": 1,
+			"optionString": "{'skipStrings': true, 'skipComments': false, 'skipRegExps': true, 'skipTemplates': true}"
+			},
+		"no-iterator": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-label-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-labels": {
+			"active": 0,
+			"optionString": "{'allowLoop': false, 'allowSwitch': false}"
+			},
+		"no-lone-blocks": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-lonely-if": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-loop-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-magic-numbers": {
+			"active": 0,
+			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
+			},
+		"no-mixed-operators": {
+			"active": 0,
+			"optionString": "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
+			},
+		"no-mixed-requires": {
+			"active": 0,
+			"optionString": "{'grouping': false, 'allowCall': false }"
+			},
+		"no-mixed-spaces-and-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-spaces": {
+			"active": 0,
+			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
+			},
+		"no-multi-str": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multiple-empty-lines": {
+			"active": 0,
+			"optionString": "{'max': 2, 'maxBOF': 2, 'maxEOF': 2}"
+			},
+		"no-negated-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-nested-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-object": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-symbol": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-new-wrappers": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-obj-calls": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-param-reassign": {
+			"active": 0,
+			"optionString": "{'props': false}"
+			},
+		"no-path-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-plusplus": {
+			"active": 0,
+			"optionString": "{'allowForLoopAfterthoughts': false}"
+			},
+		"no-process-env": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-process-exit": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-redeclare": {
+			"active": 1,
+			"optionString": "{'builtinGlobals': false}"
+			},
+		"no-regex-spaces": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-restricted-globals": {
+			"active": 0,
+			"optionString": "'event', 'fdescribe'"
+			},
+		"no-restricted-imports": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-modules": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-properties": {
+			"active": 0,
+			"optionString": "[{'object': 'disallowedObjectName', 'property': 'disallowedPropertyName'}, {'object': 'disallowedObjectName', 'property': 'anotherDisallowedPropertyName', 'message': 'Please use allowedObjectName.allowedPropertyName.'}]"
+			},
+		"no-restricted-syntax": {
+			"active": 0,
+			"optionString": "'FunctionExpression', 'WithStatement'"
+			},
+		"no-return-assign": {
+			"active": 0,
+			"optionString": "'except-parens'"
+			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-script-url": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-self-assign": {
+			"active": 1,
+			"optionString": "{'props': false}"
+			},
+		"no-self-compare": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sequences": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-shadow": {
+			"active": 0,
+			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
+			},
+		"no-shadow-restricted-names": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sparse-arrays": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-sync": {
+			"active": 0,
+			"optionString": "{'allowAtRootLevel': false}"
+			},
+		"no-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-template-curly-in-string": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-this-before-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-throw-literal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-trailing-spaces": {
+			"active": 0,
+			"optionString": "{'skipBlankLines': false, 'ignoreComments': false}"
+			},
+		"no-undef": {
+			"active": 1,
+			"optionString": "{'typeof': false}"
+			},
+		"no-undef-init": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-undefined": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-underscore-dangle": {
+			"active": 0,
+			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'enforceInMethodNames': false}"
+			},
+		"no-unexpected-multiline": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unmodified-loop-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-unneeded-ternary": {
+			"active": 0,
+			"optionString": "{'defaultAssignment': true}"
+			},
+		"no-unreachable": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-finally": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-negation": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-expressions": {
+			"active": 0,
+			"optionString": "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
+			},
+		"no-unused-labels": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-vars": {
+			"active": 1,
+			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
+			},
+		"no-use-before-define": {
+			"active": 0,
+			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
+			},
+		"no-useless-call": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-computed-key": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-rename": {
+			"active": 0,
+			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
+			},
+		"no-useless-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-void": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-warning-comments": {
+			"active": 0,
+			"optionString": "{'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}"
+			},
+		"no-whitespace-before-property": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-with": {
+			"active": 0,
+			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
+		"object-curly-newline": {
+			"active": 0,
+			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
+			},
+		"object-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"object-property-newline": {
+			"active": 0,
+			"optionString": "{'allowMultiplePropertiesPerLine': true}"
+			},
+		"object-shorthand": {
+			"active": 0,
+			"optionString": "'always', {'avoidQuotes': false, 'ignoreConstructors': false}"
+			},
+		"one-var": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"one-var-declaration-per-line": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-assignment": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-linebreak": {
+			"active": 0,
+			"optionString": "'after', {'overrides': {'?': 'after', '+=': 'none'}}"
+			},
+		"padded-blocks": {
+			"active": 0,
+			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
+			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
+		"prefer-arrow-callback": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-const": {
+			"active": 0,
+			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-numeric-literals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-rest-params": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-spread": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-template": {
+			"active": 0,
+			"optionString": ""
+			},
+		"quote-props": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"quotes": {
+			"active": 0,
+			"optionString": "'double', {'avoidEscape': true, 'allowTemplateLiterals': true}"
+			},
+		"radix": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
+			},
+		"require-jsdoc": {
+			"active": 0,
+			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
+			},
+		"require-yield": {
+			"active": 1,
+			"optionString": ""
+			},
+		"rest-spread-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"semi": {
+			"active": 0,
+			"optionString": "'always', {'omitLastInOneLineBlock': false}"
+			},
+		"semi-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
+		"sort-imports": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
+			},
+		"sort-keys": {
+			"active": 0,
+			"optionString": "'asc', {'caseSensitive': true, 'natural': false}"
+			},
+		"sort-vars": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false}"
+			},
+		"space-before-blocks": {
+			"active": 0,
+			"optionString": "{'functions': 'always', 'keywords': 'always', 'classes': 'always'}"
+			},
+		"space-before-function-paren": {
+			"active": 0,
+			"optionString": "{'anonymous': 'always', 'named': 'never'}"
+			},
+		"space-in-parens": {
+			"active": 0,
+			"optionString": "'never', {'exceptions': []}"
+			},
+		"space-infix-ops": {
+			"active": 0,
+			"optionString": "{'int32Hint': false}"
+			},
+		"space-unary-ops": {
+			"active": 0,
+			"optionString": "{'words': true, 'nonwords': false, 'overrides': {}}"
+			},
+		"spaced-comment": {
+			"active": 0,
+			"optionString": "'always', {'line': {'markers': ['\/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
+			},
+		"strict": {
+			"active": 0,
+			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
+			},
+		"symbol-description": {
+			"active": 0,
+			"optionString": ""
+			},
+		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"unicode-bom": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"use-isnan": {
+			"active": 1,
+			"optionString": ""
+			},
+		"valid-jsdoc": {
+			"active": 0,
+			"optionString": "{'prefer': {'return': 'returns'}, 'requireReturn': true, 'requireReturnDescription': true, 'requireReturnType': true, 'requireParamDescription': true}"
+			},
+		"valid-typeof": {
+			"active": 1,
+			"optionString": "{'requireStringLiterals': true}"
+			},
+		"vars-on-top": {
+			"active": 0,
+			"optionString": ""
+			},
+		"wrap-iife": {
+			"active": 0,
+			"optionString": "'outside'"
+			},
+		"wrap-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"yield-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"yoda": {
+			"active": 0,
+			"optionString": "'never', {'exceptRange': false, 'onlyEquality': false}"
+			}
+		},
+	"esLintSourceType": 0,
+	"externalServerAddress": "http:\/\/localhost:8888",
+	"gitIgnoreBuildFolder": 1,
+	"hideConfigFile": 0,
+	"jsCheckerReservedNamesString": "",
+	"jsHintFlags2": {
+		"asi": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bitwise": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"boss": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camelcase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"curly": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"dojo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqeqeq": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqnull": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es3": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"esnext": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evil": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"expr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"forin": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"freeze": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"funcscope": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"globalstrict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"immed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jasmine": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jquery": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"lastsemic": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"latedef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"laxbreak": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"laxcomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loopfunc": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxcomplexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"maxdepth": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"maxparams": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxstatements": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"mootools": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"moz": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"multistr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newcap": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noarg": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"noempty": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonbsp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonew": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nonstandard": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"notypeof": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noyield": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"onecase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"phantom": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"qunit": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"scripturl": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shadow": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"singleGroups": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"strict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"supernew": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"typed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"undef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"varstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"withstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"worker": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"wsh": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"yui": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"jsLintFlags2": {
+		"bitwise": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es6": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"for": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"white": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"languageDefaultsCOFFEE": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"minifyOutput": 1,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"languageDefaultsCSS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.min.css",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsGIF": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.gif",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsHAML": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"escapeHTMLCharacters": 0,
+		"noEscapeInAttributes": 0,
+		"outputFormat": 2,
+		"outputStyle": 0,
+		"useCDATA": 0,
+		"useDoubleQuotes": 0,
+		"useUnixNewlines": 0
+		},
+	"languageDefaultsJPG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.jpg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 3,
+		"quality": 90
+		},
+	"languageDefaultsJS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.min.js",
+		"autoOutputPathRelativePath": "\/min",
+		"autoOutputPathReplace1": "*",
+		"autoOutputPathReplace2": "scripts.min.js",
+		"autoOutputPathStyle": 3,
+		"createSourceMap": 0,
+		"minifyOutput": 1,
+		"syntaxCheckerStyle": 0,
+		"transpilerStyle": 0
+		},
+	"languageDefaultsJSON": {
+		"autoOutputAction": 1,
+		"autoOutputPathFilenamePattern": "*-min.json",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"orderOutput": 0,
+		"outputStyle": 1
+		},
+	"languageDefaultsKIT": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "kit",
+		"autoOutputPathReplace2": "html",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsLESS": {
+		"allowInsecureImports": 0,
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "less",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 1,
+		"disableJavascript": 0,
+		"ieCompatibility": 1,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"languageDefaultsMARKDOWN": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"maskEmailAddresses": 1,
+		"outputFormat": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"languageDefaultsOTHER": {
+		"autoOutputAction": 2,
+		"autoOutputPathFilenamePattern": "*.*",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsPNG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.png",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 3,
+		"optimizerType": 1,
+		"quality": 90
+		},
+	"languageDefaultsPUG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileDebug": 1,
+		"outputStyle": 0
+		},
+	"languageDefaultsSASS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "sass",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 2,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
+	"languageDefaultsSLIM": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileOnly": 0,
+		"logicless": 0,
+		"outputFormat": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0
+		},
+	"languageDefaultsSTYLUS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "*.min",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 3,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"importCSS": 0,
+		"outputStyle": 1,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsSVG": {
+		"autoOutputAction": 2,
+		"autoOutputPathFilenamePattern": "*.svg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"pluginMask": 3758088159
+		},
+	"languageDefaultsTS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "\/js",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createDeclarationFile": 0,
+		"createSourceMap": 0,
+		"jsxMode": 0,
+		"minifyOutput": 0,
+		"moduleResolutionType": 0,
+		"moduleType": 2,
+		"noImplicitAny": 0,
+		"preserveConstEnums": 0,
+		"removeComments": 0,
+		"suppressImplicitAnyIndexErrors": 0,
+		"targetECMAVersion": 0
+		},
+	"languageDefaultsUserDefined": [
+		],
+	"overrideExternalServerCSS": 0,
+	"previewPathAddition": "",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
+	"sourceFolderName": "source",
+	"susyVersion": 3,
+	"uglifyDefinesString": "",
+	"uglifyFlags2": {
+		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"booleans": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"bracketize": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"cascade": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comments": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comparisons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"compress": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"conditionals": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evaluate": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_vars": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"if_return": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indent-level": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"indent-start": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"inline-script": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"join_vars": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loops": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"mangle": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"max-line-len": {
+			"active": 1,
+			"flagValue": 32000
+			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"properties": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"quote-keys": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"screw-ie8": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sequences": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sort": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space-colon": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"toplevel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"warnings": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"width": {
+			"active": 1,
+			"flagValue": 80
+			}
+		},
+	"uglifyReservedNamesString": "$",
+	"websiteRelativeRoot": ""
+	},
+"settingsFileVersion": "3"
+}

@@ -1,0 +1,288 @@
+.cheese
+	margin-bottom: 150px
+	position: relative
+	@include media(lg)
+		margin-bottom: 70px
+
+	&:before 
+		content: ''
+		left: -300px
+		bottom: -271px
+		position: absolute
+		z-index: -5
+		width: 200%
+		height: 42px
+		transform: rotate(24deg)
+		background: #fff8dd
+	&:after
+		content: ''
+		left: -147px
+		bottom: -149px
+		position: absolute
+		z-index: -5
+		width: 344px
+		height: 119px
+		transform: rotate(24deg) skew(19deg)
+		background: #fff8dd
+
+	&__back 
+		position: absolute
+		top: 64px
+		right: 0
+		height: 16px
+		color: #707070
+		font-size: 20px
+		font-weight: 600
+		font-style: italic
+		letter-spacing: .2px
+		@include media(m)
+			position: relative
+			top: auto
+			right: auto
+			float: right
+			margin-bottom: 20px
+	&__title 
+		color: #000
+		font-weight: 800
+		font-size: 45px
+		line-height: 48px
+		letter-spacing: .45px
+		margin-bottom: 23px
+	&__text 
+		clear: both
+		color: #000
+		font-family: 'MyriadPro', sans-serif
+		font-size: 19px
+		line-height: 28px
+		text-align: justify
+		letter-spacing: .2px
+		padding-bottom: 13px
+
+
+	&__text-block 
+   		position: relative
+
+
+.cheese__text-block:after, .cheese__text-block:before 
+    content: ''
+    position: absolute
+    background: #fdd439
+
+
+.cheese__text-block:before 
+    width: 15px
+    height: 15px
+    border-radius: 100%
+    left: -39px
+    top: 0
+
+
+.cheese
+	&__text-block:after 
+		width: 4px
+		height: 100%
+		left: -33px
+		top: 0
+	&__links 
+		font-family: 'MyriadPro', sans-serif
+		display: -ms-flexbox
+		display: flex
+		-ms-flex-flow: row wrap
+		flex-flow: row wrap
+		-ms-flex-pack: justify
+		justify-content: space-between
+	&__item 
+		width: 48%
+		@include media(lg)
+			width: 100%
+	&__link 
+		position: relative
+		font-size: 16px
+		line-height: 24px
+		color: #000
+		text-decoration: none
+		@include media(lg)
+			font-size: 20px
+			line-height: 30px
+
+.cheese__link:before 
+    content: ''
+    position: absolute
+    bottom: 0
+    width: 25px
+    height: 2px
+    background: #fdd439
+    transition: width .3s
+
+
+.cheese__link:hover 
+    color: #000
+    text-decoration: none
+
+
+.cheese__link:hover:before 
+    width: 100%
+    height: 1px
+    background: #fdd439
+    transition: width .3s
+
+
+.cheese .button 
+    position: absolute
+    bottom: -64px
+    right: 75px
+
+
+// ДЛИТЕЛЬНОСТЬ АНИМАЦИИ
+$duration: 0.3s
+
+// ДЛИНА
+$width: 1000px
+
+.cheese-circle
+	position: absolute
+	float: left
+	top: -150px
+	width: $width
+	height: $width
+	&:before, &:after 
+		content: ''
+		left: 612px
+		top: 954px
+		position: absolute
+		z-index: -5
+		width: 200%
+		height: 343px
+		transform: rotate(26deg)
+		background: #f2e9cd
+	&:after 
+		left: 573px
+		top: 965px
+		height: 232px
+
+	.bg,
+	.green,
+	.shadow
+		position: absolute
+		@include bg()
+	.bg,
+	.shadow
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+	.green
+		width: $width/4.93
+		height: $width/4.139
+
+		bottom: $width/9.45
+		right: $width/4.725
+	.shadow
+		background-image: url("../images/cheese/shadow.png")
+
+	.green
+		background-image: url("../images/cheese/green.png")
+
+	.bg
+		background-image: url("../images/cheese/cheese.png")
+
+	.piece
+		width: $width/2.3625
+		height: $width/2.3625
+
+		position: absolute
+
+		@include bg(center, false, contain)
+
+		transition-duration: $duration
+
+		&[data-number='item1']
+			top: $width/7.2692
+			left: $width/5.4
+			transform: rotate(53deg)
+
+			background-image: url("../images/cheese/piece1.png")
+
+			&.active
+				transform: rotate(53deg) translateX(-$width/10)
+
+		&[data-number='item2']
+			top: $width/4.2631
+			left: $width/7.0875
+			transform: rotate(7deg)
+
+			background-image: url("../images/cheese/piece2.png")
+
+			&.active
+				transform: rotate(7deg) translateX(-$width/10)
+
+		&[data-number='item3']
+			top: $width/2.8781
+			left: $width/5.4519
+			transform: rotate(-37deg)
+		
+			background-image: url("../images/cheese/piece3.png")
+
+			&.active
+				transform: rotate(-37deg) translateX(-$width/10)
+
+	.icon
+
+		position: absolute
+
+		@include bg()
+
+		transition-duration: $duration
+		transform: rotate(0deg)
+
+		opacity: 0.5
+
+		cursor: pointer
+		&.hover
+			opacity: 1
+
+		&[data-number='item1']
+
+			width: $width/8.2173
+			height: $width/8.3382
+
+			top: $width/5.0625
+			left: $width/3.15
+
+			background-image: url("../images/cheese/1.png")
+
+			transform: rotate(53deg)
+
+			&.active
+				transform: rotate(53deg) translateX(-$width/10)
+				
+
+		&[data-number='item2']
+
+			width: $width/7.56
+			height: $width/8.7230
+
+			top: $width/2.9378
+			left: $width/4.2
+
+			background-image: url("../images/cheese/2.png")
+
+			transform: rotate(7deg)
+
+			&.active
+				transform: rotate(7deg) translateX(-$width/10)
+
+		&[data-number='item3']
+
+			width: $width/7.56
+			height: $width/7.7671
+
+			top: $width/2.1
+			left: $width/3.7302
+
+			background-image: url("../images/cheese/3.png")
+
+			transform: rotate(-37deg)
+
+			&.active
+				transform: rotate(-37deg) translateX(-$width/10)

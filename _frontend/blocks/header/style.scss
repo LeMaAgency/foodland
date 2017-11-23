@@ -1,0 +1,110 @@
+.header {
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    z-index: 2;
+
+    &__nav, 
+    &__logo, 
+    &__nav-btn,
+    &__map-btn {
+        display: inline-block;
+        vertical-align: top;
+    }
+    &__logo {
+        position: absolute;
+        left: 20px;
+        padding: 10px;
+        border-radius: 0 0 10px 10px;
+        overflow: hidden;
+        z-index: 1;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: 72px;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+    &__nav {
+        li a {
+            padding: 25px 30px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    }
+    &__nav-btn {
+        margin-top: 23px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    &__map-btn {
+        width: 90px;
+        display: inline-block;
+        padding: 8px 15px;
+        background: #fff;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+
+        & .svg {
+            fill: #979695;
+            margin-bottom: 7px;
+        }
+        &:hover{
+            color: $color-link-hover;
+
+            & svg {
+            fill: $color-link-hover!important;
+            }
+        }
+    }
+
+    &__modal {
+        position: absolute;
+        z-index: 100;
+        top: -1000%; 
+        left: 50%; 
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 80%;
+        padding: 40px 140px 45px;
+        box-shadow: 0 9px 24px rgba(75, 50, 0, .61);
+        background-color: #f6d34b;
+        transition: top .2s;
+        border-radius: 0 0 10px 10px;
+    
+        &.active {
+            top: 0; 
+            transition: top .2s
+        }
+        &__close
+            {
+            position: absolute;
+            width: 22px; height: 23px;
+            top: 38px; right: 44px;
+            cursor: pointer;
+        }
+        &_mobile {
+            display: none;
+            float: left; 
+            width: 100%;
+            padding-bottom: 50px;
+    }
+    }
+    @media (max-width: 1000px) {
+        &__modal {
+            padding: 60px 20px 20px;
+            width: 90%;
+            
+            &_mobile {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.popular {
+    position: relative;
+    padding-bottom: 50px;
+    @include media(lg){
+        padding-bottom: 0;
+    }
+    &__item {
+        position: relative;
+        color: #979695;
+        text-align: center;
+        width: 201px;
+        height: 500px;
+        margin: auto;
+        overflow: hidden;
+        transition: line-height .3s, opacity .3s;
+
+
+        &__image {
+            width: 201px;
+            height: 201px;
+            background: url(../images/plate.png) no-repeat 50%;
+            text-align: center;
+            margin-top: 60px;
+            transition: margin-top .3s;
+
+            img {
+                margin-top: 10px;
+                width: 130px;
+                display: inline-block
+            }
+        }
+
+        &__description,
+        &__name,
+        &__text {display: inline-block}
+
+        &__name,
+        &__text {
+            margin-bottom: 23px;
+            line-height: 28px;
+        }
+
+        &__name {font-size: 24px}
+        &__text {font-size: 20px;
+            opacity: 0;
+            transition: opacity .3s}
+
+        &__description {
+            font-size: 16px;
+            line-height: 18px;
+            opacity: 0;
+            transition: opacity .3s;}
+        &:hover & {
+            &__image{
+                margin-top: 0;
+                transition: margin-top .3s;
+            }
+
+            &__description,
+            &__text {
+                opacity: 1;
+                transition: opacity .3s
+            }
+
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .popular .item .image {margin-top: 0; transition: margin-top .3s}
+    .popular .item,
+    .popular .item .description,
+    .popular .item .text {
+        opacity: 1; transition: opacity .3s
+    }
+}
+.popular__carousel {
+    &:before, &:after {
+        content: '';
+        display: block;
+        top: 250px;
+        position: absolute;
+        z-index: -5;
+        width: 500px;
+        height: 2px;
+        background: #f6d34b;
+    }
+    &:before {
+        left: -550px; 
+    }
+    &:after {
+        right: -550px;
+    }
+}

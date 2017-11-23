@@ -1,0 +1,76 @@
+.footer {
+    position: relative;
+    z-index: 1;
+    padding: 50px 0;
+    background: url("../images/footer-bg.jpg");
+    @include media(lg) {
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__title, &__button, &__social, &__phone {
+        display: inline-block;
+    }
+    &__title {
+        font-size: 29px;
+        line-height: 35px;
+        font-weight: 700;
+        font-weight: bold;
+        padding-right: 40px;
+        margin-bottom: 20px;
+    }
+    &__phone {
+        float: right;
+        padding-top: 5px;
+        a {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        @include media(lg) {
+            display: block;
+            margin-top: 30px;
+            float: none;
+        }
+    }
+    &__social {
+        float: right;
+        position: relative;
+        top: -3px;
+        margin-right: 20px;
+        @include media(lg) {
+            margin-top: 20px;
+            float: none;
+        }
+
+        &__item {
+            padding: 5px;
+            border-radius: 100%;
+            width: 32px;
+            height: 32px;
+            box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.47);
+            cursor: pointer;
+            margin-right: 5px;
+
+            fill: #73662f;
+            background: #f8dc65;
+            border: 1px solid #d5bd57;
+            
+            &:hover {
+                fill: #73662f;
+                background: #facc0e;
+                border-color: #c7a119;
+            }
+        }
+    }
+    .menu-site-map {
+        margin-top: 20px;
+    }
+
+    .button-cheese span {
+
+        color: #694c3d;
+        svg {
+            fill: #694c3d;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.tm-carousel {
+    text-align: center;
+    &__title {
+        margin: 63px auto 60px;
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 700;
+    }
+    &__carousel {
+        margin: 30px auto;
+        &__item {
+            padding: 14px 0;
+            height: 100px;
+        }
+        .arrows {
+            width: 42px;
+            height: 42px;
+            position: absolute;
+            left: 50%;
+            top: auto;
+            fill: #f6d34b;
+            transform: translateX(-50%) rotate(90deg);
+            cursor: pointer;
+        }
+        .arrows--prev {
+            top: -40px;
+        }
+        .arrows--next {
+            bottom: -40px;
+        }
+    }
+}

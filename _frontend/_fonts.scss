@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:300,400,600");
+
+@font-face {
+  font-family: MyriadPro;
+  src: url(../fonts/MyriadProRegular/MyriadProRegular.eot);
+  src: url(../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadProRegular/MyriadProRegular.woff) format("woff"), url(../fonts/MyriadProRegular/MyriadProRegular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400
+}
+@font-face {
+  font-family: MyriadPro;
+  src: url(../fonts/MyriadProBold/MyriadProBold.eot);
+  src: url(../fonts/MyriadProBold/MyriadProBold.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadProBold/MyriadProBold.woff) format("woff"), url(../fonts/MyriadProBold/MyriadProBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 800
+}
+@font-face {
+  font-family: MyriadPro;
+  src: url(../fonts/MyriadProItalic/MyriadProItalic.eot);
+  src: url(../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadProItalic/MyriadProItalic.woff) format("woff"), url(../fonts/MyriadProItalic/MyriadProItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: 400
+}
+@font-face {
+  font-family: MyriadPro;
+  src: url(../fonts/MyriadProSemiBold/MyriadProSemiBold.eot);
+  src: url(../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadProSemiBold/MyriadProSemiBold.woff) format("woff"), url(../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700
+}
+@font-face {
+  font-family: MyriadPro;
+  src: url(../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot);
+  src: url(../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff) format("woff"), url(../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: 800
+}
+@font-face {
+  font-family: MyriadPro;
+  src: url(../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot);
+  src: url(../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff) format("woff"), url(../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: 700
+}
+
+@font-face {
+  font-family: PFBeauSansPro;
+  src: url(../fonts/pfbeausanspro/pfbeausanspro-bold-webfont.eot);
+  src: url(../fonts/pfbeausanspro/pfbeausanspro-bold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/pfbeausanspro/pfbeausanspro-bold-webfont.woff) format("woff"), url(../fonts/pfbeausanspro/pfbeausanspro-bold-webfont.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 800
+}
+@font-face {
+  font-family: PFBeauSansPro;
+  src: url(../fonts/pfbeausanspro/pfbeausanspro-reg-webfont.eot);
+  src: url(../fonts/pfbeausanspro/pfbeausanspro-reg-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/pfbeausanspro/pfbeausanspro-reg-webfont.woff) format("woff"), url(../fonts/pfbeausanspro/pfbeausanspro-reg-webfont.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400
+}
+@font-face {
+  font-family: PFBeauSansPro;
+  src: url(../fonts/pfbeausanspro/pfbeausanspro-seboldital-webfont.eot);
+  src: url(../fonts/pfbeausanspro/pfbeausanspro-seboldital-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/pfbeausanspro/pfbeausanspro-seboldital-webfont.woff) format("woff"), url(../fonts/pfbeausanspro/pfbeausanspro-seboldital-webfont.ttf) format("truetype");
+  font-style: italic;
+  font-weight: 400
+}
+@font-face {
+  font-family: Beause;
+  src: url(../fonts/pfbeausanspro/pfbeausanspro-sebold-webfont.eot);
+  src: url(../fonts/pfbeausanspro/pfbeausanspro-sebold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/pfbeausanspro/pfbeausanspro-sebold-webfont.woff) format("woff"), url(../fonts/pfbeausanspro/pfbeausanspro-sebold-webfont.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 800
+}
+@font-face {
+  font-family: Museo;
+  src: url(../fonts/MuseoCyrl/exljbris_-_museo_cyrl_900-webfont.eot);
+  src: url(../fonts/MuseoCyrl/exljbris_-_museo_cyrl_900-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/MuseoCyrl/exljbris_-_museo_cyrl_900-webfont.woff) format("woff"), url(../fonts/MuseoCyrl/exljbris_-_museo_cyrl_900-webfont.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 800
+}

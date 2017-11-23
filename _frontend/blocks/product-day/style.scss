@@ -1,0 +1,102 @@
+.day-product {
+    margin-top: 200px;
+    z-index: 1;
+    .container {
+        width: 1255px;
+    }
+
+    &__images-block {
+        font-family: 'MyriadPro', sans-serif;
+        background: url("../images/board.jpg");
+        background-size: cover;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+
+        &_images {
+            max-height: 320px;
+                      
+            @include media(lg){
+                max-height: none;
+                text-align: center;
+                padding: 20px;
+            }
+            & img {
+                position: relative;
+                top: -25px;
+                left: 10px;
+                width: 65%;
+                @include media(lg){
+                    top: auto;
+                    left: auto;
+                    width: auto;
+                }
+            }           
+        }
+        &_text {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            max-width: 195px;
+            padding-right: 20px;
+            
+            @include media(lg) {
+                position: relative;
+                left: auto; top: auto;
+                padding: 20px;
+                text-align: center;
+                max-width: 100%;
+                padding: 20px;
+            }    
+        }
+        &_name {
+            display: inline-block;
+            position: relative;
+            font-size: 18px;
+            font-weight: 800;
+            font-style: italic;
+            margin-bottom: 10px;
+            
+            &:before, &::after{
+                content: "";
+                position: absolute;
+                width: 15px;
+                height: 2px;
+                top: 10px;
+                background: #000000;
+            }
+            &:before {
+                left: -20px;
+            }
+            
+            &::after{
+                right: -20px;
+            }
+        }
+        &_description {
+            line-height: 22px;
+        }
+    }
+    &__product {
+        padding: 20px 40px;
+        font-family: 'MyriadPro', sans-serif;
+        
+        &_name {
+            font-size: 23px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        
+        &_text {
+            font-size: 17px;
+            line-height: 23px;
+            margin-bottom: 20px;
+        }
+        
+        &_images {
+            padding-left: 20px;
+        }
+    }
+}
+
+

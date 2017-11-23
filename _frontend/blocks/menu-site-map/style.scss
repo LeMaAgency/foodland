@@ -1,0 +1,51 @@
+.menu-site-map {
+    margin-top: 20px;
+    text-align: left;
+    
+    &__title {
+        position: relative; margin-bottom: 20px;
+        font-size: 25px; font-weight: 700;
+        width: 100%; float: left;
+        clear: both;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            background: #000;
+            right: 0;
+            bottom: 50%;
+            width: 80%;
+            height: 2px;
+        }
+    }
+    &__nav {
+        & li {
+            width: 20%;
+            float: left;
+            & a {
+                text-decoration: underline;
+                padding: 3px 0;
+                font-size: 15px;
+                line-height: 18px;
+                display: inline-block
+            }
+        }
+
+    }
+    @media (max-width: 1350px) {
+        &__title:before {
+            width: 60%
+        }
+        &__nav li {
+            width: 50%;
+        }
+    }
+    @media (max-width: 1000px) {
+        &__title:before {
+            width: 40%
+        }
+        &__nav li {
+            width: 100%;
+        }
+    }
+}

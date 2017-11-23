@@ -1,0 +1,175 @@
+/**
+ * Переменные
+*/
+
+$media-size: (
+    xl: 1200px,
+    lg: 992px,
+    md: 758px,
+    sm: 576px,
+    xs: 0,
+) !default;
+$container-media-size: (
+    xs: 0,
+    sm: 576px,
+    md: 758px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+$container-max-widths: (
+    xs: 100%,
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px
+) !default;
+
+$container-margin: 70px;
+$container-aside: 170px;
+$container-main: 940px;
+
+%after {
+    &::after{
+        display: table;
+        clear: both;
+        content: "";
+    }
+  }
+%block {
+    position: relative;
+    display: block;
+    float: left;
+    min-height: 1px;
+}
+
+/**
+ * Стили
+*/
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    @extend %after;
+
+    &-fluid {
+      position: relative;
+      display: table;
+      width: 100%;
+    }
+
+    &-aside {
+      width: $container-aside;
+      margin-right: $container-margin;
+    }
+    &-main {
+      width: $container-main;
+    }
+
+    // Адаптивность
+    @each $name, $size in $container-media-size {
+        @media (min-width: $size) {
+            max-width: map-get($container-max-widths, $name)!important;
+            @if($size == 0) {
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+
+            // Доп контаинеты
+            @if($name != sm and $name != xs) {
+              &-main {
+                width: (map-get($container-max-widths, $name) - $container-aside - $container-margin - 40);
+              }
+              &-aside{
+                width: $container-aside;
+              }
+
+            } @else {
+              &-main , &-aside{
+                width: 100%;
+              }
+            }
+
+
+        }
+    }
+
+    &-fluid {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%
+    }
+}
+
+.row {
+    width: 100%;
+    clear: both;
+    @extend %block;
+    @extend %after;
+}
+
+
+.container-main , .container-aside,
+.col {
+  @extend %block;
+}
+
+/**
+ * Стиль: col-24
+*/
+
+@for $i from 1 through 24 {
+    .col-#{$i} {
+        @extend %block;
+        width: (100% * $i) / 24;
+    }
+}
+
+/**
+ * Стиль: col-xl-24
+*/
+
+@each $name, $size in $media-size {
+    @for $i from 1 through 24 {
+        .col-#{$name}-#{$i} {
+            @extend %block;
+        }
+    }
+}
+@each $name, $size in $media-size {
+    @media (max-width: $size) {
+      @for $i from 1 through 24 {  
+        .col-#{$name}-#{$i} {
+            width: (100% * $i) / 24;
+        }
+      }
+      .col-#{$name}-none {display: none}
+      .col-#{$name}-table-none {display: block!important;}
+      .col-#{$name}-table__cell-none {display: inline-block!important}
+
+      .col-#{$name}-css-text-left {text-align: left!important}
+      .col-#{$name}-css-text-right {text-align: right!important}
+      .col-#{$name}-css-text-center {text-align: center!important}
+
+      .col-#{$name}-css-padding {padding: 20px!important}
+
+      .col-#{$name}-css-margin {margin: 20px!important}
+      .col-#{$name}-css-margin-none {margin: 0!important}
+
+      .col-#{$name}-css-padding-none {padding: 0!important}
+    }
+}
+
+
+.table {
+  display: table;
+  width: 100%;
+  &__cell {
+    display: table-cell; vertical-align: top; float: none;
+  }
+  &_middle, &_middle > *{
+    vertical-align: middle;
+  }
+  &_bottom, &_bottom > *{
+    vertical-align: bottom;
+  }
+}

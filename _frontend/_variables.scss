@@ -1,0 +1,65 @@
+
+$font:          'PFBeauSansPro', sans-serif;
+$font-2:        'Museo';
+
+$font-size:                    14px         !default;
+$font-size-mini:               0.7142em     !default;
+$font-size-small:              0.8571em     !default;
+
+$font-size-h1:                 3.5em        !default; // ~ 49px
+$font-size-h2:                 2.5em        !default; // ~ 35px
+$font-size-h3:                 2em          !default; // ~ 28px
+$font-size-h4:                 1.714em      !default; // ~ 24px
+$font-size-h5:                 1.57em       !default; // ~ 22px
+$font-size-h6:                 1em          !default; // ~ 14px
+
+$font-weight-light:             300         !default;
+$font-weight-normal:            400         !default;
+$font-weight-semi:              600         !default;
+$font-weight-bold:              700         !default;
+
+$line-height:                   1.55em         !default;
+$line-height-l:                 54px           !default;
+
+$color:                         #000000      !default;
+$color-link:                    inherit;
+$color-link-hover:              #ce0018;
+
+$background:                    #fff;
+
+$status: (
+  '': (
+    #888,
+    #979797,
+  ),
+  primary:    (
+    #f96332,
+    #fa7a50,
+  ),
+  info:        (
+    #2CA8FF,
+    #4bb5ff
+  ),
+  success:     (
+    #18ce0f,
+    #1beb11
+  ),
+  warning:     (
+    #FFB236,
+    #f96332
+  ),
+  danger:      (
+    #FF3636,
+    #f96332
+  ),
+);
+
+$color-primary:                 #f96332;
+$color-info:                    #2CA8FF;
+$color-success:                 #18ce0f;
+$color-warning:                 #FFB236;
+$color-danger:                  #FF3636;
+
+
+
+

@@ -1,0 +1,35 @@
+.clients {
+    position: relative;
+    background: #fff8dd;
+    padding: 110px 0 145px;
+    &__title {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 48px;
+        margin-bottom: 43px
+    }
+    &__carousel { 
+        &__item {
+            position: relative;
+            height: 95px;
+            margin: auto;
+            text-align: center; 
+        }
+        &:before, &:after {
+            content: '';
+            display: block;
+            top: 48px;
+            position: absolute;
+            z-index: 1;
+            width: 500px;
+            height: 2px;
+            background: #f6d34b;
+        }
+        &:before {
+            left: -550px; 
+        }
+        &:after {
+            right: -550px;
+        }   
+    }   
+}

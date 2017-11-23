@@ -1,0 +1,33 @@
+.product {
+
+  &__category {
+    text-align: center;
+
+    &__item {
+      float: left;
+      &__images {
+        width: 150px;
+        height: 200px;
+        img {
+          display: inline-block;
+          height: 120px;
+        }
+        &_hover {
+          display: none!important;
+        }
+      }
+
+      &:hover &{
+        &__images {
+          img {
+            display: none;
+          }
+          &_hover {
+            display: inline-block!important;
+          }
+        }
+
+      }
+    }
+  }
+}

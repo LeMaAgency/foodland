@@ -1,0 +1,23 @@
+.category-carousel {
+    margin-right: 32px;
+    margin-bottom: 60px;
+    padding-top: 20px;
+    @include media(md) {
+        width: 80%;
+        margin: 0 auto 60px;
+    }
+}
+
+.category-carousel__item {
+    height: 122px;
+    margin: auto;
+    text-align: center;
+}
+
+.category-carousel .arrows--next {
+    right: -40px;
+}
+
+.category-carousel .arrows--prev {
+    left: -40px;
+}
