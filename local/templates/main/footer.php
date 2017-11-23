@@ -50,23 +50,14 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
             </div>
             <div class="row">
                 <div class="menu-site-map">
-                    <div class="menu-site-map__title">Карта сайта</div>
-                    <ul class="menu-site-map__nav">
-                        <li><a href="" title="">о нас</a></li>
-                        <li><a href="" title="">рецепты</a></li>
-                        <li><a href="" title="">возможности</a></li>
-                        <li><a href="" title="">товары для разницы</a></li>
-                        <li><a href="" title="">топ-10 продукции</a></li>
-                        <li><a href="" title="">события</a></li>
-                        <li><a href="" title="">упаковка</a></li>
-                        <li><a href="" title="">преимущества</a></li>
-                        <li><a href="" title="">для сегмента HoReCa</a></li>
-                        <li><a href="" title="">торговые марки</a></li>
-                        <li><a href="" title="">предложения</a></li>
-                        <li><a href="" title="">новинки</a></li>
-                        <li><a href="" title="">что прозводим</a></li>
-                        <li><a href="" title="">для производства</a></li>
-                    </ul>
+                    <?$APPLICATION->IncludeComponent('bitrix:main.map','sitemap', array(
+                        'LEVEL' => '3',
+                        'COL_NUM' => '1',
+                        'SHOW_DESCRIPTION' => 'Y',
+                        'SET_TITLE' => 'Y',
+                        'CACHE_TYPE' => 'A',
+                        'CACHE_TIME' => '3600'
+                    ));?>
                 </div>
             </div>
         </div>

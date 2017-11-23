@@ -1,0 +1,101 @@
+<?
+$aMenuLinks = array(
+    array(
+        'о нас',
+        '/about/',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'рецепты',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'возможности',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'товары для разницы',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'топ-10 продукции',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'события',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'упаковка',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'преимущества',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'для сегмента HoReCa',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'торговые марки',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'предложения',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'новинки',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'что прозводим',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+    array(
+        'для производства',
+        '#',
+        array(),
+        array(),
+        ''
+    ),
+);

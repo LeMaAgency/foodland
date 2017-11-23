@@ -51,11 +51,19 @@ Loc::loadMessages(__FILE__);
                 <? endif; ?>
             </div>
             <nav class="header__nav nav" data-resize="nav" data-resize-width="1000">
-                <ul>
-                    <li><a href="" title="">о компании</a></li>
-                    <li><a href="" title="">собственное производство</a></li>
-                    <li><a href="" title="">каталог товаров</a></li>
-                </ul>
+                <?$APPLICATION->IncludeComponent('bitrix:menu','top_menu',Array(
+                        'ROOT_MENU_TYPE' => 'top',
+                        'MAX_LEVEL' => '1',
+                        'CHILD_MENU_TYPE' => 'top',
+                        'USE_EXT' => 'N',
+                        'DELAY' => 'N',
+                        'ALLOW_MULTI_SELECT' => 'N',
+                        'MENU_CACHE_TYPE' => 'A',
+                        'MENU_CACHE_TIME' => '3600',
+                        'MENU_CACHE_USE_GROUPS' => 'N',
+                        'MENU_CACHE_GET_VARS' => ''
+                    )
+                );?>
             </nav>
             <div class="header__modal">
                 <svg class="header__modal__close" width="30px" height="30px" viewBox="0 0 357 357">
@@ -64,26 +72,17 @@ Loc::loadMessages(__FILE__);
                 </svg>
                 <div class="menu-site-map">
                     <div class="header__modal_mobile">
-                        <div class="menu-site-map__title">Меню</div>
+                        <div class="menu-site-map__title"><?=Loc::getMessage('WM_HEADER_MENU_TITLE');?></div>
                         <ul class="menu-site-map__nav nav" data-resize-after="nav"></ul>
                     </div>
-                    <div class="menu-site-map__title">Карта сайта</div>
-                    <ul class="menu-site-map__nav">
-                        <li><a href="" title="">о нас</a></li>
-                        <li><a href="" title="">рецепты</a></li>
-                        <li><a href="" title="">возможности</a></li>
-                        <li><a href="" title="">товары для разницы</a></li>
-                        <li><a href="" title="">топ-10 продукции</a></li>
-                        <li><a href="" title="">события</a></li>
-                        <li><a href="" title="">упаковка</a></li>
-                        <li><a href="" title="">преимущества</a></li>
-                        <li><a href="" title="">для сегмента HoReCa</a></li>
-                        <li><a href="" title="">торговые марки</a></li>
-                        <li><a href="" title="">предложения</a></li>
-                        <li><a href="" title="">новинки</a></li>
-                        <li><a href="" title="">что прозводим</a></li>
-                        <li><a href="" title="">для производства</a></li>
-                    </ul>
+                    <?$APPLICATION->IncludeComponent('bitrix:main.map','sitemap', array(
+                        'LEVEL' => '3',
+                        'COL_NUM' => '1',
+                        'SHOW_DESCRIPTION' => 'Y',
+                        'SET_TITLE' => 'Y',
+                        'CACHE_TYPE' => 'A',
+                        'CACHE_TIME' => '3600'
+                    ));?>
                 </div>
             </div>
             <svg class="header__nav-btn" width="30" height="23" viewBox="0 0 30 23">
@@ -99,7 +98,7 @@ Loc::loadMessages(__FILE__);
                         </g>
                     </svg>
                     <br>
-                    <span>Схема<br>проезда</span>
+                    <span><?=Loc::getMessage('WM_HEADER_SCHEME_TITLE');?></span>
                 </a>
             </div>
         </div>
