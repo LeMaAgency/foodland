@@ -61,7 +61,7 @@ Loc::loadMessages(__FILE__);
                         'MENU_CACHE_TYPE' => 'A',
                         'MENU_CACHE_TIME' => '3600',
                         'MENU_CACHE_USE_GROUPS' => 'N',
-                        'MENU_CACHE_GET_VARS' => ''
+                        'MENU_CACHE_GET_VARS' => '',
                     )
                 ); ?>
             </nav>
@@ -81,7 +81,7 @@ Loc::loadMessages(__FILE__);
                         'SHOW_DESCRIPTION' => 'N',
                         'SET_TITLE' => 'N',
                         'CACHE_TYPE' => 'A',
-                        'CACHE_TIME' => '3600'
+                        'CACHE_TIME' => '3600',
                     )); ?>
                 </div>
             </div>
