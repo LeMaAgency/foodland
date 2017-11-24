@@ -59,217 +59,64 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
     'AJAX_OPTION_HISTORY' => 'N',
     'AJAX_OPTION_ADDITIONAL' => '',
 )); ?>
+<? $APPLICATION->IncludeComponent('bitrix:news.list', 'cheese_elements', array(
+    'DISPLAY_DATE' => 'Y',
+    'DISPLAY_NAME' => 'Y',
+    'DISPLAY_PICTURE' => 'Y',
+    'DISPLAY_PREVIEW_TEXT' => 'Y',
+    'AJAX_MODE' => 'N',
+    'IBLOCK_TYPE' => 'content',
+    'IBLOCK_ID' => '4',
+    'NEWS_COUNT' => '20',
+    'SORT_BY1' => 'ID',
+    'SORT_ORDER1' => 'ASC',
+    'SORT_BY2' => 'SORT',
+    'SORT_ORDER2' => 'ASC',
+    'FILTER_NAME' => '',
+    'FIELD_CODE' => array(),
+    'PROPERTY_CODE' => array(
+        'CATALOG_SECTIONS'
+    ),
+    'CHECK_DATES' => 'Y',
+    'DETAIL_URL' => '',
+    'PREVIEW_TRUNCATE_LEN' => '',
+    'ACTIVE_DATE_FORMAT' => 'd.m.Y',
+    'SET_TITLE' => 'N',
+    'SET_BROWSER_TITLE' => 'N',
+    'SET_META_KEYWORDS' => 'N',
+    'SET_META_DESCRIPTION' => 'N',
+    'SET_LAST_MODIFIED' => 'N',
+    'INCLUDE_IBLOCK_INTO_CHAIN' => 'N',
+    'ADD_SECTIONS_CHAIN' => 'N',
+    'HIDE_LINK_WHEN_NO_DETAIL' => 'Y',
+    'PARENT_SECTION' => '',
+    'PARENT_SECTION_CODE' => '',
+    'INCLUDE_SUBSECTIONS' => 'Y',
+    'CACHE_TYPE' => 'A',
+    'CACHE_TIME' => '36000000',
+    'CACHE_FILTER' => 'Y',
+    'CACHE_GROUPS' => 'N',
+    'DISPLAY_TOP_PAGER' => 'N',
+    'DISPLAY_BOTTOM_PAGER' => 'N',
+    'PAGER_TITLE' => 'Элементы',
+    'PAGER_SHOW_ALWAYS' => 'N',
+    'PAGER_TEMPLATE' => '',
+    'PAGER_DESC_NUMBERING' => 'N',
+    'PAGER_DESC_NUMBERING_CACHE_TIME' => '36000',
+    'PAGER_SHOW_ALL' => 'N',
+    'PAGER_BASE_LINK_ENABLE' => 'N',
+    'SET_STATUS_404' => 'N',
+    'SHOW_404' => 'N',
+    'MESSAGE_404' => '',
+    'PAGER_BASE_LINK' => '',
+    'PAGER_PARAMS_NAME' => 'arrPager',
+    'AJAX_OPTION_JUMP' => 'N',
+    'AJAX_OPTION_STYLE' => 'Y',
+    'AJAX_OPTION_HISTORY' => 'N',
+    'AJAX_OPTION_ADDITIONAL' => '',
+)); ?>
 
-    <div class="cheese">
-        <div class="back-img back-img__tomato"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-24">
-                    <div data-resize-after="cheese"></div>
-                    <div class="cheese__product active" data-cheese="content" data-cheese-index="default">
-                        <h3 class="cheese__title">О компании</h3>
-                        <div class="cheese__text-block">
-                            <div class="cheese__text scroll-pane">
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                            </div>
-                            <ul class="cheese__links">
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Масло сливочное и спреды</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Молоко и сливки</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Сухие молочные продукты</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Кисломолочные продукты</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Выдержанные сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Твёрдые сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Плавленный сыр</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Рассольные продукты</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Молодые сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Сливочные и творожные сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Специалитеты с сыром</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Молочные напитки</a></li>
-                            </ul>
-                        </div>
-                        <a href="" title="" class="button button-cheese"><span>Подробно о товарax</span></a>
-                    </div>
-                    <div class="cheese__product" data-cheese="content" data-cheese-index="item1">
-                        <h3 class="cheese__title">Продукты<br>для HoReCa</h3>
-                        <a href="" title="" class="cheese__back">&lt; Назад —</a>
-                        <div class="cheese__text-block">
-                            <div class="cheese__text scroll-pane">
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                            </div>
-                            <ul class="cheese__links">
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Масло сливочное и спреды</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Молоко и сливки</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Сухие молочные продукты</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Кисломолочные продукты</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Выдержанные сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Твёрдые сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Плавленный сыр</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Рассольные продукты</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Молодые сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Сливочные и творожные сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Специалитеты с сыром</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Молочные напитки</a></li>
-                            </ul>
-                        </div>
-                        <a href="" title="" class="button button-cheese"><span>Подробно о товарax</span></a>
-                    </div>
-                    <div class="cheese__product" data-cheese="content" data-cheese-index="item2">
-                        <h3 class="cheese__title">Продукты<br>для HoReCa</h3>
-                        <a href="" title="" class="cheese__back">&lt; Назад —</a>
-                        <div class="cheese__text-block">
-                            <div class="cheese__text scroll-pane">
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                            </div>
-                            <ul class="cheese__links">
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Масло сливочное и спреды</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Молоко и сливки</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Сухие молочные продукты</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Кисломолочные продукты</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Выдержанные сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Твёрдые сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Плавленный сыр</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Рассольные продукты</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Молодые сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Сливочные и творожные сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Специалитеты с сыром</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Молочные напитки</a></li>
-                            </ul>
-                        </div>
-                        <a href="" title="" class="button button-cheese"><span>Подробно о товарax</span></a>
-                    </div>
-                    <div class="cheese__product" data-cheese="content" data-cheese-index="item3">
-                        <h3 class="cheese__title">Продукты<br>для HoReCa</h3>
-                        <a href="" title="" class="cheese__back">&lt; Назад —</a>
-                        <div class="cheese__text-block">
-                            <div class="cheese__text scroll-pane">
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                                <p>
-                                    Мы начали свою деятельность в 1994 году и благодаря профессиональному отношению к делу приобрели солидную деловую
-                                    репутацию. На сегодняшний день компания «Фудлэнд» является крупнейшим в России дистрибьютором различных видов
-                                    сыров, сливочного масла и сухих молочных продуктов. Сотрудничество с нами – это возможность круглогодично получать
-                                    самый полный ассортимент традиционных отечественных и импортных сыров.
-                                </p>
-                            </div>
-                            <ul class="cheese__links">
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Масло сливочное и спреды</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Молоко и сливки</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Сухие молочные продукты</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Кисломолочные продукты</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Выдержанные сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Твёрдые сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Плавленный сыр</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Рассольные продукты</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Молодые сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Сливочные и творожные сыры</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Специалитеты с сыром</a></li>
-                                <li class="cheese__item"><a href="" title="" class="cheese__link">Молочные напитки</a></li>
-                            </ul>
-                        </div>
-                        <a href="" title="" class="button button-cheese"><span>Подробно о товарax</span></a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-24" data-resize="cheese" data-resize-width="1000">
-                    <div class="cheese-circle">
-                        <div class="shadow"></div>
-                        <div class="piece" data-number="item1" data-type="piece"></div>
-                        <div class="piece" data-number="item2" data-type="piece"></div>
-                        <div class="piece" data-number="item3" data-type="piece"></div>
-                        <div class="green"></div>
-                        <div class="bg"></div>
-                        <div class="icon" data-number="item1" data-type="piece"></div>
-                        <div class="icon" data-number="item2" data-type="piece"></div>
-                        <div class="icon" data-number="item3" data-type="piece"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="popular ">
         <div class="back-img back-img__maslo"></div>
         <div class="container">
