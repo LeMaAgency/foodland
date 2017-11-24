@@ -21,7 +21,7 @@ Loc::loadMessages(__FILE__);
 
     $assetManager
         ->addCssArray(array(
-            '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css',
+            'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css',
             '/assets/css/style.css',
             '/assets/css/custom.css',
         ))
@@ -78,8 +78,8 @@ Loc::loadMessages(__FILE__);
                     <? $APPLICATION->IncludeComponent('bitrix:main.map', 'sitemap', array(
                         'LEVEL' => '3',
                         'COL_NUM' => '1',
-                        'SHOW_DESCRIPTION' => 'Y',
-                        'SET_TITLE' => 'Y',
+                        'SHOW_DESCRIPTION' => 'N',
+                        'SET_TITLE' => 'N',
                         'CACHE_TYPE' => 'A',
                         'CACHE_TIME' => '3600'
                     )); ?>
