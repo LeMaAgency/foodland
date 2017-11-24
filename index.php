@@ -1,6 +1,6 @@
 <?
-require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
+require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
+$APPLICATION->SetTitle('FoodLand - главная страница');
 ?>
 <? $APPLICATION->IncludeComponent('bitrix:news.list', 'top_slider', array(
     'DISPLAY_DATE' => 'Y',
@@ -670,4 +670,4 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
     'AJAX_OPTION_HISTORY' => 'N',
     'AJAX_OPTION_ADDITIONAL' => '',
 )); ?>
-<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+<? require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/footer.php'); ?>
