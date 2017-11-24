@@ -2,13 +2,17 @@
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
     die();
 
+use \Bitrix\Main\Localization\Loc;
+
+Loc::loadMessages(__FILE__);
+
 ?>
 <footer>
     <div class="footer">
         <div class="container">
             <div class="row table table_middle">
                 <div class="col-14 col-lg-24 col-lg-table-none table__cell">
-                    <div class="footer__title">Как к нам проехать?</div>
+                    <div class="footer__title"><? $APPLICATION->IncludeFile(SITE_DIR . 'include/footer/how_to_get_us_title.php'); ?></div>
                     <div class="footer__button">
                         <a href="" title="" class="button-cheese"><span>
                                     <svg class="svg" width="27" height="37" viewBox="0 0 27 37">
@@ -16,12 +20,14 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                                             <path d="M1884 29.5c0 7.46-12.82 23.5-13.5 23.5-.98 0-13.5-16.04-13.5-23.5a13.5 13.5 0 1 1 27 0zm-19 0a5.5 5.5 0 1 0 11 0 5.5 5.5 0 0 0-11 0z"></path>
                                         </g>
                                     </svg>
-                                    Схема проезда</span></a>
+                                <? $APPLICATION->IncludeFile(SITE_DIR . 'include/footer/scheme_title.php'); ?></span></a>
                     </div>
                 </div>
                 <div class="col-10 col-lg-24 col-lg-table-none table__cell">
                     <div class="footer__phone">
-                        <a href="" title="">8 (495) 424-20-60</a>
+                        <a href="tel:<? $APPLICATION->IncludeFile(SITE_DIR . 'include/footer/phone_url.php'); ?>" title="">
+                            <? $APPLICATION->IncludeFile(SITE_DIR . 'include/footer/phone.php'); ?>
+                        </a>
                     </div>
                     <div class="footer__social nav">
                         <a href="" title="">
@@ -50,14 +56,14 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
             </div>
             <div class="row">
                 <div class="menu-site-map">
-                    <?$APPLICATION->IncludeComponent('bitrix:main.map','sitemap', array(
-                        'LEVEL' => '3',
-                        'COL_NUM' => '1',
+                    <? $APPLICATION->IncludeComponent('bitrix:main.map', 'sitemap', array(
+                        'LEVEL'            => '3',
+                        'COL_NUM'          => '1',
                         'SHOW_DESCRIPTION' => 'Y',
-                        'SET_TITLE' => 'Y',
-                        'CACHE_TYPE' => 'A',
-                        'CACHE_TIME' => '3600'
-                    ));?>
+                        'SET_TITLE'        => 'Y',
+                        'CACHE_TYPE'       => 'A',
+                        'CACHE_TIME'       => '3600',
+                    )); ?>
                 </div>
             </div>
         </div>

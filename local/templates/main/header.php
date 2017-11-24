@@ -45,13 +45,13 @@ Loc::loadMessages(__FILE__);
         <div class="header">
             <div class="header__logo">
                 <? if($APPLICATION->GetCurDir() == SITE_DIR): ?>
-                    <img src="/assets/images/logo.png" alt="Логотип">
+                    <img src="/assets/images/logo.png" alt="<?=Loc::getMessage('LEMA_HEADER_LOGO_TITLE');?>">
                 <? else: ?>
-                    <a href="<?=SITE_DIR;?>"><img src="/assets/images/logo.png" alt="Логотип"></a>
+                    <a href="<?=SITE_DIR;?>"><img src="/assets/images/logo.png" alt="<?=Loc::getMessage('LEMA_HEADER_LOGO_TITLE');?>"></a>
                 <? endif; ?>
             </div>
             <nav class="header__nav nav" data-resize="nav" data-resize-width="1000">
-                <?$APPLICATION->IncludeComponent('bitrix:menu','top_menu',Array(
+                <? $APPLICATION->IncludeComponent('bitrix:menu', 'top_menu', Array(
                         'ROOT_MENU_TYPE' => 'top',
                         'MAX_LEVEL' => '1',
                         'CHILD_MENU_TYPE' => 'top',
@@ -63,7 +63,7 @@ Loc::loadMessages(__FILE__);
                         'MENU_CACHE_USE_GROUPS' => 'N',
                         'MENU_CACHE_GET_VARS' => ''
                     )
-                );?>
+                ); ?>
             </nav>
             <div class="header__modal">
                 <svg class="header__modal__close" width="30px" height="30px" viewBox="0 0 357 357">
@@ -72,17 +72,17 @@ Loc::loadMessages(__FILE__);
                 </svg>
                 <div class="menu-site-map">
                     <div class="header__modal_mobile">
-                        <div class="menu-site-map__title"><?=Loc::getMessage('WM_HEADER_MENU_TITLE');?></div>
+                        <div class="menu-site-map__title"><?=Loc::getMessage('LEMA_HEADER_MENU_TITLE');?></div>
                         <ul class="menu-site-map__nav nav" data-resize-after="nav"></ul>
                     </div>
-                    <?$APPLICATION->IncludeComponent('bitrix:main.map','sitemap', array(
+                    <? $APPLICATION->IncludeComponent('bitrix:main.map', 'sitemap', array(
                         'LEVEL' => '3',
                         'COL_NUM' => '1',
                         'SHOW_DESCRIPTION' => 'Y',
                         'SET_TITLE' => 'Y',
                         'CACHE_TYPE' => 'A',
                         'CACHE_TIME' => '3600'
-                    ));?>
+                    )); ?>
                 </div>
             </div>
             <svg class="header__nav-btn" width="30" height="23" viewBox="0 0 30 23">
@@ -98,7 +98,7 @@ Loc::loadMessages(__FILE__);
                         </g>
                     </svg>
                     <br>
-                    <span><?=Loc::getMessage('WM_HEADER_SCHEME_TITLE');?></span>
+                    <span><? $APPLICATION->IncludeFile(SITE_DIR . 'include/header/scheme_title.php'); ?></span>
                 </a>
             </div>
         </div>
