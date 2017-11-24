@@ -55,7 +55,7 @@ Loc::loadMessages(__FILE__);
             <div class="row">
                 <div class="menu-site-map">
                     <? $APPLICATION->IncludeComponent('bitrix:main.map', 'sitemap', array(
-                        'LEVEL' => '3',
+                        'LEVEL' => '0',
                         'COL_NUM' => '1',
                         'SHOW_DESCRIPTION' => 'N',
                         'SET_TITLE' => 'N',

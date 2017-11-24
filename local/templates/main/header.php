@@ -76,7 +76,7 @@ Loc::loadMessages(__FILE__);
                         <ul class="menu-site-map__nav nav" data-resize-after="nav"></ul>
                     </div>
                     <? $APPLICATION->IncludeComponent('bitrix:main.map', 'sitemap', array(
-                        'LEVEL' => '3',
+                        'LEVEL' => '0',
                         'COL_NUM' => '1',
                         'SHOW_DESCRIPTION' => 'N',
                         'SET_TITLE' => 'N',
