@@ -526,91 +526,129 @@ $APPLICATION->SetTitle('FoodLand - главная страница');
             </div>
         </div>
     </div>
+
+
+
     <div class="random container-fluid">
         <div class="back-img back-img__cheese-and-tomato"></div>
         <div class="row">
             <div class="col-1 col-xl-none">
                 <div class="random__point"></div>
             </div>
-            <div class="col-11 col-xl-24">
-                <div class="random__carousel">
-                    <div class="random__block" style="background-image: url('/assets/images/images-1.jpg')">
-                        <div class="random__logo"><img src="/assets/images/icons/bonfesto.png" alt=""></div>
-                        <div class="random__body">
-                            <div class="random__title">
-                                Дегустация сыров
-                                от «Фудленд»
-                            </div>
-                            <div class="random__text">
-                                <p>«Фудлэнд» совместно с Bonfesto и Heidi провели дегустацию новых сыров. На дегустации были представлены 12 сортов
-                                    сыра, которыми пополнился ассортимент компаний.</p>
-                            </div>
-                            <div class="random__button-mini">
-                                <a href="" title="">— Подробней —</a>
-                            </div>
-                            <div class="random__button">
-                                <a href="" title="" class="button-orange"><span>Все события</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="random__block" style="background-image: url('/assets/images/images-1.jpg')">
-                        <div class="random__body">
-                            <div class="random__title">
-                                Дегустация сыров
-                                от «Фудленд»
-                            </div>
-                            <div class="random__text">
-                                <p>«Фудлэнд» совместно с Bonfesto и Heidi провели дегустацию новых сыров. На дегустации были представлены 12 сортов
-                                    сыра, которыми пополнился ассортимент компаний.</p>
-                            </div>
-                            <div class="random__button-mini">
-                                <a href="" title="">— Подробней —</a>
-                            </div>
-                            <div class="random__button">
-                                <a href="" title="" class="button-orange"><span>Все события</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-11 col-xl-24">
-                <div class="random__carousel">
-                    <div class="random__block" style="background-image: url('/assets/images/images-2.jpg')">
-                        <div class="random__body">
-                            <div class="random__title">
-                                Паста Сицилиана
-                            </div>
-                            <div class="random__text">
-                                <p>Паста с базиликом, томатами черри и сыром «Пармезан». Традиционное сицилийское блюдо отличается своей легкостью,
-                                    вкусом и красотой. Пармезан придает блюду особенный изысканный аромат и пикантный вкус.</p>
-                            </div>
-                            <div class="random__button-mini">
-                                <a href="" title="">— Подробней —</a>
-                            </div>
-                            <div class="random__button">
-                                <a href="" title="" class="button-orange"><span>Все события</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="random__block" style="background-image: url('/assets/images/images-2.jpg')">
-                        <div class="random__body">
-                            <div class="random__title">
-                                Паста Сицилиана
-                            </div>
-                            <div class="random__text">
-                                <p>Паста с базиликом, томатами черри и сыром «Пармезан». Традиционное сицилийское блюдо отличается своей легкостью,
-                                    вкусом и красотой. Пармезан придает блюду особенный изысканный аромат и пикантный вкус.</p>
-                            </div>
-                            <div class="random__button-mini">
-                                <a href="" title="">— Подробней —</a>
-                            </div>
-                            <div class="random__button">
-                                <a href="" title="" class="button-orange"><span>Все события</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <? $APPLICATION->IncludeComponent('bitrix:news.list', 'bottom_slider_events', array(
+                'DISPLAY_DATE' => 'Y',
+                'DISPLAY_NAME' => 'Y',
+                'DISPLAY_PICTURE' => 'Y',
+                'DISPLAY_PREVIEW_TEXT' => 'Y',
+                'AJAX_MODE' => 'N',
+                'IBLOCK_TYPE' => 'content',
+                'IBLOCK_ID' => '6',
+                'NEWS_COUNT' => '20',
+                'SORT_BY1' => 'ID',
+                'SORT_ORDER1' => 'ASC',
+                'SORT_BY2' => 'SORT',
+                'SORT_ORDER2' => 'ASC',
+                'FILTER_NAME' => '',
+                'FIELD_CODE' => array(),
+                'PROPERTY_CODE' => array(
+                    'LOGO_IMG',
+                    'URL',
+                ),
+                'CHECK_DATES' => 'Y',
+                'DETAIL_URL' => '',
+                'PREVIEW_TRUNCATE_LEN' => '',
+                'ACTIVE_DATE_FORMAT' => 'd.m.Y',
+                'SET_TITLE' => 'N',
+                'SET_BROWSER_TITLE' => 'N',
+                'SET_META_KEYWORDS' => 'N',
+                'SET_META_DESCRIPTION' => 'N',
+                'SET_LAST_MODIFIED' => 'N',
+                'INCLUDE_IBLOCK_INTO_CHAIN' => 'N',
+                'ADD_SECTIONS_CHAIN' => 'N',
+                'HIDE_LINK_WHEN_NO_DETAIL' => 'Y',
+                'PARENT_SECTION' => '',
+                'PARENT_SECTION_CODE' => 'left_block',
+                'INCLUDE_SUBSECTIONS' => 'Y',
+                'CACHE_TYPE' => 'A',
+                'CACHE_TIME' => '36000000',
+                'CACHE_FILTER' => 'Y',
+                'CACHE_GROUPS' => 'N',
+                'DISPLAY_TOP_PAGER' => 'N',
+                'DISPLAY_BOTTOM_PAGER' => 'N',
+                'PAGER_TITLE' => 'Элементы',
+                'PAGER_SHOW_ALWAYS' => 'N',
+                'PAGER_TEMPLATE' => '',
+                'PAGER_DESC_NUMBERING' => 'N',
+                'PAGER_DESC_NUMBERING_CACHE_TIME' => '36000',
+                'PAGER_SHOW_ALL' => 'N',
+                'PAGER_BASE_LINK_ENABLE' => 'N',
+                'SET_STATUS_404' => 'N',
+                'SHOW_404' => 'N',
+                'MESSAGE_404' => '',
+                'PAGER_BASE_LINK' => '',
+                'PAGER_PARAMS_NAME' => 'arrPager',
+                'AJAX_OPTION_JUMP' => 'N',
+                'AJAX_OPTION_STYLE' => 'Y',
+                'AJAX_OPTION_HISTORY' => 'N',
+                'AJAX_OPTION_ADDITIONAL' => '',
+            )); ?>
+            <? $APPLICATION->IncludeComponent('bitrix:news.list', 'bottom_slider_events', array(
+                'DISPLAY_DATE' => 'Y',
+                'DISPLAY_NAME' => 'Y',
+                'DISPLAY_PICTURE' => 'Y',
+                'DISPLAY_PREVIEW_TEXT' => 'Y',
+                'AJAX_MODE' => 'N',
+                'IBLOCK_TYPE' => 'content',
+                'IBLOCK_ID' => '6',
+                'NEWS_COUNT' => '20',
+                'SORT_BY1' => 'ID',
+                'SORT_ORDER1' => 'ASC',
+                'SORT_BY2' => 'SORT',
+                'SORT_ORDER2' => 'ASC',
+                'FILTER_NAME' => '',
+                'FIELD_CODE' => array(),
+                'PROPERTY_CODE' => array(
+                    'LOGO_IMG',
+                    'URL',
+                ),
+                'CHECK_DATES' => 'Y',
+                'DETAIL_URL' => '',
+                'PREVIEW_TRUNCATE_LEN' => '',
+                'ACTIVE_DATE_FORMAT' => 'd.m.Y',
+                'SET_TITLE' => 'N',
+                'SET_BROWSER_TITLE' => 'N',
+                'SET_META_KEYWORDS' => 'N',
+                'SET_META_DESCRIPTION' => 'N',
+                'SET_LAST_MODIFIED' => 'N',
+                'INCLUDE_IBLOCK_INTO_CHAIN' => 'N',
+                'ADD_SECTIONS_CHAIN' => 'N',
+                'HIDE_LINK_WHEN_NO_DETAIL' => 'Y',
+                'PARENT_SECTION' => '',
+                'PARENT_SECTION_CODE' => 'right_block',
+                'INCLUDE_SUBSECTIONS' => 'Y',
+                'CACHE_TYPE' => 'A',
+                'CACHE_TIME' => '36000000',
+                'CACHE_FILTER' => 'Y',
+                'CACHE_GROUPS' => 'N',
+                'DISPLAY_TOP_PAGER' => 'N',
+                'DISPLAY_BOTTOM_PAGER' => 'N',
+                'PAGER_TITLE' => 'Элементы',
+                'PAGER_SHOW_ALWAYS' => 'N',
+                'PAGER_TEMPLATE' => '',
+                'PAGER_DESC_NUMBERING' => 'N',
+                'PAGER_DESC_NUMBERING_CACHE_TIME' => '36000',
+                'PAGER_SHOW_ALL' => 'N',
+                'PAGER_BASE_LINK_ENABLE' => 'N',
+                'SET_STATUS_404' => 'N',
+                'SHOW_404' => 'N',
+                'MESSAGE_404' => '',
+                'PAGER_BASE_LINK' => '',
+                'PAGER_PARAMS_NAME' => 'arrPager',
+                'AJAX_OPTION_JUMP' => 'N',
+                'AJAX_OPTION_STYLE' => 'Y',
+                'AJAX_OPTION_HISTORY' => 'N',
+                'AJAX_OPTION_ADDITIONAL' => '',
+            )); ?>
             <div class="col-1 col-xl-none">
                 <div class="random__point"></div>
             </div>
