@@ -65,6 +65,10 @@ Loc::loadMessages(__FILE__);
                 </div>
             </div>
         </div>
+        <? if($APPLICATION->GetCurDir() == SITE_DIR . 'contacts/'): ?>
+            <div class="footer__parsley-left col-xs-none col-lg-none"></div>
+            <div class="footer__parsley-right col-xs-none col-lg-none"></div>
+        <? endif; ?>
     </div>
 </footer>
 </div>

@@ -2,6 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Наши контакты");
 
+\WM\Common\Asset::get()->addJs('/assets/js/libs/classie.js');
 \WM\Common\Asset::get()->addJs('https://api-maps.yandex.ru/2.1/?lang=ru_RU');
 
 $APPLICATION->AddViewContent('header_class', 'product-page-header');
