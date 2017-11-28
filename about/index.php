@@ -318,45 +318,72 @@ $APPLICATION->SetTitle("О компании");
             'AJAX_OPTION_HISTORY' => 'N',
             'AJAX_OPTION_ADDITIONAL' => '',
         )); ?>
+
         <div class="structure-company structure-company_direct">
             <div class="container">
                 <div class="row">
-                    <div class="col-24">
-                        <h2 class="h2_about-company">Направления деятельности</h2>
-                        <div class="col-8 col-lg-24">
-                            <div class="structure-company__wrap structure-company__wrap_pad-left structure-company__wrap_no-elem">
-                                <div class="structure-company__img structure-company__img_size">
-                                    <img src="/assets/images/product/category/text__block-1.png" alt="" class="structure-company__img_over">
-                                    <img src="/assets/images/product/category/text__block-1_hover.png" alt="" class="structure-company__img_hover">
-                                </div>
-                                <p class="structure-company_direct__p-mb">Еланский комбинат обладает сетью пунктов сбора и охлаждения молока,
-                                    насчитывает около ста единиц техники. В основном, молоковозы. На территории комбината находится собственная
-                                    лаборатория, отвечающая за контроль качества сырья, а также цеха, оснащенные современным оборудованием. </p>
-                            </div>
-                        </div>
-                        <div class="col-8 col-lg-24">
-                            <div class="structure-company__wrap structure-company__wrap_no-elem">
-                                <div class="structure-company__img structure-company__img_size">
-                                    <img src="/assets/images/product/category/text__block-2.png" alt="" class="structure-company__img_over">
-                                    <img src="/assets/images/product/category/text__block-2_hover.png" alt="" class="structure-company__img_hover">
-                                </div>
-                                <p class="structure-company_direct__p-mb">Еланский комбинат насчитывает около ста единиц техники. В основном,
-                                    молоковозы. На территории комбината находится собственная лаборатория, отвечающая за контроль качества сырья, а
-                                    также цеха, оснащенные современным оборудованием. </p>
-                            </div>
-                        </div>
-                        <div class="col-8 col-lg-24">
-                            <div class="structure-company__wrap structure-company__wrap_pad-right structure-company__wrap_no-elem">
-                                <div class="structure-company__img structure-company__img_size">
-                                    <img src="/assets/images/product/category/text__block-3.png" alt="" class="structure-company__img_over">
-                                    <img src="/assets/images/product/category/text__block-3_hover.png" alt="" class="structure-company__img_hover">
-                                </div>
-                                <p class="structure-company_direct__p-mb">В основном, молоковозы. На территории комбината находится собственная
-                                    лаборатория, отвечающая за контроль качества сырья, а также цеха, оснащенные современным оборудованием. Еланский
-                                    комбинат обладает сетью пунктов сбора и охлаждения молока, насчитывает около ста единиц техники. </p>
-                            </div>
-                        </div>
-                    </div>
+                    <? $APPLICATION->IncludeComponent('bitrix:news.list', 'direction_about', array(
+                        'DISPLAY_DATE' => 'Y',
+                        'DISPLAY_NAME' => 'Y',
+                        'DISPLAY_PICTURE' => 'Y',
+                        'DISPLAY_PREVIEW_TEXT' => 'Y',
+                        'AJAX_MODE' => 'N',
+                        'IBLOCK_TYPE' => 'content',
+                        'IBLOCK_ID' => '14',
+                        'NEWS_COUNT' => '20',
+                        'SORT_BY1' => 'ACTIVE_FROM',
+                        'SORT_ORDER1' => 'DESC',
+                        'SORT_BY2' => 'SORT',
+                        'SORT_ORDER2' => 'ASC',
+                        'FILTER_NAME' => '',
+                        'FIELD_CODE' => array(
+                            'ID',
+                            'NAME',
+                            'PREVIEW_TEXT',
+                            'PREVIEW_PICTURE',
+                            'DETAIL_PICTURE',
+                        ),
+                        'PROPERTY_CODE' => array(
+                            'ORIENTATION',
+                        ),
+                        'CHECK_DATES' => 'Y',
+                        'DETAIL_URL' => '',
+                        'PREVIEW_TRUNCATE_LEN' => '',
+                        'ACTIVE_DATE_FORMAT' => 'd.m.Y',
+                        'SET_TITLE' => 'N',
+                        'SET_BROWSER_TITLE' => 'N',
+                        'SET_META_KEYWORDS' => 'N',
+                        'SET_META_DESCRIPTION' => 'N',
+                        'SET_LAST_MODIFIED' => 'N',
+                        'INCLUDE_IBLOCK_INTO_CHAIN' => 'N',
+                        'ADD_SECTIONS_CHAIN' => 'N',
+                        'HIDE_LINK_WHEN_NO_DETAIL' => 'Y',
+                        'PARENT_SECTION' => '',
+                        'PARENT_SECTION_CODE' => '',
+                        'INCLUDE_SUBSECTIONS' => 'Y',
+                        'CACHE_TYPE' => 'A',
+                        'CACHE_TIME' => '36000000',
+                        'CACHE_FILTER' => 'Y',
+                        'CACHE_GROUPS' => 'N',
+                        'DISPLAY_TOP_PAGER' => 'N',
+                        'DISPLAY_BOTTOM_PAGER' => 'N',
+                        'PAGER_TITLE' => 'Элементы',
+                        'PAGER_SHOW_ALWAYS' => 'N',
+                        'PAGER_TEMPLATE' => '',
+                        'PAGER_DESC_NUMBERING' => 'N',
+                        'PAGER_DESC_NUMBERING_CACHE_TIME' => '36000',
+                        'PAGER_SHOW_ALL' => 'N',
+                        'PAGER_BASE_LINK_ENABLE' => 'N',
+                        'SET_STATUS_404' => 'N',
+                        'SHOW_404' => 'N',
+                        'MESSAGE_404' => '',
+                        'PAGER_BASE_LINK' => '',
+                        'PAGER_PARAMS_NAME' => 'arrPager',
+                        'AJAX_OPTION_JUMP' => 'N',
+                        'AJAX_OPTION_STYLE' => 'Y',
+                        'AJAX_OPTION_HISTORY' => 'N',
+                        'AJAX_OPTION_ADDITIONAL' => '',
+                    )); ?>
                     <div class="row">
                         <div class="structure-company_direct__more">
                             <div class="col-12 col-sm-24 css-right">
@@ -364,14 +391,12 @@ $APPLICATION->SetTitle("О компании");
                                     <div class="col-15 col-lg-none">
                                         <div class="structure-company_direct__more__description">
                                             <p>
-                                                В разделе «собственное производство»<br> вы можете получить подробную<br> информацию о
-                                                производимой<br> нами продукции<br>
+                                                <?$APPLICATION->IncludeFile(SITE_DIR.'include/about/direction_text.php');?>
                                             </p>
                                         </div>
                                     </div>
                                     <div class="col-9 col-lg-24 col-lg-css-text-center">
-                                        <a href="" title=""
-                                           class="button-cheese structure-company_direct__more__button"><span>Узнать больше</span></a>
+                                        <?$APPLICATION->IncludeFile(SITE_DIR.'include/about/direction_link.php');?>
                                     </div>
                                 </div>
                             </div>

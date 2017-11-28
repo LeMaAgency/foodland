@@ -17,10 +17,6 @@ $this->setFrameMode(true);
 if(empty($arResult['ITEMS']))
     return;
 
-$strEditLink = \CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'ELEMENT_EDIT');
-$strDeleteLink = \CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'ELEMENT_DELETE');
-$confirmDelete = array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM'));
-
 $data = new \WM\Template\TemplateHelper($this);
 
 
