@@ -19,66 +19,60 @@ $this->setFrameMode(true);
 if(empty($arResult['ITEMS']))
     return;
 
-$strEditLink = \CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'ELEMENT_EDIT');
-$strDeleteLink = \CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'ELEMENT_DELETE');
-$confirmDelete = array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM'));
+$data = new \WM\Template\TemplateHelper($this);
 
 ?>
-<? if($arResult['SHOW_WRAPPER']): ?>
+<? if($data->get('SHOW_WRAPPER')): ?>
     <div class="recommendation__carousel__block">
     <div class="recommendation__list row">
 <? endif; ?>
 
-<? foreach($arResult["ITEMS"] as $arItem): ?>
-    <?
-    $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], $strEditLink);
-    $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], $strDeleteLink, $confirmDelete);
-    ?>
-    <div class="col-8 col-xl-8 col-lg-8 col-md-12 col-sm-24" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-        <? if($arItem['TWO_COLUMNS']): ?>
+<? foreach($data->items() as $item): ?>
+    <div class="col-8 col-xl-8 col-lg-8 col-md-12 col-sm-24" <?=$item->editId();?>>
+        <? if($item->get('TWO_COLUMNS')): ?>
             <div class="row">
                 <div class="recommendation__block recommendation__block_col-2"
-                     style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>')">
-                    <? if($arItem['SHOW_LIKE']): ?>
+                     style="background-image: url('<?=$item->previewPicture();?>')">
+                    <? if($item->get('SHOW_LIKE')): ?>
                         <div class="icon">
                             <span class="icon__like"></span>
                         </div>
                     <? endif; ?>
-                    <a href="<?=Helper::escPropValue('URL', $arItem);?>"
-                       class="recommendation__block__title-mini recommendation__block__line <?=$arItem['ITEM_CLASS'];?>">
-                        <?=$arItem['NAME'];?>
+                    <a href="<?=$item->propValue('URL');?>"
+                       class="recommendation__block__title-mini recommendation__block__line <?=$item->get('ITEM_CLASS');?>">
+                        <?=$item->getName();?>
                     </a>
                 </div>
             </div>
         <? else: ?>
-            <? if($arItem['TEXT_IN_TOP_BLOCK']): ?>
+            <? if($item->get('TEXT_IN_TOP_BLOCK')): ?>
                 <div class="row">
-                    <div class="recommendation__block" style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>')">
-                        <? if($arItem['SHOW_LIKE']): ?>
+                    <div class="recommendation__block" style="background-image: url('<?=$item->previewPicture();?>')">
+                        <? if($item->get('SHOW_LIKE')): ?>
                             <div class="icon">
                                 <span class="icon__like"></span>
                             </div>
                         <? endif; ?>
-                        <a href="<?=Helper::escPropValue('URL', $arItem);?>" class="recommendation__block__title-mini
-                            recommendation__block__line <?=$arItem['ITEM_CLASS'];?>">
-                            <?=$arItem['NAME'];?>
+                        <a href="<?=$item->propValue('URL');?>" class="recommendation__block__title-mini
+                            recommendation__block__line <?=$item->get('ITEM_CLASS');?>">
+                            <?=$item->getName();?>
                         </a>
                     </div>
                 </div>
                 <div class="row">
-                    <a href="<?=Helper::escPropValue('URL_2', $arItem);?>" class="recommendation__block"
-                       style="background-image: url('<?=$arItem['DETAIL_PICTURE']['SRC'];?>')"></a>
+                    <a href="<?=$item->propValue('URL_2');?>" class="recommendation__block"
+                       style="background-image: url('<?=$item->detailPicture();?>')"></a>
                 </div>
             <? else: ?>
                 <div class="row">
-                    <a href="<?=Helper::escPropValue('URL', $arItem);?>" class="recommendation__block"
-                       style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>')"></a>
+                    <a href="<?=$item->propValue('URL');?>" class="recommendation__block"
+                       style="background-image: url('<?=$item->previewPicture();?>')"></a>
                 </div>
                 <div class="row">
-                    <div class="recommendation__block" style="background-image: url('<?=$arItem['DETAIL_PICTURE']['SRC'];?>')">
-                        <a href="<?=Helper::escPropValue('URL_2', $arItem);?>"
-                           class="recommendation__block__title-mini recommendation__block__line <?=$arItem['ITEM_CLASS'];?>">
-                            <?=$arItem['NAME'];?>
+                    <div class="recommendation__block" style="background-image: url('<?=$item->detailPicture();?>')">
+                        <a href="<?=$item->propValue('URL_2');?>"
+                           class="recommendation__block__title-mini recommendation__block__line <?=$data->get('ITEM_CLASS');?>">
+                            <?=$item->getName();?>
                         </a>
                     </div>
                 </div>
@@ -87,7 +81,7 @@ $confirmDelete = array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')
     </div>
 <? endforeach; ?>
 
-<? if($arResult['SHOW_WRAPPER']): ?>
+<? if($data->get('SHOW_WRAPPER')): ?>
     </div>
     </div>
 <? endif; ?>

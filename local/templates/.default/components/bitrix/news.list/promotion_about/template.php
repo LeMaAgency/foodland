@@ -20,42 +20,36 @@ $this->setFrameMode(true);
 if(empty($arResult['ITEMS']))
     return;
 
-$strEditLink = \CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'ELEMENT_EDIT');
-$strDeleteLink = \CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'ELEMENT_DELETE');
-$confirmDelete = array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM'));
+$data = new \WM\Template\TemplateHelper($this);
 
 ?>
 <div class="random random_about container">
     <div class="row">
         <div class="col-24">
-            <h2 class="h2_about-company h2_about-company_mt"><?=$arResult['NAME'];?></h2>
+            <h2 class="h2_about-company h2_about-company_mt"><?=$data->getName();?></h2>
         </div>
         <div class="col-24">
             <div class="random_about__wrap">
                 <div class="random__carousel">
-                    <? foreach($arResult["ITEMS"] as $arItem): ?>
-                        <?
-                        $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], $strEditLink);
-                        $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], $strDeleteLink, $confirmDelete);
-                        ?>
+                    <? foreach($data->items() as $item): ?>
 
-                        <div class="random__block" style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>')">
-                            <? if(Helper::propFilled('LOGO_IMG', $arItem)): ?>
-                                <div class="random__logo"><img src="<?=$arItem['PROPERTIES']['LOGO_IMG']['VALUE_SRC'];?>" alt="<?=$arItem['NAME'];?>">
+                        <div class="random__block" style="background-image: url('<?=$item->previewPicture();?>')">
+                            <? if($item->propFilled('LOGO_IMG')): ?>
+                                <div class="random__logo"><img src="<?=$item->prop('LOGO_IMG', 'VALUE_SRC');?>" alt="<?=$item->getName();?>">
                                 </div>
                             <? endif; ?>
-                            <div class="random__body random__body_about" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+                            <div class="random__body random__body_about" <?=$item->editId();?>>
                                 <div class="random__title">
-                                    <?=$arItem['NAME'];?>
+                                    <?=$item->getName();?>
                                 </div>
                                 <div class="random__text">
-                                    <p><?=$arItem['PREVIEW_TEXT'];?></p>
+                                    <p><?=$item->previewText();?></p>
                                 </div>
                                 <div class="random__button-mini">
-                                    <a href="<?=Helper::escPropValue('URL', $arItem);?>" title="<?=$arItem['NAME'];?>"><?=Loc::getMessage('LEMA_EVENTS_MORE_TEXT');?></a>
+                                    <a href="<?=$item->propValue('URL');?>" title="<?=$item->getName();?>"><?=Loc::getMessage('LEMA_EVENTS_MORE_TEXT');?></a>
                                 </div>
                                 <div class="random__button">
-                                    <a href="<?=$arItem['LIST_PAGE_URL'];?>" title="<?=Loc::getMessage('LEMA_ALL_EVENTS_TEXT');?>"
+                                    <a href="<?=$item->listUrl();?>" title="<?=Loc::getMessage('LEMA_ALL_EVENTS_TEXT');?>"
                                        class="button-orange">
                                         <span><?=Loc::getMessage('LEMA_ALL_EVENTS_TEXT');?></span>
                                     </a>

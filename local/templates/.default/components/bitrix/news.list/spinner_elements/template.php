@@ -20,9 +20,7 @@ $this->setFrameMode(true);
 if(empty($arResult['ITEMS']))
     return;
 
-$strEditLink = \CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'ELEMENT_EDIT');
-$strDeleteLink = \CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'ELEMENT_DELETE');
-$confirmDelete = array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM'));
+$data = new \WM\Template\TemplateHelper($this);
 
 $i = 0;
 
@@ -33,31 +31,26 @@ $i = 0;
         <div class="row">
             <div class="col-12 col-lg-24">
                 <div data-js-core-resize-after="spinet__resize"></div>
-                <? foreach($arResult["ITEMS"] as $arItem): ?>
-                    <?
-                    $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], $strEditLink);
-                    $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], $strDeleteLink, $confirmDelete);
-                    ?>
-                    <div data-spinner="content" data-index="<?=++$i;?>"<? if(1 === $i): ?> class="active"<? endif; ?>
-                         id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-                        <div class="title-big"><?=Helper::escPropValue('ADDITIONAL_HEADER', $arItem);?></div>
-                        <div class="title-mini"><?=$arItem['NAME'];?></div>
+                <? foreach($data->items() as $item): ?>
+                    <div data-spinner="content" data-index="<?=++$i;?>"<? if(1 === $i): ?> class="active"<? endif; ?> <?=$item->editId();?>>
+                        <div class="title-big"><?=$item->propText('ADDITIONAL_HEADER');?></div>
+                        <div class="title-mini"><?=$item->getName();?></div>
                         <div class="text">
                             <p>
-                                <?=$arItem['PREVIEW_TEXT'];?>
+                                <?=$item->previewText();?>
                             </p>
                         </div>
                         <div class="row">
                             <div class="col-12 col-lg-none">
                                 <div class="description">
                                     <p>
-                                        <?=$arItem['DETAIL_TEXT'];?>
+                                        <?=$item->detailText();?>
                                     </p>
                                 </div>
                             </div>
-                            <? if(Helper::propFilled('URL', $arItem)): ?>
+                            <? if($item->propFilled('URL')): ?>
                                 <div class="col-12 col-lg-24 col-lg-css-text-center">
-                                    <a href="<?=Helper::escPropValue('URL', $arItem);?>" title="" class="button-cheese">
+                                    <a href="<?=$item->propValue('URL');?>" title="" class="button-cheese">
                                         <span>
                                             <?=Loc::getMessage('LEMA_SPINNER_MORE_TEXT');?>
                                         </span>
@@ -76,9 +69,9 @@ $i = 0;
                             <?php
                             $i = 0;
                             ?>
-                            <? foreach($arResult['ITEMS'] as $arItem): ?>
+                            <? foreach($data->items() as $item): ?>
                                 <div class="circle active" data-index="<?=++$i;?>">
-                                    <h4><?=$arItem['NAME'];?></h4>
+                                    <h4><?=$item->getName();?></h4>
                                 </div>
                             <? endforeach; ?>
                         </div>
