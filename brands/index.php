@@ -3,66 +3,72 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Торговые марки");
 
 ?>
-    <div class="slider slider__carousel container-fluid">
-        <div class="slider__item" style="background-image: url(/assets/images/slider/imagas-2.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-24 col-lg-css-center">
-                        <div class="slider__item__text">
-                            <span>Натуральные<br>сыры из Сербии</span>
-                            <p>Начиная с 2004 года, после приватизации, компания «MLEKARA SАBAC» стала активно развиваться, модернизируя и увеличивая свое производство.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider__item" style="background-image: url(/assets/images/slider/imagas-2.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-24 col-lg-css-center">
-                        <div class="slider__item__text">
-                            <span>Натуральные<br>сыры из Сербии</span>
-                            <p>Начиная с 2004 года, после приватизации, компания «MLEKARA SАBAC» стала активно развиваться, модернизируя и увеличивая свое производство.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider__item" style="background-image: url(/assets/images/slider/imagas-2.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-24 col-lg-css-center">
-                        <div class="slider__item__text">
-                            <span>Натуральные<br>сыры из Сербии</span>
-                            <p>Начиная с 2004 года, после приватизации, компания «MLEKARA SАBAC» стала активно развиваться, модернизируя и увеличивая свое производство.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider__item" style="background-image: url(/assets/images/slider/imagas-2.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-24 col-lg-css-center">
-                        <div class="slider__item__text">
-                            <span>Натуральные<br>сыры из Сербии</span>
-                            <p>Начиная с 2004 года, после приватизации, компания «MLEKARA SАBAC» стала активно развиваться, модернизируя и увеличивая свое производство.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<? $APPLICATION->IncludeComponent('bitrix:news.list', 'brands_top_slider', array(
+    'DISPLAY_DATE' => 'Y',
+    'DISPLAY_NAME' => 'Y',
+    'DISPLAY_PICTURE' => 'Y',
+    'DISPLAY_PREVIEW_TEXT' => 'Y',
+    'AJAX_MODE' => 'N',
+    'IBLOCK_TYPE' => 'content',
+    'IBLOCK_ID' => '15',
+    'NEWS_COUNT' => '20',
+    'SORT_BY1' => 'ACTIVE_FROM',
+    'SORT_ORDER1' => 'DESC',
+    'SORT_BY2' => 'SORT',
+    'SORT_ORDER2' => 'ASC',
+    'FILTER_NAME' => '',
+    'FIELD_CODE' => array(),
+    'PROPERTY_CODE' => array(),
+    'CHECK_DATES' => 'Y',
+    'DETAIL_URL' => '',
+    'PREVIEW_TRUNCATE_LEN' => '',
+    'ACTIVE_DATE_FORMAT' => 'd.m.Y',
+    'SET_TITLE' => 'N',
+    'SET_BROWSER_TITLE' => 'N',
+    'SET_META_KEYWORDS' => 'N',
+    'SET_META_DESCRIPTION' => 'N',
+    'SET_LAST_MODIFIED' => 'N',
+    'INCLUDE_IBLOCK_INTO_CHAIN' => 'N',
+    'ADD_SECTIONS_CHAIN' => 'N',
+    'HIDE_LINK_WHEN_NO_DETAIL' => 'Y',
+    'PARENT_SECTION' => '',
+    'PARENT_SECTION_CODE' => '',
+    'INCLUDE_SUBSECTIONS' => 'Y',
+    'CACHE_TYPE' => 'A',
+    'CACHE_TIME' => '36000000',
+    'CACHE_FILTER' => 'Y',
+    'CACHE_GROUPS' => 'N',
+    'DISPLAY_TOP_PAGER' => 'N',
+    'DISPLAY_BOTTOM_PAGER' => 'N',
+    'PAGER_TITLE' => 'Элементы',
+    'PAGER_SHOW_ALWAYS' => 'N',
+    'PAGER_TEMPLATE' => '',
+    'PAGER_DESC_NUMBERING' => 'N',
+    'PAGER_DESC_NUMBERING_CACHE_TIME' => '36000',
+    'PAGER_SHOW_ALL' => 'N',
+    'PAGER_BASE_LINK_ENABLE' => 'N',
+    'SET_STATUS_404' => 'N',
+    'SHOW_404' => 'N',
+    'MESSAGE_404' => '',
+    'PAGER_BASE_LINK' => '',
+    'PAGER_PARAMS_NAME' => 'arrPager',
+    'AJAX_OPTION_JUMP' => 'N',
+    'AJAX_OPTION_STYLE' => 'Y',
+    'AJAX_OPTION_HISTORY' => 'N',
+    'AJAX_OPTION_ADDITIONAL' => '',
+)); ?>
+
     <div class="container">
         <div class="element">
-            <h1 class="element__title__h1">Торговые марки</h1>
+            <h1 class="element__title__h1"><? $APPLICATION->ShowTitle(false); ?></h1>
         </div>
         <div class="search">
             <div class="search__form-mini">
                 <form action="" method="get">
                     <input class="search__form-mini__input" type="text" placeholder="" name="q" value="" size="40">
-                    <button class="search__form-mini__button" role="button" type="submit" value="Искать"><i
-                                class="icon search__form_button"></i></button>
+                    <button class="search__form-mini__button" role="button" type="submit" value="Искать">
+                        <i class="icon search__form_button"></i>
+                    </button>
                 </form>
             </div>
         </div>
