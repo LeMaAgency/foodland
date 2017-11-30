@@ -16,7 +16,7 @@ $aMenuLinks = array(
     ),
     array(
         'каталог товаров',
-        '#',
+        '/catalog/',
         array(),
         array(),
         ''

@@ -69,7 +69,7 @@ Loc::loadMessages(__FILE__);
             <div class="footer__parsley-left col-xs-none col-lg-none"></div>
             <div class="footer__parsley-right col-xs-none col-lg-none"></div>
         <? endif; ?>
-        <? if($APPLICATION->GetCurDir() == SITE_DIR . 'events/'): ?>
+        <? if(in_array($APPLICATION->GetCurDir(), array(SITE_DIR . 'events/', SITE_DIR . 'catalog/'))): ?>
             <div class="footer__parsley-left col-xs-none"></div>
             <div class="footer__parsley-right col-xs-none"></div>
         <? endif; ?>
