@@ -70,7 +70,7 @@ $i = 0;
                             $i = 0;
                             ?>
                             <? foreach($data->items() as $item): ?>
-                                <div class="circle active" data-index="<?=++$i;?>">
+                                <div data-index="<?=++$i;?>" class="circle<?if($i===1):?> active<?endif;?>">
                                     <h4><?=$item->getName();?></h4>
                                 </div>
                             <? endforeach; ?>
