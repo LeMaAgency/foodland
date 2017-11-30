@@ -21,6 +21,7 @@ Loc::loadMessages(__FILE__);
 
     $assetManager
         ->addCssArray(array(
+            'https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:300,400,600',
             'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css',
             '/assets/css/style.css',
             '/assets/css/custom.css',
