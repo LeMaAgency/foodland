@@ -63,7 +63,7 @@ $strNavQueryStringFull = ($arResult["NavQueryString"] != "" ? "?" . $arResult["N
                                         <?
                                         if($arResult["nStartPage"] < ($arResult["NavPageCount"] - 1)):
                                             ?>
-                                            <li><a href="#" title="" class="product-pagination__pagination__elem-deactive">...</a></li>
+                                            <li><span class="product-pagination__pagination__elem-deactive">...</span></li>
                                             <?
                                         endif;
                                     endif;
@@ -164,7 +164,7 @@ $strNavQueryStringFull = ($arResult["NavQueryString"] != "" ? "?" . $arResult["N
                                         <?
                                         if($arResult["nStartPage"] > 2):
                                             ?>
-                                            <li><a href="#" title="" class="product-pagination__pagination__elem-deactive">...</a></li>
+                                            <li><span class="product-pagination__pagination__elem-deactive">...</span></li>
                                             <?
                                         endif;
                                     endif;
@@ -199,12 +199,15 @@ $strNavQueryStringFull = ($arResult["NavQueryString"] != "" ? "?" . $arResult["N
                                     if($arResult["nEndPage"] < $arResult["NavPageCount"]):
                                         if($arResult["nEndPage"] < ($arResult["NavPageCount"] - 1)):
                                             ?>
-                                            <li><a href="#" title="" class="product-pagination__pagination__elem-deactive">...</a></li>
+                                            <li><span class="product-pagination__pagination__elem-deactive">...</span></li>
                                             <?
                                         endif;
                                         ?>
-                                        <li><a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>PAGEN_<?=$arResult["NavNum"]?>=<?=$arResult["NavPageCount
-                    "]?>"><?=$arResult["NavPageCount"]?></a></li>
+                                        <li>
+                                            <a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>PAGEN_<?=$arResult["NavNum"]?>=<?=$arResult["NavPageCount"]?>">
+                                                <?=$arResult["NavPageCount"]?>
+                                            </a>
+                                        </li>
                                         <?
                                     endif;
 
