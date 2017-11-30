@@ -20,20 +20,12 @@ if(empty($arResult['ITEMS']))
 $data = new \WM\Template\TemplateHelper($this);
 
 ?>
-<div class="slider slider__carousel container-fluid">
+<div class="slider slider__carousel container-full">
     <? foreach($data->items() as $item): ?>
         <div class="slider__item" style="background-image: url('<?=$item->previewPicture();?>');">
             <div class="container">
                 <div class="row" <?=$item->editId();?>>
-                    <div class="slider__item__images col-12 col-lg-24 css-text-right col-lg-css-text-center">
-                        <? if($item->propFilled('LOGO_IMG')): ?>
-                            <img src="<?=$item->prop('LOGO_IMG', 'VALUE_SRC');?>" alt="<?=$item->getName();?>"><br>
-                        <? endif; ?>
-                        <? if($item->propFilled('LOGO_TITLE_IMG')): ?>
-                            <img src="<?=$item->prop('LOGO_TITLE_IMG', 'VALUE_SRC');?>" alt="<?=$item->getName();?>">
-                        <? endif; ?>
-                    </div>
-                    <div class="col-12 col-lg-24 col-lg-css-center">
+                    <div class="col-24 l-24 l-css-center">
                         <div class="slider__item__text">
                             <span><?=htmlspecialcharsback($item->getName());?></span>
                             <p><?=$item->previewText();?></p>

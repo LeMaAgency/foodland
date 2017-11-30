@@ -19,10 +19,11 @@ if(empty($arResult['ITEMS']))
 
 $data = new \WM\Template\TemplateHelper($this);
 
+$class = isset($arParams['H2_CLASS']) ? $arParams['H2_CLASS'] : 'h2_about-company';
 
 ?>
 <div class="col-24">
-    <h2 class="h2_about-company"><?=$data->getName();?></h2>
+    <h2 class="<?=$class;?>"><?=$data->getName();?></h2>
     <? foreach($data->items() as $item): ?>
         <div class="col-8 col-lg-24" <?=$item->editId();?>>
             <div class="structure-company__wrap <?=$item->get('ITEM_CLASS');?> structure-company__wrap_no-elem">

@@ -388,6 +388,7 @@ $APPLICATION->SetTitle("О компании");
                         'AJAX_OPTION_STYLE' => 'Y',
                         'AJAX_OPTION_HISTORY' => 'N',
                         'AJAX_OPTION_ADDITIONAL' => '',
+                        'H2_CLASS' => 'h2_about-company',
                     )); ?>
                     <div class="row">
                         <div class="structure-company_direct__more">
