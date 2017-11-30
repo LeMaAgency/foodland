@@ -3,7 +3,6 @@
 /upload
 /*.txt
 !/robots.txt
-/*.html
 ~*.php
 *.log
 *.xml
