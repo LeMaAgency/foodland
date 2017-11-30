@@ -20,37 +20,33 @@ if(empty($arResult['ITEMS']))
 $data = new \WM\Template\TemplateHelper($this);
 
 ?>
-<div class="popular popular_pb">
-    <div class="container">
-        <div class="popular__carousel">
-            <? foreach($data->items() as $item): ?>
-                <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
-                    <div class="popular__item" <?=$item->editId();?> >
-                        <div class="popular__item__image">
-                            <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
-                        </div>
-                        <div class="popular__item__name"><b><?=$item->getName();?></b></div>
-                        <div class="popular__item__text">
-                            <span><?=$item->prop('BRAND', 'LINKED_NAME');?></span><br>
-                            <? if($item->propFilled('FATNESS')): ?>
-                                <span>
-                                    <?=$item->propName('FATNESS');?>:
-                                    <b><?=$item->propValue('FATNESS');?></b>
-                                </span><br>
-                            <? endif; ?>
-                            <? if($item->propFilled('ARTICLE')): ?>
-                                <span>
+<div class="popular__carousel">
+    <? foreach($data->items() as $item): ?>
+        <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
+            <div class="popular__item" <?=$item->editId();?> >
+                <div class="popular__item__image">
+                    <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
+                </div>
+                <div class="popular__item__name"><b><?=$item->getName();?></b></div>
+                <div class="popular__item__text">
+                    <span><?=$item->prop('BRAND', 'LINKED_NAME');?></span><br>
+                    <? if($item->propFilled('FATNESS')): ?>
+                        <span>
+                        <?=$item->propName('FATNESS');?>:
+                        <b><?=$item->propValue('FATNESS');?></b>
+                    </span><br>
+                    <? endif; ?>
+                    <? if($item->propFilled('ARTICLE')): ?>
+                        <span>
                                     <?=$item->propName('ARTICLE');?>:
                                     <b><?=$item->propValue('ARTICLE');?></b>
                                 </span><br>
-                            <? endif; ?>
-                        </div>
-                        <div class="popular__item__description">
-                            <p><?=$item->previewText();?></p>
-                        </div>
-                    </div>
-                </a>
-            <? endforeach; ?>
-        </div>
-    </div>
+                    <? endif; ?>
+                </div>
+                <div class="popular__item__description">
+                    <p><?=$item->previewText();?></p>
+                </div>
+            </div>
+        </a>
+    <? endforeach; ?>
 </div>

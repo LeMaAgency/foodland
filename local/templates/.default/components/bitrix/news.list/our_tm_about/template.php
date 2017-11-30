@@ -20,17 +20,15 @@ if(empty($arResult['ITEMS']))
 $data = new \WM\Template\TemplateHelper($this);
 
 ?>
-<div class="tm-carousel-horizontal">
-    <div class="container">
-        <h2 class="h2_about-company"><?=$arResult['NAME'];?></h2>
-        <div class="tm-carousel-horizontal__carousel">
-            <? foreach($data->items() as $item): ?>
-                <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
-                    <div class="tm-carousel-horizontal__carousel__item" <?=$item->editId();?>>
-                        <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
-                    </div>
-                </a>
-            <? endforeach; ?>
-        </div>
+<div class="container">
+    <h2 class="h2_about-company"><?=$arResult['NAME'];?></h2>
+    <div class="tm-carousel-horizontal__carousel">
+        <? foreach($data->items() as $item): ?>
+            <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
+                <div class="tm-carousel-horizontal__carousel__item" <?=$item->editId();?>>
+                    <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
+                </div>
+            </a>
+        <? endforeach; ?>
     </div>
 </div>

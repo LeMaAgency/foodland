@@ -40,7 +40,7 @@ $data = new \WM\Template\TemplateHelper($this);
                             <span><?=$item->prop('BRAND', 'LINKED_NAME');?></span><br>
                             <? if($item->propFilled('FATNESS')): ?>
                                 <span>
-                                    <?=$item->propName('FATNESS');;?>:
+                                    <?=$item->propName('FATNESS');?>:
                                     <b><?=$item->propValue('FATNESS');?></b>
                                 </span><br>
                             <? endif; ?>
