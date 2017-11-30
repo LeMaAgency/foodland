@@ -224,18 +224,20 @@ $strNavQueryStringFull = ($arResult["NavQueryString"] != "" ? "?" . $arResult["N
                     <?
                 }
                 ?>
-                <div class="col-5 col-xl-7 col-lg-24 css-right">
-                    <div class="product-pagination__button">
-                        <?
-                        if($arResult["NavShowAll"]):?>
-                            <a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>SHOWALL_<?=$arResult["NavNum"]?>=0" title=""
-                               class="button-cheese"><span><?=Loc::getMessage('nav_paged');?></span></a>
-                        <? else: ?>
-                            <a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>SHOWALL_<?=$arResult["NavNum"]?>=1" title=""
-                               class="button-cheese"><span><?=Loc::getMessage('nav_all');?></span></a>
-                        <? endif; ?>
+                <? if($arResult['NavShowAll'] || $arResult['NavRecordCount'] > $arResult['NavPageSize']): ?>
+                    <div class="col-5 col-xl-7 col-lg-24 css-right">
+                        <div class="product-pagination__button">
+                            <?
+                            if($arResult["NavShowAll"]):?>
+                                <a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>SHOWALL_<?=$arResult["NavNum"]?>=0" title=""
+                                   class="button-cheese"><span><?=Loc::getMessage('nav_paged');?></span></a>
+                            <? else: ?>
+                                <a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>SHOWALL_<?=$arResult["NavNum"]?>=1" title=""
+                                   class="button-cheese"><span><?=Loc::getMessage('nav_all');?></span></a>
+                            <? endif; ?>
+                        </div>
                     </div>
-                </div>
+                <? endif; ?>
             </div>
         </div>
     </div>

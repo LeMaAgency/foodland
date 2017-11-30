@@ -47,7 +47,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
             'MESSAGE_404' => '',
             'META_DESCRIPTION' => '-',
             'META_KEYWORDS' => '-',
-            'NEWS_COUNT' => '1',
+            'NEWS_COUNT' => '20',
             'PAGER_BASE_LINK_ENABLE' => 'N',
             'PAGER_DESC_NUMBERING' => 'N',
             'PAGER_DESC_NUMBERING_CACHE_TIME' => '36000',
@@ -84,7 +84,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
         <div class="background-page__cheese-left_event"></div>
         <div class="background-page__block-left-top_event"></div>
         <div class="background-page__block-left-middle_event"></div>
-        <div class="background-page__block-left-bottom_event"></div>
+        <?$APPLICATION->ShowViewContent('bg_block');?>
         <div class="background-page__butter-right_event"></div>
         <div class="background-page__block-right-top_event"></div>
     </div>

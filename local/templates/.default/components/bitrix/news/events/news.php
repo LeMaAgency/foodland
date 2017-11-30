@@ -11,6 +11,9 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+
+$APPLICATION->AddViewContent('bg_block','<div class="background-page__block-left-bottom_event"></div>');
+
 ?>
 
 <? if($arParams["USE_RSS"] == "Y"): ?>
@@ -34,7 +37,8 @@ $this->setFrameMode(true);
             Array(
                 "PAGE" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["search"],
             ),
-            $component
+            $component,
+            array('HIDE_ICONS' => 'Y')
         ); ?>
     </div>
 <? endif ?>
