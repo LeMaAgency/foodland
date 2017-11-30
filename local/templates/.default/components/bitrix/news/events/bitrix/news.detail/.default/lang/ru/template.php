@@ -1,2 +1,2 @@
 <?
-?>
+$MESS['LEMA_EVENT_DETAIL_GALLERY_TITLE'] = 'Галерея';
