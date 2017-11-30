@@ -12,8 +12,9 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 $inputValue = isset($arParams['REQUEST_QUERY']) ? htmlspecialcharsbx($arParams['REQUEST_QUERY']) : '';
+$additionalClass = isset($arParams['ADDITIONAL_CLASS']) ? htmlspecialcharsbx($arParams['ADDITIONAL_CLASS']) : '';
 ?>
-<div class="search">
+<div class="search <?=$additionalClass;?>">
     <div class="search__form-mini">
         <form action="<?=$arResult["FORM_ACTION"]?>">
             <? if($arParams["USE_SUGGEST"] === "Y"): ?><? $APPLICATION->IncludeComponent(
