@@ -12,4 +12,10 @@ $arUrlRewrite = array(
 		'ID' => 'bitrix:news',
 		'PATH' => '/events/index.php',
 	),
+	array(
+		'CONDITION' => '#^/catalog/#',
+		'RULE' => '',
+		'ID' => 'bitrix:news',
+		'PATH' => '/catalog/index.php',
+	),
 );

@@ -17,6 +17,8 @@ class TemplateHelper
     protected $arParams = array();
     protected $singleRecord = false;
 
+    protected $arKey = 'ITEMS';
+
     protected $editLinks = array();
 
     /**
@@ -31,24 +33,49 @@ class TemplateHelper
         $this->arParams = $this->component->arParams;
         $this->arResult = $this->component->arResult;
 
-        if(!isset($this->arResult['ITEMS']))
+        if(!isset($this->arResult['ITEMS']) && !isset($this->arResult['SECTIONS']))
             $this->arResult = new Item($this->arResult);
         else
         {
-            $this->arResult['OBJ_ITEMS'] = array();
+            $isSection = false;
+            //elements
+            if(isset($this->arResult['ITEMS']))
+            {
+                $name = 'ELEMENT';
+                $msg = \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM');
+            }
+            //sections
+            elseif(isset($this->arResult['SECTIONS']))
+            {
+                $this->arKey = 'SECTIONS';
+                $isSection = true;
+                $name = 'SECTION';
+                $msg = \GetMessage('CT_BCSL_ELEMENT_DELETE_CONFIRM');
+            }
+            //default:elements
+            else
+            {
+                $name = 'ELEMENT';
+                $msg = \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM');
+            }
+
+            $this->arResult['OBJ_' . $this->arKey] = array();
             $this->editLinks = array(
-                'edit' => \CIBlock::GetArrayByID($this->arParams['IBLOCK_ID'], 'ELEMENT_EDIT'),
-                'delete' => \CIBlock::GetArrayByID($this->arParams['IBLOCK_ID'], 'ELEMENT_DELETE'),
-                'confirm' => array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')),
+                'edit' => \CIBlock::GetArrayByID($this->arParams['IBLOCK_ID'], $name . '_EDIT'),
+                'delete' => \CIBlock::GetArrayByID($this->arParams['IBLOCK_ID'],$name . '_DELETE'),
+                'confirm' => array('CONFIRM' => $msg),
             );
 
-            foreach($this->arResult['ITEMS'] as $k => $item)
+            foreach($this->arResult[$this->arKey] as $k => $item)
             {
                 //add edit actions
                 $this->data->AddEditAction($item['ID'], $item['EDIT_LINK'], $this->editLinks['edit']);
                 $this->data->AddDeleteAction($item['ID'], $item['DELETE_LINK'], $this->editLinks['delete'], $this->editLinks['confirm']);
 
-                $this->arResult['OBJ_ITEMS'][$k] = new Item($item, $this->data->GetEditAreaId($item['ID']));
+                if($isSection)
+                    $this->arResult['OBJ_' . $this->arKey][$k] = new Section($item, $this->data->GetEditAreaId($item['ID']));
+                else
+                    $this->arResult['OBJ_' . $this->arKey][$k] = new Item($item, $this->data->GetEditAreaId($item['ID']));
             }
         }
     }
@@ -59,7 +86,15 @@ class TemplateHelper
      */
     public function items($objectData = true)
     {
-        return $objectData ? $this->arResult['OBJ_ITEMS'] : $this->arResult['ITEMS'];
+        return $objectData ? $this->arResult['OBJ_' . $this->arKey] : $this->arResult[$this->arKey];
+    }
+    /**
+     * @param bool $objectData
+     * @return mixed
+     */
+    public function sections($objectData = true)
+    {
+        return $this->items($objectData);
     }
 
     /**
@@ -67,7 +102,7 @@ class TemplateHelper
      */
     public function itemCount()
     {
-        return count($this->arResult['ITEMS']);
+        return count($this->arResult[$this->arKey]);
     }
 
     /**
