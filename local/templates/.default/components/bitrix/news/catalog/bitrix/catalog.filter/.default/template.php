@@ -22,7 +22,7 @@ $this->setFrameMode(true);
                 endif;
             endforeach; ?>
             <? foreach($arResult["ITEMS"] as $arItem): ?>
-                <? if(!array_key_exists("HIDDEN", $arItem)): ?>
+                <? if(!array_key_exists("HIDDEN", $arItem)):?>
                     <div class="filter__item">
                         <div class="filter__item__name">Особенности</div>
                         <div class="filter__item__select">

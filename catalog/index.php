@@ -98,6 +98,8 @@ $APPLICATION->SetTitle("Каталог продукции");
             'LIST_ACTIVE_DATE_FORMAT' => 'd.m.Y',
             'LIST_FIELD_CODE' => array('DATE_CREATE', ''),
             'LIST_PROPERTY_CODE' => array('', ''),
+            'FILTER_FIELD_CODE' => array('', ''),
+            'FILTER_PROPERTY_CODE' => array('BRAND', 'COUNTRY'),
             'MESSAGE_404' => '',
             'META_DESCRIPTION' => '-',
             'META_KEYWORDS' => '-',
