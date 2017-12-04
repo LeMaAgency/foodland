@@ -20,6 +20,7 @@ $APPLICATION->SetTitle('FoodLand - главная страница');
     'PROPERTY_CODE' => array(
         'LOGO_IMG',
         'LOGO_TITLE_IMG',
+        'URL',
     ),
     'CHECK_DATES' => 'Y',
     'DETAIL_URL' => '',
