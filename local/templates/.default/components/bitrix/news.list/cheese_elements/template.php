@@ -83,9 +83,11 @@ $confirmDelete = array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')
                             <? if(!empty($arItem['SECTIONS'])): ?>
                                 <ul class="cheese__links">
                                     <? foreach($arItem['SECTIONS'] as $sectionId => $section): ?>
-                                        <a href="<?=$section['URL'];?>" title="<?=$section['NAME'];?>" class="cheese__link">
-                                            <?=$section['NAME'];?>
-                                        </a>
+                                        <li class="cheese__item">
+                                            <a href="<?=$section['URL'];?>" title="<?=$section['NAME'];?>" class="cheese__link">
+                                                <?=$section['NAME'];?>
+                                            </a>
+                                        </li>
                                     <? endforeach; ?>
                                 </ul>
                             <? endif; ?>
