@@ -128,7 +128,7 @@ $popularItemsFilter = array('PROPERTY_IS_POPULAR_VALUE' => 'Y');
     'AJAX_MODE' => 'N',
     'IBLOCK_TYPE' => 'content',
     'IBLOCK_ID' => '3',
-    'NEWS_COUNT' => '3',
+    'NEWS_COUNT' => '20',
     'SORT_BY1' => 'ID',
     'SORT_ORDER1' => 'ASC',
     'SORT_BY2' => 'SORT',
