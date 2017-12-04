@@ -210,12 +210,12 @@ $strNavQueryStringFull = ($arResult["NavQueryString"] != "" ? "?" . $arResult["N
                                         </li>
                                         <?
                                     endif;
-
+/*
                                     ?>
                                     <li><a class="blog-page-next"
                                            href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>PAGEN_<?=$arResult["NavNum"]?>=<?=($arResult["NavPageNomer"] + 1)?>"><?=GetMessage("nav_next")?></a>
                                     </li>
-                                    <?
+                                    <?*/
                                 endif;
                             endif;
                             ?>

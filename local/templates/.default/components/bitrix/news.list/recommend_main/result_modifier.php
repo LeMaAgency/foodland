@@ -14,7 +14,7 @@ foreach($arResult['ITEMS'] as $k => $arItem)
     $arResult['ITEMS'][$k]['TEXT_IN_TOP_BLOCK'] = Helper::propValue('TEXT_IN_TOP_BLOCK', $arItem) == 'Y';
 
     //type of line
-    switch(Helper::propValue('LINE_ORIENTATION', $arItem))
+    switch($arItem['PROPERTIES']['LINE_ORIENTATION']['VALUE_XML_ID'])
     {
         case 'down':
             $arResult['ITEMS'][$k]['ITEM_CLASS'] = 'recommendation__block__line_down';
