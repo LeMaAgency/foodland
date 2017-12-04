@@ -9,3 +9,9 @@ a.recommendation__block__title-mini {
 .cheese-circle .icon[data-number] {
     opacity: 1;
 }
+
+/* sider 4 */
+
+.product-use-carousel__carousel {
+    padding: 20px 15px 30px;
+}
