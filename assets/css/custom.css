@@ -5,3 +5,7 @@ a.recommendation__block__title-mini {
 .recommendation__block .icon {
     z-index: 1;
 }
+
+.cheese-circle .icon[data-number] {
+    opacity: 1;
+}
