@@ -9,12 +9,18 @@
 /** @var string $templateFile */
 /** @var string $templateFolder */
 /** @var string $componentPath */
+
 /** @var CBitrixComponent $component */
+
+use \Bitrix\Main\Localization\Loc;
+
+Loc::loadMessages(__FILE__);
+
 $this->setFrameMode(true);
 ?>
 <div class="col-4 col-lg-6 col-md-8 col-sm-24">
     <div class="filter">
-        <div class="filter__title"><span>Настройка<br>поиска</span></div>
+        <div class="filter__title"><span><?=Loc::getMessage('LEMA_CATALOG_FILTER_TITLE');?></span></div>
         <form name="<? echo $arResult["FILTER_NAME"] . "_form" ?>" action="<? echo $arResult["FORM_ACTION"] ?>" method="get">
             <? foreach($arResult["ITEMS"] as $arItem):
                 if(array_key_exists("HIDDEN", $arItem)):
@@ -37,7 +43,9 @@ $this->setFrameMode(true);
             <? endforeach; ?>
 
             <div class="filter__button">
-                <a href="#" title="" class="button-orange js-catalog-filter-btn"><span>Показать</span></a>
+                <a href="#" title="" class="button-orange js-catalog-filter-btn">
+                    <span><?=Loc::getMessage('LEMA_CATALOG_FILTER_BTN');?></span>
+                </a>
             </div>
             <div class="filter__button" style="display: none;">
                 <input type="submit" name="set_filter" value="<?=GetMessage("IBLOCK_SET_FILTER")?>"/>

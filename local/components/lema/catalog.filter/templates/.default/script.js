@@ -3,5 +3,7 @@ $(function() {
         e.preventDefault();
 
         $(this).closest('form').submit();
+
+        return false;
     })
 });
