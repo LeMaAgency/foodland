@@ -33,6 +33,8 @@ Loc::loadMessages(__FILE__);
             '/assets/js/libs/anime.js',
             '/assets/js/libs/scroll/jquery.mousewheel.js',
             '/assets/js/libs/scroll/jquery.jscrollpane.min.js',
+            '/assets/js/libs/classie.js',
+            '/assets/js/libs/selectFx.js',
             '/assets/js/scripts.min.js',
             '/assets/js/custom.js',
         ));

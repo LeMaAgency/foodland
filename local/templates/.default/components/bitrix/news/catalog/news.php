@@ -37,7 +37,7 @@ $APPLICATION->AddViewContent('bg_block', '<div class="background-page__block-lef
     <div class="row">
         <? if($arParams["USE_FILTER"] == "Y"): ?>
             <? $APPLICATION->IncludeComponent(
-                "bitrix:catalog.filter",
+                "lema:catalog.filter",
                 "",
                 Array(
                     "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
