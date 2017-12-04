@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Эксклюзивы";
+$arDirProperties = Array(
+
+);
+?>
