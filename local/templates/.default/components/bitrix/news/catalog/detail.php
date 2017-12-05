@@ -17,6 +17,8 @@ use \Bitrix\Main\Localization\Loc;
 Loc::loadMessages(__FILE__);
 
 $this->setFrameMode(true);
+
+$APPLICATION->AddViewContent('header_class', 'product-page-header');
 ?>
 <div class="wrap-search">
     <div class="container">

@@ -13,10 +13,11 @@
 
 $this->setFrameMode(true);
 
-$APPLICATION->AddViewContent('bg_block', '<div class="background-page__block-left-bottom_event"></div>');
+$APPLICATION->AddViewContent('header_class', 'product-category-header-2');
+$APPLICATION->AddViewContent('header_blocks', '<div class="product-category-header-1"></div>');
 
 ?>
-<? $APPLICATION->IncludeFile($this->GetFolder() . '/catalog_before.php'); ?>
+
 <? if($arParams["USE_SEARCH"] == "Y"): ?>
     <div class="container">
         <div class="element">
@@ -34,6 +35,7 @@ $APPLICATION->AddViewContent('bg_block', '<div class="background-page__block-lef
     </div>
 <? endif ?>
 
+<div class="background-page-category">
     <div class="container">
         <div class="row">
             <? if($arParams["USE_FILTER"] == "Y"): ?>
@@ -194,4 +196,6 @@ $APPLICATION->AddViewContent('bg_block', '<div class="background-page__block-lef
             </div>
         </div>
     </div>
-<? $APPLICATION->IncludeFile($this->GetFolder() . '/catalog_after.php'); ?>
+
+    <? $APPLICATION->IncludeFile($this->GetFolder() . '/catalog_section_after.php'); ?>
+</div>
