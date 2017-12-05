@@ -24,8 +24,7 @@ if(empty($arResult['ITEMS']))
 $data = new \WM\Template\TemplateHelper($this);
 
 ?>
-<div class="popular ">
-    <div class="back-img back-img__maslo"></div>
+<div class="popular popular_pb">
     <div class="container">
         <div class="title-big"><?=Loc::getMessage('LEMA_MOST_POPULAR_MAIN_TITLE');?></div>
         <div class="popular__carousel">
