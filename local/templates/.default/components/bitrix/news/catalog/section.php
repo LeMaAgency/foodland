@@ -21,7 +21,7 @@ $APPLICATION->AddViewContent('header_blocks', '<div class="product-category-head
 <? if($arParams["USE_SEARCH"] == "Y"): ?>
     <div class="container">
         <div class="element">
-            <h1 class="element__title__h1"><? $APPLICATION->ShowTitle(false); ?></h1>
+            <h1 class="element__title__h1"><? $APPLICATION->ShowTitle(); ?></h1>
         </div>
         <? $APPLICATION->IncludeComponent(
             "bitrix:search.form",
