@@ -23,12 +23,11 @@ $this->setFrameMode(true);
         <div class="row">
             <div class="col-19 col-md-24 css-right">
                 <div class="bread-crumbs">
-                    <ul>
-                        <li><a href="" title="">Сливочные и творожные сыры</a></li>
-                        <li><a href="" title="">Твёрдые выдержанные</a></li>
-                        <li><a href="" title="">Тип Пармезан</a></li>
-                        <li><span>Мезан Люкс</span></li>
-                    </ul>
+                    <?$APPLICATION->IncludeComponent('bitrix:breadcrumb', 'breadcrumbs', array(
+                        'START_FROM' => '0',
+                        'PATH' => '',
+                        'SITE_ID' => SITE_ID,
+                    ));?>
                 </div>
                 <? if($arParams["USE_SEARCH"] == "Y"): ?>
                     <div class="container">
