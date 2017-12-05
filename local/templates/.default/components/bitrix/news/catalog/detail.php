@@ -303,6 +303,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
             </div>
         </div>
     </div>
+
     <div class="milk"></div>
     <div class="block-left-top"></div>
     <div class="block-right"></div>
