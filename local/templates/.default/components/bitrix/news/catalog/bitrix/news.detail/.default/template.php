@@ -57,36 +57,15 @@ $item = $data->item();
         </div>
         <div class="block-product-img__description">
             <h2 class="block-product-img__description__h2">Пищевая ценность в 100 г продукта:</h2>
-            <div class="block-product-img__description__line">
-                <div class="block-product-img__description__line__name">Калории</div>
-                <div class="block-product-img__description__line__dots"></div>
-                <div class="block-product-img__description__line__val"><span>355,6</span> кКал</div>
-            </div>
-            <div class="block-product-img__description__line">
-                <div class="block-product-img__description__line__name">Белки</div>
-                <div class="block-product-img__description__line__dots"></div>
-                <div class="block-product-img__description__line__val"><span>26</span> г</div>
-            </div>
-            <div class="block-product-img__description__line">
-                <div class="block-product-img__description__line__name">Жиры</div>
-                <div class="block-product-img__description__line__dots"></div>
-                <div class="block-product-img__description__line__val"><span>26,5</span> г</div>
-            </div>
-            <div class="block-product-img__description__line">
-                <div class="block-product-img__description__line__name">Углеводы</div>
-                <div class="block-product-img__description__line__dots"></div>
-                <div class="block-product-img__description__line__val"><span>3,5</span> г</div>
-            </div>
-            <div class="block-product-img__description__line">
-                <div class="block-product-img__description__line__name">Пищевые волокна</div>
-                <div class="block-product-img__description__line__dots"></div>
-                <div class="block-product-img__description__line__val"><span>0</span> г</div>
-            </div>
-            <div class="block-product-img__description__line">
-                <div class="block-product-img__description__line__name">Вода</div>
-                <div class="block-product-img__description__line__dots"></div>
-                <div class="block-product-img__description__line__val"><span>0</span> г</div>
-            </div>
+            <?
+            $props = array('CALORIES', 'PROTEINS', 'FATS', 'CARBOHYDRATES', 'DIETARY_FIBER', 'WATER');
+            foreach($props as $prop): ?>
+                <div class="block-product-img__description__line">
+                    <div class="block-product-img__description__line__name"><?=$item->propName($prop);?></div>
+                    <div class="block-product-img__description__line__dots"></div>
+                    <div class="block-product-img__description__line__val"><?=$item->propValue($prop);?></div>
+                </div>
+            <? endforeach; ?>
         </div>
     </div>
 </div>
@@ -95,8 +74,10 @@ $item = $data->item();
         <h2 class="block-product-text__h2">Описание продукта</h2>
         <?=$item->previewText();?>
         <h2 class="block-product-text__h2-info">Информация о товаре</h2>
-        <h3 class="block-product-text__h3-composition">Состав</h3>
-        <?=$item->detailText();?>
+        <? if($item->propFilled('COMPOSITION')): ?>
+            <h3 class="block-product-text__h3-composition">Состав</h3>
+            <?=$item->propText('COMPOSITION');?>
+        <? endif; ?>
         <h3 class="block-product-text__h3-factory">Завод изготовитель</h3>
         <p>Республика Беларусь, г. Каменец, ОАО «Савушкин продукт».</p>
     </div>

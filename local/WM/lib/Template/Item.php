@@ -102,7 +102,7 @@ class Item
      */
     public function propText($name)
     {
-        $prop = $this->prop($name);
+        $prop = $this->propValue($name);
         return isset($prop, $prop['TEXT']) ? $prop['TEXT'] : null;
     }
 
