@@ -12,40 +12,92 @@
 
 /** @var CBitrixComponent $component */
 
-use \WM\Common\Helper,
-    \Bitrix\Main\Localization\Loc;
+use \Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
 
 $this->setFrameMode(true);
 
-?>
-    <section class="event-inn">
-        <div class="container">
-            <h2 class="h2 event-inn__h2"><?=$arResult['NAME'];?></h2>
-            <div class="event-inn__img"><img src="<?=$arResult['DETAIL_PICTURE']['SRC'];?>" alt="<?=$arResult['NAME'];?>"></div>
-            <p>
-                <?=$arResult['PREVIEW_TEXT'];?>
-            </p>
-            <div class="text-about-company__advantages text-about-company__advantages_event">
-                <?=$arResult['DETAIL_TEXT'];?>
-            </div>
-        </div>
-    </section>
-<? if(Helper::propFilled('MORE_PHOTO', $arResult)): ?>
-    <div class="product-use-carousel_4_gallery">
-        <div class="container">
-            <h2 class="h2 h2_mb-25"><?=Loc::getMessage('LEMA_EVENT_DETAIL_GALLERY_TITLE');?></h2>
+$data = new \WM\Template\TemplateHelper($this);
 
-            <div class="product-use-carousel_4__carousel">
-                <? foreach($arResult['PROPERTIES']['MORE_PHOTO']['VALUE_SRC'] as $src): ?>
-                    <div class="product-use-carousel__carousel__item product-use-carousel_4__carousel__item product-use-carousel_4__carousel__item_gallery">
-                        <div class="product-use-carousel_4__carousel__item__wrap product-use-carousel_4__carousel__item__wrap_gallery">
-                            <img src="<?=$src;?>" alt="<?=$arResult['NAME'];?>">
-                        </div>
-                    </div>
-                <? endforeach; ?>
+$item = $data->item();
+
+?>
+<div class="col-12 col-xl-24">
+    <div class="block-product-img">
+        <div class="block-product-img__img">
+            <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
+        </div>
+        <div class="block-product-img__carousel">
+            <a href="" title="">
+                <div class="block-product-img__carousel__item">
+                    <img src="/assets/images/product/product-page/carousel-item-1.png" alt="">
+                </div>
+            </a>
+            <a href="" title="">
+                <div class="block-product-img__carousel__item"><img
+                            src="/assets/images/product/product-page/carousel-item-2.png" alt="">
+                </div>
+            </a>
+            <a href="" title="">
+                <div class="block-product-img__carousel__item"><img
+                            src="/assets/images/product/product-page/carousel-item-3.png" alt="">
+                </div>
+            </a>
+            <a href="" title="">
+                <div class="block-product-img__carousel__item"><img
+                            src="/assets/images/product/product-page/carousel-item-4.png" alt="">
+                </div>
+            </a>
+            <a href="" title="">
+                <div class="block-product-img__carousel__item"><img
+                            src="/assets/images/product/product-page/carousel-item-1.png" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="block-product-img__description">
+            <h2 class="block-product-img__description__h2">Пищевая ценность в 100 г продукта:</h2>
+            <div class="block-product-img__description__line">
+                <div class="block-product-img__description__line__name">Калории</div>
+                <div class="block-product-img__description__line__dots"></div>
+                <div class="block-product-img__description__line__val"><span>355,6</span> кКал</div>
+            </div>
+            <div class="block-product-img__description__line">
+                <div class="block-product-img__description__line__name">Белки</div>
+                <div class="block-product-img__description__line__dots"></div>
+                <div class="block-product-img__description__line__val"><span>26</span> г</div>
+            </div>
+            <div class="block-product-img__description__line">
+                <div class="block-product-img__description__line__name">Жиры</div>
+                <div class="block-product-img__description__line__dots"></div>
+                <div class="block-product-img__description__line__val"><span>26,5</span> г</div>
+            </div>
+            <div class="block-product-img__description__line">
+                <div class="block-product-img__description__line__name">Углеводы</div>
+                <div class="block-product-img__description__line__dots"></div>
+                <div class="block-product-img__description__line__val"><span>3,5</span> г</div>
+            </div>
+            <div class="block-product-img__description__line">
+                <div class="block-product-img__description__line__name">Пищевые волокна</div>
+                <div class="block-product-img__description__line__dots"></div>
+                <div class="block-product-img__description__line__val"><span>0</span> г</div>
+            </div>
+            <div class="block-product-img__description__line">
+                <div class="block-product-img__description__line__name">Вода</div>
+                <div class="block-product-img__description__line__dots"></div>
+                <div class="block-product-img__description__line__val"><span>0</span> г</div>
             </div>
         </div>
     </div>
-<? endif; ?>
+</div>
+<div class="col-12 col-xl-24">
+    <div class="block-product-text">
+        <h2 class="block-product-text__h2">Описание продукта</h2>
+        <?=$item->previewText();?>
+        <h2 class="block-product-text__h2-info">Информация о товаре</h2>
+        <h3 class="block-product-text__h3-composition">Состав</h3>
+        <?=$item->detailText();?>
+        <h3 class="block-product-text__h3-factory">Завод изготовитель</h3>
+        <p>Республика Беларусь, г. Каменец, ОАО «Савушкин продукт».</p>
+    </div>
+</div>

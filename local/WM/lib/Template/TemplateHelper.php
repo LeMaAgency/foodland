@@ -43,16 +43,14 @@ class TemplateHelper
             {
                 $name = 'ELEMENT';
                 $msg = \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM');
-            }
-            //sections
+            } //sections
             elseif(isset($this->arResult['SECTIONS']))
             {
                 $this->arKey = 'SECTIONS';
                 $isSection = true;
                 $name = 'SECTION';
                 $msg = \GetMessage('CT_BCSL_ELEMENT_DELETE_CONFIRM');
-            }
-            //default:elements
+            } //default:elements
             else
             {
                 $name = 'ELEMENT';
@@ -62,7 +60,7 @@ class TemplateHelper
             $this->arResult['OBJ_' . $this->arKey] = array();
             $this->editLinks = array(
                 'edit' => \CIBlock::GetArrayByID($this->arParams['IBLOCK_ID'], $name . '_EDIT'),
-                'delete' => \CIBlock::GetArrayByID($this->arParams['IBLOCK_ID'],$name . '_DELETE'),
+                'delete' => \CIBlock::GetArrayByID($this->arParams['IBLOCK_ID'], $name . '_DELETE'),
                 'confirm' => array('CONFIRM' => $msg),
             );
 
@@ -88,6 +86,7 @@ class TemplateHelper
     {
         return $objectData ? $this->arResult['OBJ_' . $this->arKey] : $this->arResult[$this->arKey];
     }
+
     /**
      * @param bool $objectData
      * @return mixed
@@ -95,6 +94,14 @@ class TemplateHelper
     public function sections($objectData = true)
     {
         return $this->items($objectData);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function item()
+    {
+        return $this->arResult;
     }
 
     /**

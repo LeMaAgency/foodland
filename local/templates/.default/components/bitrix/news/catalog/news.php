@@ -23,7 +23,7 @@ $this->setFrameMode(true);
 $APPLICATION->AddViewContent('bg_block', '<div class="background-page__block-left-bottom_event"></div>');
 
 ?>
-
+<? $APPLICATION->IncludeFile($this->GetFolder() . '/catalog_before.php'); ?>
 <? if($arParams["USE_SEARCH"] == "Y"): ?>
     <div class="container">
         <div class="element">
@@ -41,46 +41,47 @@ $APPLICATION->AddViewContent('bg_block', '<div class="background-page__block-lef
     </div>
 <? endif ?>
 
-<div class="container">
-    <div class="row">
-        <? if($arParams["USE_FILTER"] == "Y"): ?>
-            <div class="col-4 col-lg-6 col-md-8 col-sm-24">
-                <? $APPLICATION->IncludeComponent(
-                    "lema:catalog.filter",
-                    "",
-                    Array(
-                        "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
-                        "IBLOCK_ID" => $arParams["IBLOCK_ID"],
-                        "FILTER_NAME" => $arParams["FILTER_NAME"],
-                        "FIELD_CODE" => $arParams["FILTER_FIELD_CODE"],
-                        "PROPERTY_CODE" => $arParams["FILTER_PROPERTY_CODE"],
-                        "CACHE_TYPE" => $arParams["CACHE_TYPE"],
-                        "CACHE_TIME" => $arParams["CACHE_TIME"],
-                        "CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
-                        "PAGER_PARAMS_NAME" => $arParams["PAGER_PARAMS_NAME"],
-                    ),
-                    $component
-                );
-                ?>
-            </div>
-        <? endif ?>
-        <? $APPLICATION->IncludeComponent('bitrix:catalog.section.list', 'catalog_section_list', array(
-            'VIEW_MODE' => 'TEXT',
-            'SHOW_PARENT_NAME' => 'Y',
-            'IBLOCK_TYPE' => $arParams['IBLOCK_TYPE'],
-            'IBLOCK_ID' => $arParams['IBLOCK_ID'],
-            'SECTION_ID' => '',
-            'SECTION_CODE' => '',
-            'SECTION_URL' => '',
-            'COUNT_ELEMENTS' => 'Y',
-            'TOP_DEPTH' => '2',
-            'SECTION_FIELDS' => array('PICTURE', 'DETAIL_PICTURE'),
-            'SECTION_USER_FIELDS' => '',
-            'ADD_SECTIONS_CHAIN' => 'Y',
-            'CACHE_TYPE' => 'A',
-            'CACHE_TIME' => '36000000',
-            'CACHE_NOTES' => '',
-            'CACHE_GROUPS' => 'Y',
-        )); ?>
+    <div class="container">
+        <div class="row">
+            <? if($arParams["USE_FILTER"] == "Y"): ?>
+                <div class="col-4 col-lg-6 col-md-8 col-sm-24">
+                    <? $APPLICATION->IncludeComponent(
+                        "lema:catalog.filter",
+                        "",
+                        Array(
+                            "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
+                            "IBLOCK_ID" => $arParams["IBLOCK_ID"],
+                            "FILTER_NAME" => $arParams["FILTER_NAME"],
+                            "FIELD_CODE" => $arParams["FILTER_FIELD_CODE"],
+                            "PROPERTY_CODE" => $arParams["FILTER_PROPERTY_CODE"],
+                            "CACHE_TYPE" => $arParams["CACHE_TYPE"],
+                            "CACHE_TIME" => $arParams["CACHE_TIME"],
+                            "CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
+                            "PAGER_PARAMS_NAME" => $arParams["PAGER_PARAMS_NAME"],
+                        ),
+                        $component
+                    );
+                    ?>
+                </div>
+            <? endif ?>
+            <? $APPLICATION->IncludeComponent('bitrix:catalog.section.list', 'catalog_section_list', array(
+                'VIEW_MODE' => 'TEXT',
+                'SHOW_PARENT_NAME' => 'Y',
+                'IBLOCK_TYPE' => $arParams['IBLOCK_TYPE'],
+                'IBLOCK_ID' => $arParams['IBLOCK_ID'],
+                'SECTION_ID' => '',
+                'SECTION_CODE' => '',
+                'SECTION_URL' => '',
+                'COUNT_ELEMENTS' => 'Y',
+                'TOP_DEPTH' => '2',
+                'SECTION_FIELDS' => array('PICTURE', 'DETAIL_PICTURE'),
+                'SECTION_USER_FIELDS' => '',
+                'ADD_SECTIONS_CHAIN' => 'Y',
+                'CACHE_TYPE' => 'A',
+                'CACHE_TIME' => '36000000',
+                'CACHE_NOTES' => '',
+                'CACHE_GROUPS' => 'Y',
+            )); ?>
+        </div>
     </div>
-</div>
+<? $APPLICATION->IncludeFile($this->GetFolder() . '/catalog_after.php'); ?>
