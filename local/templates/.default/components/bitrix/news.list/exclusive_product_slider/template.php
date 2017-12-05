@@ -37,7 +37,7 @@ $data = new \WM\Template\TemplateHelper($this);
                             <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
                             <div class="product-use-carousel__carousel__item__name"><?=$item->getName();?></div>
                             <div class="product-use-carousel__carousel__item__block-link">
-                                <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
+                                <a href="<?=str_replace('exclusive', 'catalog', $item->detailUrl());?>" title="<?=$item->getName();?>">
                                     <span><?=Loc::getMessage('LEMA_DETAIL_SLIDER_EVENT_MORE_LINK');?></span>
                                 </a>
                             </div>
@@ -55,7 +55,7 @@ $data = new \WM\Template\TemplateHelper($this);
                             <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
                             <div class="product-use-carousel__carousel__item__name"><?=$item->getName();?></div>
                             <div class="product-use-carousel__carousel__item__block-link">
-                                <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
+                                <a href="<?=str_replace('exclusive', 'catalog', $item->detailUrl());?>" title="<?=$item->getName();?>">
                                     <span><?=Loc::getMessage('LEMA_DETAIL_SLIDER_EVENT_MORE_LINK');?></span>
                                 </a>
                             </div>
@@ -73,7 +73,7 @@ $data = new \WM\Template\TemplateHelper($this);
                             <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
                             <div class="product-use-carousel__carousel__item__name"><?=$item->getName();?></div>
                             <div class="product-use-carousel__carousel__item__block-link">
-                                <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
+                                <a href="<?=str_replace('exclusive', 'catalog', $item->detailUrl());?>" title="<?=$item->getName();?>">
                                     <span><?=Loc::getMessage('LEMA_DETAIL_SLIDER_EVENT_MORE_LINK');?></span>
                                 </a>
                             </div>
@@ -91,7 +91,7 @@ $data = new \WM\Template\TemplateHelper($this);
                             <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
                             <div class="product-use-carousel__carousel__item__name"><?=$item->getName();?></div>
                             <div class="product-use-carousel__carousel__item__block-link">
-                                <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
+                                <a href="<?=str_replace('exclusive', 'catalog', $item->detailUrl());?>" title="<?=$item->getName();?>">
                                     <span><?=Loc::getMessage('LEMA_DETAIL_SLIDER_EVENT_MORE_LINK');?></span>
                                 </a>
                             </div>

@@ -26,8 +26,8 @@ $data = new \WM\Template\TemplateHelper($this);
     <div class="container">
         <div class="row">
             <? foreach($data->items() as $item): ?>
-                <div class="products-block__wrap-item products-block__wrap-item_4">
-                    <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
+                <div class="products-block__wrap-item products-block__wrap-item_4" <?=$item->editId();?>>
+                    <a href="<?=str_replace('exclusive', 'catalog', $item->detailUrl());?>" title="<?=$item->getName();?>">
                         <div class="products-block__item">
                             <div class="products-block__item__image">
                                 <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
