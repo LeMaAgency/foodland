@@ -40,7 +40,7 @@ $item = $data->item();
             </div>
         <? endif; ?>
         <div class="block-product-img__description">
-            <h2 class="block-product-img__description__h2">Пищевая ценность в 100 г продукта:</h2>
+            <h2 class="block-product-img__description__h2"><?=Loc::getMessage('LEMA_CATALOG_DETAIL_CHARACTERS_100_TITLE');?></h2>
             <?
             $props = array('CALORIES', 'PROTEINS', 'FATS', 'CARBOHYDRATES', 'DIETARY_FIBER', 'WATER');
             foreach($props as $prop): ?>
@@ -55,11 +55,11 @@ $item = $data->item();
 </div>
 <div class="col-12 col-xl-24">
     <div class="block-product-text">
-        <h2 class="block-product-text__h2">Описание продукта</h2>
+        <h2 class="block-product-text__h2"><?=Loc::getMessage('LEMA_CATALOG_DETAIL_PRODUCT_TITLE');?></h2>
         <?=$item->previewText();?>
-        <h2 class="block-product-text__h2-info">Информация о товаре</h2>
+        <h2 class="block-product-text__h2-info"><?=Loc::getMessage('LEMA_CATALOG_DETAIL_PRODUCT_INFO');?></h2>
         <? if($item->propFilled('COMPOSITION')): ?>
-            <h3 class="block-product-text__h3-composition">Состав</h3>
+            <h3 class="block-product-text__h3-composition"><?=Loc::getMessage('LEMA_CATALOG_DETAIL_COMPOSITION');?></h3>
             <?=$item->propText('COMPOSITION');?>
         <? endif; ?>
         <? if($item->propFilled('MANUFACTURE')): ?>
