@@ -28,33 +28,17 @@ $item = $data->item();
         <div class="block-product-img__img">
             <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
         </div>
-        <div class="block-product-img__carousel">
-            <a href="" title="">
-                <div class="block-product-img__carousel__item">
-                    <img src="/assets/images/product/product-page/carousel-item-1.png" alt="">
-                </div>
-            </a>
-            <a href="" title="">
-                <div class="block-product-img__carousel__item"><img
-                            src="/assets/images/product/product-page/carousel-item-2.png" alt="">
-                </div>
-            </a>
-            <a href="" title="">
-                <div class="block-product-img__carousel__item"><img
-                            src="/assets/images/product/product-page/carousel-item-3.png" alt="">
-                </div>
-            </a>
-            <a href="" title="">
-                <div class="block-product-img__carousel__item"><img
-                            src="/assets/images/product/product-page/carousel-item-4.png" alt="">
-                </div>
-            </a>
-            <a href="" title="">
-                <div class="block-product-img__carousel__item"><img
-                            src="/assets/images/product/product-page/carousel-item-1.png" alt="">
-                </div>
-            </a>
-        </div>
+        <? if($item->propFilled('MORE_PHOTO')): ?>
+            <div class="block-product-img__carousel">
+                <? foreach($item->prop('MORE_PHOTO', 'VALUE_SRC') as $src): ?>
+                    <a href="<?=$src;?>" title="<?=$item->getName();?>">
+                        <div class="block-product-img__carousel__item">
+                            <img src="<?=$src;?>" alt="<?=$item->getName();?>">
+                        </div>
+                    </a>
+                <? endforeach; ?>
+            </div>
+        <? endif; ?>
         <div class="block-product-img__description">
             <h2 class="block-product-img__description__h2">Пищевая ценность в 100 г продукта:</h2>
             <?
@@ -78,7 +62,9 @@ $item = $data->item();
             <h3 class="block-product-text__h3-composition">Состав</h3>
             <?=$item->propText('COMPOSITION');?>
         <? endif; ?>
-        <h3 class="block-product-text__h3-factory">Завод изготовитель</h3>
-        <p>Республика Беларусь, г. Каменец, ОАО «Савушкин продукт».</p>
+        <? if($item->propFilled('MANUFACTURE')): ?>
+            <h3 class="block-product-text__h3-factory"><?=$item->propName('MANUFACTURE');?></h3>
+            <p><?=$item->propValue('MANUFACTURE');?></p>
+        <? endif; ?>
     </div>
 </div>
