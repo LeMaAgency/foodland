@@ -12,8 +12,7 @@
 
 /** @var CBitrixComponent $component */
 
-use \WM\Common\Helper,
-    \Bitrix\Main\Localization\Loc;
+use \Bitrix\Main\Localization\Loc;
 
 $this->setFrameMode(true);
 
@@ -33,8 +32,8 @@ $i = 0;
                 <div data-js-core-resize-after="spinet__resize"></div>
                 <? foreach($data->items() as $item): ?>
                     <div data-spinner="content" data-index="<?=++$i;?>"<? if(1 === $i): ?> class="active"<? endif; ?> <?=$item->editId();?>>
-                        <div class="title-big"><?=$item->propText('ADDITIONAL_HEADER');?></div>
-                        <div class="title-mini"><?=$item->getName();?></div>
+                        <div class="title-big"><?=htmlspecialcharsback($item->propText('ADDITIONAL_HEADER'));?></div>
+                        <div class="title-mini"><?=htmlspecialcharsback($item->getName());?></div>
                         <div class="text">
                             <p>
                                 <?=$item->previewText();?>
@@ -71,7 +70,7 @@ $i = 0;
                             ?>
                             <? foreach($data->items() as $item): ?>
                                 <div data-index="<?=++$i;?>" class="circle<?if($i===1):?> active<?endif;?>">
-                                    <h4><?=$item->getName();?></h4>
+                                    <h4><?=htmlspecialcharsback($item->getName());?></h4>
                                 </div>
                             <? endforeach; ?>
                         </div>

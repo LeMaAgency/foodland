@@ -46,6 +46,7 @@ Loc::loadMessages(__FILE__);
     <header>
         <div class="header <?$APPLICATION->ShowViewContent('header_class');?>">
             <? $APPLICATION->ShowPanel(); ?>
+            <?$APPLICATION->ShowViewContent('header_blocks');?>
             <div class="header__logo">
                 <? if($APPLICATION->GetCurDir() == SITE_DIR): ?>
                     <img src="/assets/images/logo.png" alt="<?=Loc::getMessage('LEMA_HEADER_LOGO_TITLE');?>">

@@ -1,6 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Эксклюзивы");
+
+$APPLICATION->AddViewContent('header_class', 'product-page-header');
 ?>
     <?$APPLICATION->IncludeComponent(
         "bitrix:news",
