@@ -4,9 +4,17 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 use \WM\Common\Helper;
 
-if(Helper::propFilled('MORE_PHOTO', $arResult))
+if(Helper::propFilled('URL', $arResult))
 {
-    $arResult['PROPERTIES']['MORE_PHOTO']['VALUE_SRC'] = array();
-    foreach($arResult['PROPERTIES']['MORE_PHOTO']['VALUE'] as $imgId)
-        $arResult['PROPERTIES']['MORE_PHOTO']['VALUE_SRC'][] = \CFile::GetPath($imgId);
+    $url = Helper::propValue('URL', $arResult);
+    if(preg_match('~^https?://(.+)$~iu', $url, $m))
+    {
+        $arResult['PROPERTIES']['URL']['VALUE'] = $m[0];
+    }
+    else
+    {
+        $arResult['PROPERTIES']['URL']['VALUE'] = '//' . $url;
+    }
+    if(empty($arResult['PROPERTIES']['URL']['DESCRIPTION']))
+        $arResult['PROPERTIES']['URL']['DESCRIPTION'] = empty($m[1]) ? $url : $m[1];
 }

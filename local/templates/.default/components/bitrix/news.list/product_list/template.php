@@ -24,7 +24,7 @@ $data = new \WM\Template\TemplateHelper($this);
     <div class="container-fluid">
         <div class="row">
             <? foreach($data->items() as $item): ?>
-                <div class="products-block__wrap-item">
+                <div class="products-block__wrap-item" <?=$item->editId();?>>
                     <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
                         <div class="products-block__item">
                             <div class="products-block__item__image">

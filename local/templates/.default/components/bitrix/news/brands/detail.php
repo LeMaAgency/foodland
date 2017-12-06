@@ -20,16 +20,34 @@ $this->setFrameMode(true);
 
 $APPLICATION->AddViewContent('header_class', 'product-page-header');
 ?>
-<div class="wrap-search">
+<div class="slider container-fluid">
+    <div class="slider__item slick-list" style="background-image: url(/assets/images/slider/imagas-2.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-24 col-lg-css-center">
+                    <div class="slider__item__text">
+                        <span>Натуральные<br>сыры из Сербии</span>
+                        <p>Начиная с 2004 года, после приватизации, компания «MLEKARA SАBAC» стала активно развиваться, модернизируя и увеличивая свое
+                            производство.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider__img-brand">
+        <img src="/assets/images/slider/1-logo.png" alt="">
+    </div>
+</div>
+<div class="wrap-search wrap-search_one-brand">
     <div class="container">
         <div class="row">
             <div class="col-19 col-md-24 css-right">
-                <div class="bread-crumbs">
-                    <?$APPLICATION->IncludeComponent('bitrix:breadcrumb', 'breadcrumbs', array(
+                <div class="bread-crumbs bread-crumbs_return">
+                    <? $APPLICATION->IncludeComponent('bitrix:breadcrumb', 'breadcrumbs', array(
                         'START_FROM' => '0',
                         'PATH' => '',
                         'SITE_ID' => SITE_ID,
-                    ));?>
+                    )); ?>
                 </div>
                 <? if($arParams["USE_SEARCH"] == "Y"): ?>
                     <div class="container">
@@ -38,6 +56,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
                             "flat",
                             Array(
                                 "PAGE" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["search"],
+                                'ADDITIONAL_CLASS' => 'css-right',
                             ),
                             $component,
                             array('HIDE_ICONS' => 'Y')
@@ -75,6 +94,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
                             "CACHE_TIME" => $arParams["CACHE_TIME"],
                             "CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
                             "PAGER_PARAMS_NAME" => $arParams["PAGER_PARAMS_NAME"],
+                            'FORM_ACTION' => $arParams['SEF_FOLDER'],
                         ),
                         $component
                     );
@@ -143,119 +163,117 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
                 )); ?>
             </div>
             <div class="container-main">
-                <div class="row">
-                    <? $ElementID = $APPLICATION->IncludeComponent(
-                        "bitrix:news.detail",
-                        "",
-                        Array(
-                            "DISPLAY_DATE" => $arParams["DISPLAY_DATE"],
-                            "DISPLAY_NAME" => $arParams["DISPLAY_NAME"],
-                            "DISPLAY_PICTURE" => $arParams["DISPLAY_PICTURE"],
-                            "DISPLAY_PREVIEW_TEXT" => $arParams["DISPLAY_PREVIEW_TEXT"],
-                            "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
-                            "IBLOCK_ID" => $arParams["IBLOCK_ID"],
-                            "FIELD_CODE" => $arParams["DETAIL_FIELD_CODE"],
-                            "PROPERTY_CODE" => $arParams["DETAIL_PROPERTY_CODE"],
-                            "DETAIL_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["detail"],
-                            "SECTION_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["section"],
-                            "META_KEYWORDS" => $arParams["META_KEYWORDS"],
-                            "META_DESCRIPTION" => $arParams["META_DESCRIPTION"],
-                            "BROWSER_TITLE" => $arParams["BROWSER_TITLE"],
-                            "SET_CANONICAL_URL" => $arParams["DETAIL_SET_CANONICAL_URL"],
-                            "DISPLAY_PANEL" => $arParams["DISPLAY_PANEL"],
-                            "SET_LAST_MODIFIED" => $arParams["SET_LAST_MODIFIED"],
-                            "SET_TITLE" => $arParams["SET_TITLE"],
-                            "MESSAGE_404" => $arParams["MESSAGE_404"],
-                            "SET_STATUS_404" => $arParams["SET_STATUS_404"],
-                            "SHOW_404" => $arParams["SHOW_404"],
-                            "FILE_404" => $arParams["FILE_404"],
-                            "INCLUDE_IBLOCK_INTO_CHAIN" => $arParams["INCLUDE_IBLOCK_INTO_CHAIN"],
-                            "ADD_SECTIONS_CHAIN" => $arParams["ADD_SECTIONS_CHAIN"],
-                            "ACTIVE_DATE_FORMAT" => $arParams["DETAIL_ACTIVE_DATE_FORMAT"],
-                            "CACHE_TYPE" => $arParams["CACHE_TYPE"],
-                            "CACHE_TIME" => $arParams["CACHE_TIME"],
-                            "CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
-                            "USE_PERMISSIONS" => $arParams["USE_PERMISSIONS"],
-                            "GROUP_PERMISSIONS" => $arParams["GROUP_PERMISSIONS"],
-                            "DISPLAY_TOP_PAGER" => $arParams["DETAIL_DISPLAY_TOP_PAGER"],
-                            "DISPLAY_BOTTOM_PAGER" => $arParams["DETAIL_DISPLAY_BOTTOM_PAGER"],
-                            "PAGER_TITLE" => $arParams["DETAIL_PAGER_TITLE"],
-                            "PAGER_SHOW_ALWAYS" => "N",
-                            "PAGER_TEMPLATE" => $arParams["DETAIL_PAGER_TEMPLATE"],
-                            "PAGER_SHOW_ALL" => $arParams["DETAIL_PAGER_SHOW_ALL"],
-                            "CHECK_DATES" => $arParams["CHECK_DATES"],
-                            "ELEMENT_ID" => $arResult["VARIABLES"]["ELEMENT_ID"],
-                            "ELEMENT_CODE" => $arResult["VARIABLES"]["ELEMENT_CODE"],
-                            "SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
-                            "SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
-                            "IBLOCK_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["news"],
-                            "USE_SHARE" => $arParams["USE_SHARE"],
-                            "SHARE_HIDE" => $arParams["SHARE_HIDE"],
-                            "SHARE_TEMPLATE" => $arParams["SHARE_TEMPLATE"],
-                            "SHARE_HANDLERS" => $arParams["SHARE_HANDLERS"],
-                            "SHARE_SHORTEN_URL_LOGIN" => $arParams["SHARE_SHORTEN_URL_LOGIN"],
-                            "SHARE_SHORTEN_URL_KEY" => $arParams["SHARE_SHORTEN_URL_KEY"],
-                            "ADD_ELEMENT_CHAIN" => (isset($arParams["ADD_ELEMENT_CHAIN"]) ? $arParams["ADD_ELEMENT_CHAIN"] : ''),
-                            'STRICT_SECTION_CHECK' => (isset($arParams['STRICT_SECTION_CHECK']) ? $arParams['STRICT_SECTION_CHECK'] : ''),
-                        ),
-                        $component
-                    ); ?>
-                    <div class="col-24">
-                        <div class="product-use-carousel">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-8 col-xl-12 col-lg-24">
-                                        <div class="product-use-carousel__carousel">
-                                            <div class="product-use-carousel__carousel__item">
-                                                <img src="/assets/images/product/product-page/product-use-2.png" alt="">
-                                                <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                                <div class="product-use-carousel__carousel__item__block-link">
-                                                    <a href="" title=""><span>Подробней</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-use-carousel__carousel__item"><img
-                                                        src="/assets/images/product/product-page/product-use-1.png" alt="">
-                                                <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                                <div class="product-use-carousel__carousel__item__block-link">
-                                                    <a href="" title=""><span>Подробней</span></a>
-                                                </div>
-                                            </div>
+                <? $ElementID = $APPLICATION->IncludeComponent(
+                    "bitrix:news.detail",
+                    "",
+                    Array(
+                        "DISPLAY_DATE" => $arParams["DISPLAY_DATE"],
+                        "DISPLAY_NAME" => $arParams["DISPLAY_NAME"],
+                        "DISPLAY_PICTURE" => $arParams["DISPLAY_PICTURE"],
+                        "DISPLAY_PREVIEW_TEXT" => $arParams["DISPLAY_PREVIEW_TEXT"],
+                        "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
+                        "IBLOCK_ID" => $arParams["IBLOCK_ID"],
+                        "FIELD_CODE" => $arParams["DETAIL_FIELD_CODE"],
+                        "PROPERTY_CODE" => $arParams["DETAIL_PROPERTY_CODE"],
+                        "DETAIL_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["detail"],
+                        "SECTION_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["section"],
+                        "META_KEYWORDS" => $arParams["META_KEYWORDS"],
+                        "META_DESCRIPTION" => $arParams["META_DESCRIPTION"],
+                        "BROWSER_TITLE" => $arParams["BROWSER_TITLE"],
+                        "SET_CANONICAL_URL" => $arParams["DETAIL_SET_CANONICAL_URL"],
+                        "DISPLAY_PANEL" => $arParams["DISPLAY_PANEL"],
+                        "SET_LAST_MODIFIED" => $arParams["SET_LAST_MODIFIED"],
+                        "SET_TITLE" => $arParams["SET_TITLE"],
+                        "MESSAGE_404" => $arParams["MESSAGE_404"],
+                        "SET_STATUS_404" => $arParams["SET_STATUS_404"],
+                        "SHOW_404" => $arParams["SHOW_404"],
+                        "FILE_404" => $arParams["FILE_404"],
+                        "INCLUDE_IBLOCK_INTO_CHAIN" => $arParams["INCLUDE_IBLOCK_INTO_CHAIN"],
+                        "ADD_SECTIONS_CHAIN" => $arParams["ADD_SECTIONS_CHAIN"],
+                        "ACTIVE_DATE_FORMAT" => $arParams["DETAIL_ACTIVE_DATE_FORMAT"],
+                        "CACHE_TYPE" => $arParams["CACHE_TYPE"],
+                        "CACHE_TIME" => $arParams["CACHE_TIME"],
+                        "CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
+                        "USE_PERMISSIONS" => $arParams["USE_PERMISSIONS"],
+                        "GROUP_PERMISSIONS" => $arParams["GROUP_PERMISSIONS"],
+                        "DISPLAY_TOP_PAGER" => $arParams["DETAIL_DISPLAY_TOP_PAGER"],
+                        "DISPLAY_BOTTOM_PAGER" => $arParams["DETAIL_DISPLAY_BOTTOM_PAGER"],
+                        "PAGER_TITLE" => $arParams["DETAIL_PAGER_TITLE"],
+                        "PAGER_SHOW_ALWAYS" => "N",
+                        "PAGER_TEMPLATE" => $arParams["DETAIL_PAGER_TEMPLATE"],
+                        "PAGER_SHOW_ALL" => $arParams["DETAIL_PAGER_SHOW_ALL"],
+                        "CHECK_DATES" => $arParams["CHECK_DATES"],
+                        "ELEMENT_ID" => $arResult["VARIABLES"]["ELEMENT_ID"],
+                        "ELEMENT_CODE" => $arResult["VARIABLES"]["ELEMENT_CODE"],
+                        "SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
+                        "SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
+                        "IBLOCK_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["news"],
+                        "USE_SHARE" => $arParams["USE_SHARE"],
+                        "SHARE_HIDE" => $arParams["SHARE_HIDE"],
+                        "SHARE_TEMPLATE" => $arParams["SHARE_TEMPLATE"],
+                        "SHARE_HANDLERS" => $arParams["SHARE_HANDLERS"],
+                        "SHARE_SHORTEN_URL_LOGIN" => $arParams["SHARE_SHORTEN_URL_LOGIN"],
+                        "SHARE_SHORTEN_URL_KEY" => $arParams["SHARE_SHORTEN_URL_KEY"],
+                        "ADD_ELEMENT_CHAIN" => (isset($arParams["ADD_ELEMENT_CHAIN"]) ? $arParams["ADD_ELEMENT_CHAIN"] : ''),
+                        'STRICT_SECTION_CHECK' => (isset($arParams['STRICT_SECTION_CHECK']) ? $arParams['STRICT_SECTION_CHECK'] : ''),
+                    ),
+                    $component
+                ); ?>
+            </div>
+            <div class="col-24">
+                <div class="product-use-carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-8 col-xl-12 col-lg-24">
+                                <div class="product-use-carousel__carousel">
+                                    <div class="product-use-carousel__carousel__item">
+                                        <img src="/assets/images/product/product-page/product-use-2.png" alt="">
+                                        <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
+                                        <div class="product-use-carousel__carousel__item__block-link">
+                                            <a href="" title=""><span>Подробней</span></a>
                                         </div>
                                     </div>
-                                    <div class="col-8 col-xl-12 col-lg-24">
-                                        <div class="product-use-carousel__carousel">
-                                            <div class="product-use-carousel__carousel__item">
-                                                <img src="/assets/images/product/product-page/product-use-1.png" alt="">
-                                                <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                                <div class="product-use-carousel__carousel__item__block-link">
-                                                    <a href="" title=""><span>Подробней</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-use-carousel__carousel__item"><img
-                                                        src="/assets/images/product/product-page/product-use-2.png" alt="">
-                                                <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                                <div class="product-use-carousel__carousel__item__block-link">
-                                                    <a href="" title=""><span>Подробней</span></a>
-                                                </div>
-                                            </div>
+                                    <div class="product-use-carousel__carousel__item"><img
+                                                src="/assets/images/product/product-page/product-use-1.png" alt="">
+                                        <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
+                                        <div class="product-use-carousel__carousel__item__block-link">
+                                            <a href="" title=""><span>Подробней</span></a>
                                         </div>
                                     </div>
-                                    <div class="col-8 col-xl-12 col-lg-24">
-                                        <div class="product-use-carousel__carousel">
-                                            <div class="product-use-carousel__carousel__item">
-                                                <img src="/assets/images/product/product-page/product-use-2.png" alt="">
-                                                <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                                <div class="product-use-carousel__carousel__item__block-link">
-                                                    <a href="" title=""><span>Подробней</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-use-carousel__carousel__item"><img
-                                                        src="/assets/images/product/product-page/product-use-1.png" alt="">
-                                                <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                                <div class="product-use-carousel__carousel__item__block-link">
-                                                    <a href="" title=""><span>Подробней</span></a>
-                                                </div>
-                                            </div>
+                                </div>
+                            </div>
+                            <div class="col-8 col-xl-12 col-lg-24">
+                                <div class="product-use-carousel__carousel">
+                                    <div class="product-use-carousel__carousel__item">
+                                        <img src="/assets/images/product/product-page/product-use-1.png" alt="">
+                                        <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
+                                        <div class="product-use-carousel__carousel__item__block-link">
+                                            <a href="" title=""><span>Подробней</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-use-carousel__carousel__item"><img
+                                                src="/assets/images/product/product-page/product-use-2.png" alt="">
+                                        <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
+                                        <div class="product-use-carousel__carousel__item__block-link">
+                                            <a href="" title=""><span>Подробней</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8 col-xl-12 col-lg-24">
+                                <div class="product-use-carousel__carousel">
+                                    <div class="product-use-carousel__carousel__item">
+                                        <img src="/assets/images/product/product-page/product-use-2.png" alt="">
+                                        <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
+                                        <div class="product-use-carousel__carousel__item__block-link">
+                                            <a href="" title=""><span>Подробней</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-use-carousel__carousel__item"><img
+                                                src="/assets/images/product/product-page/product-use-1.png" alt="">
+                                        <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
+                                        <div class="product-use-carousel__carousel__item__block-link">
+                                            <a href="" title=""><span>Подробней</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -266,48 +284,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="clients clients-page-product">
-            <h3 class="clients__title">Этот продукт представлен</h3>
-            <div class="clients__carousel">
-                <a href="" title="">
-                    <div class="clients__carousel__item">
-                        <img src="/assets/images/clients/azbuka.png" alt="">
-                    </div>
-                </a>
-                <a href="" title="">
-                    <div class="clients__carousel__item">
-                        <img src="/assets/images/clients/azbuka.png" alt="">
-                    </div>
-                </a>
-                <a href="" title="">
-                    <div class="clients__carousel__item">
-                        <img src="/assets/images/clients/azbuka.png" alt="">
-                    </div>
-                </a>
-                <a href="" title="">
-                    <div class="clients__carousel__item">
-                        <img src="/assets/images/clients/azbuka.png" alt="">
-                    </div>
-                </a>
-                <a href="" title="">
-                    <div class="clients__carousel__item">
-                        <img src="/assets/images/clients/azbuka.png" alt="">
-                    </div>
-                </a>
-                <a href="" title="">
-                    <div class="clients__carousel__item">
-                        <img src="/assets/images/clients/azbuka.png" alt="">
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
 
-    <div class="milk"></div>
-    <div class="block-left-top"></div>
-    <div class="block-right"></div>
-    <div class="block-left-middle"></div>
-    <div class="block-left-bottom"></div>
-    <div class="cheese-right"></div>
+    <div class="background-page__top"></div>
+    <div class="background-page__bottom"></div>
 </div>

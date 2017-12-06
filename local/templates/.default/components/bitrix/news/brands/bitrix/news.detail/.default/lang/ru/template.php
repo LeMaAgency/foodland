@@ -1,6 +1,2 @@
 <?
-$MESS['LEMA_EVENT_DETAIL_GALLERY_TITLE'] = 'Галерея';
-$MESS['LEMA_CATALOG_DETAIL_CHARACTERS_100_TITLE'] = 'Пищевая ценность в 100 г продукта:';
-$MESS['LEMA_CATALOG_DETAIL_PRODUCT_TITLE'] = 'Описание продукта';
-$MESS['LEMA_CATALOG_DETAIL_PRODUCT_INFO'] = 'Информация о товаре';
-$MESS['LEMA_CATALOG_DETAIL_COMPOSITION'] = 'Состав';
+$MESS['LEMA_BRAND_DETAIL_SITE_LINK'] = 'Сайт: ';
