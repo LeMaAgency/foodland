@@ -33,3 +33,5 @@ $item = $data->item();
         </div>
     <? endif; ?>
 </article>
+<?php
+$this->SetViewTarget('brand_logo_detail');?><img src="/assets/images/slider/1-logo.png" alt="<?=$item->getName();?>"><?$this->EndViewTarget();
