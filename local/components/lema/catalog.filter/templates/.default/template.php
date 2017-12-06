@@ -20,7 +20,7 @@ $this->setFrameMode(true);
 ?>
 <div class="filter">
     <div class="filter__title"><span><?=Loc::getMessage('LEMA_CATALOG_FILTER_TITLE');?></span></div>
-    <form name="<? echo $arResult["FILTER_NAME"] . "_form" ?>" action="<? echo $arResult["FORM_ACTION"] ?>" method="get">
+    <form name="<? echo $arResult["FILTER_NAME"] . "_form" ?>" action="<?=preg_replace('~/search~iu', '', $arResult["FORM_ACTION"]);?>" method="get">
         <? foreach($arResult["ITEMS"] as $arItem):
             if(array_key_exists("HIDDEN", $arItem)):
                 echo $arItem["INPUT"];
