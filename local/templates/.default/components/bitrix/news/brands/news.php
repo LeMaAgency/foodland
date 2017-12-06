@@ -74,7 +74,6 @@ $this->setFrameMode(true);
     'AJAX_OPTION_HISTORY' => 'N',
     'AJAX_OPTION_ADDITIONAL' => '',
 )); ?>
-<div class="background-page">
     <? if($arParams["USE_SEARCH"] == "Y"): ?>
         <div class="container">
             <div class="element">
@@ -92,6 +91,7 @@ $this->setFrameMode(true);
         </div>
     <? endif ?>
 
+<div class="background-page">
     <div class="container">
         <div class="row">
             <? if($arParams["USE_FILTER"] == "Y"): ?>
