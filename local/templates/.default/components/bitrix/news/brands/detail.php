@@ -21,7 +21,7 @@ $this->setFrameMode(true);
 $APPLICATION->AddViewContent('header_class', 'product-page-header');
 ?>
 <div class="slider container-fluid">
-    <? /*$APPLICATION->IncludeComponent('bitrix:news.list', 'brands_top_slider', array(
+    <? $APPLICATION->IncludeComponent('bitrix:news.list', 'brands_detail_top_slider', array(
         'DISPLAY_DATE' => 'Y',
         'DISPLAY_NAME' => 'Y',
         'DISPLAY_PICTURE' => 'Y',
@@ -29,7 +29,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
         'AJAX_MODE' => 'N',
         'IBLOCK_TYPE' => 'content',
         'IBLOCK_ID' => '15',
-        'NEWS_COUNT' => '20',
+        'NEWS_COUNT' => '1',
         'SORT_BY1' => 'ACTIVE_FROM',
         'SORT_ORDER1' => 'DESC',
         'SORT_BY2' => 'SORT',
@@ -74,19 +74,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
         'AJAX_OPTION_STYLE' => 'Y',
         'AJAX_OPTION_HISTORY' => 'N',
         'AJAX_OPTION_ADDITIONAL' => '',
-    )); */?>
-    <div class="slider__item slick-list" style="background-image: url(/assets/images/slider/imagas-2.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-24 col-lg-css-center">
-                    <div class="slider__item__text">
-                        <span>Натуральные<br>сыры из Сербии</span>
-                        <p>Начиная с 2004 года, после приватизации, компания «MLEKARA SАBAC» стала активно развиваться, модернизируя и увеличивая свое производство.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    )); ?>
     <div class="slider__img-brand">
         <?$APPLICATION->ShowViewContent('brand_logo_detail');?>
     </div>
