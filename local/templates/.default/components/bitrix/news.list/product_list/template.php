@@ -12,53 +12,58 @@
 
 /** @var CBitrixComponent $component */
 
-$this->setFrameMode(true);
+use \Bitrix\Main\Localization\Loc;
 
-if(empty($arResult['ITEMS']))
-    return;
+Loc::loadMessages(__FILE__);
+
+$this->setFrameMode(true);
 
 $data = new \WM\Template\TemplateHelper($this);
 
 ?>
-<section class="products-block">
-    <div class="container-fluid">
-        <div class="row">
-            <? foreach($data->items() as $item): ?>
-                <div class="products-block__wrap-item" <?=$item->editId();?>>
-                    <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
-                        <div class="products-block__item">
-                            <div class="products-block__item__image">
-                                <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
-                            </div>
-                            <div class="products-block__item__name"><?=$item->getName();?></div>
-                            <? if($item->propFilled('ARTICLE')): ?>
-                                <p class="products-block__item__art">
-                                    <?=$item->propName('ARTICLE');?>
-                                    <?=$item->propValue('ARTICLE');?>
-                                </p>
-                            <? endif; ?>
-                            <div class="products-block__item__description">
-                                <? if($item->propFilled('BRAND')): ?>
-                                    <p class="products-block__item__sort"><?=$item->prop('BRAND', 'LINKED_NAME');?>
-                                    </p>
-                                <? endif; ?>
-                                <? if($item->propFilled('FATNESS')): ?>
-                                    <p class="products-block__item__sort-fat">
-                                        <?=$item->propName('FATNESS');?>:
-                                        <?=$item->propValue('FATNESS');?>
-                                    </p>
-                                <? endif; ?>
-                                <p class="products-block__item__text">
-                                    <?=$item->previewText();?>
-                                </p>
-                            </div>
+    <section class="products-block">
+        <div class="container-fluid">
+            <div class="row">
+                <? if(empty($arResult['ITEMS'])): ?>
+                    <div><?=Loc::getMessage('LEMA_NO_PRODUCTS_FOUND');?></div>
+                <? else: ?>
+                    <? foreach($data->items() as $item): ?>
+                        <div class="products-block__wrap-item" <?=$item->editId();?>>
+                            <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
+                                <div class="products-block__item">
+                                    <div class="products-block__item__image">
+                                        <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
+                                    </div>
+                                    <div class="products-block__item__name"><?=$item->getName();?></div>
+                                    <? if($item->propFilled('ARTICLE')): ?>
+                                        <p class="products-block__item__art">
+                                            <?=$item->propName('ARTICLE');?>
+                                            <?=$item->propValue('ARTICLE');?>
+                                        </p>
+                                    <? endif; ?>
+                                    <div class="products-block__item__description">
+                                        <? if($item->propFilled('BRAND')): ?>
+                                            <p class="products-block__item__sort"><?=$item->prop('BRAND', 'LINKED_NAME');?>
+                                            </p>
+                                        <? endif; ?>
+                                        <? if($item->propFilled('FATNESS')): ?>
+                                            <p class="products-block__item__sort-fat">
+                                                <?=$item->propName('FATNESS');?>:
+                                                <?=$item->propValue('FATNESS');?>
+                                            </p>
+                                        <? endif; ?>
+                                        <p class="products-block__item__text">
+                                            <?=$item->previewText();?>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-            <? endforeach; ?>
+                    <? endforeach; ?>
+                <? endif; ?>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 <? if($arParams['DISPLAY_BOTTOM_PAGER'] == 'Y'): ?>
     <?=$arResult['NAV_STRING'];?>
 <? endif; ?>

@@ -18,6 +18,8 @@ foreach($arResult['ITEMS'] as $k => $arItem)
         $brands[Helper::propValue('BRAND', $arItem)] = array();
 
     $arResult['ITEMS'][$k]['PROPERTIES']['BRAND']['LINKED_NAME'] = '';
+
+    $arResult['ITEMS'][$k]['DETAIL_PAGE_URL'] = str_replace(array('brands', 'events', 'exclusive', 'direction'), 'catalog', $arItem['DETAIL_PAGE_URL']);
 }
 
 if(!empty($brands))
