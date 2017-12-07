@@ -95,7 +95,7 @@ Loc::loadMessages(__FILE__);
                 </g>
             </svg>
             <div class="header__map-btn">
-                <a href="" title="">
+                <a href="<?=SITE_DIR?>contacts/" title="">
                     <svg class="svg" width="27" height="37" viewBox="0 0 27 37">
                         <g transform="translate(-1857 -16)">
                             <path d="M1884 29.5c0 7.46-12.82 23.5-13.5 23.5-.98 0-13.5-16.04-13.5-23.5a13.5 13.5 0 1 1 27 0zm-19 0a5.5 5.5 0 1 0 11 0 5.5 5.5 0 0 0-11 0z"></path>
