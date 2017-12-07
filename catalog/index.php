@@ -43,7 +43,7 @@ $APPLICATION->SetTitle("Каталог продукции");
     'LIST_FIELD_CODE' => array('DATE_CREATE', ''),
     'LIST_PROPERTY_CODE' => array('BRAND', 'ARTICLE', 'FATNESS'),
     'FILTER_FIELD_CODE' => array('', ''),
-    'FILTER_PROPERTY_CODE' => array('BRAND', 'COUNTRY'),
+    'FILTER_PROPERTY_CODE' => array('BRAND', 'COUNTRY', 'DIRECTION'),
     'MESSAGE_404' => '',
     'META_DESCRIPTION' => '-',
     'META_KEYWORDS' => '-',

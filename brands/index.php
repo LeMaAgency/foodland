@@ -44,7 +44,7 @@ $APPLICATION->SetTitle("Торговые марки");
     'LIST_FIELD_CODE' => array('DATE_CREATE', ''),
     'LIST_PROPERTY_CODE' => array(''),
     'FILTER_FIELD_CODE' => array('', ''),
-    'FILTER_PROPERTY_CODE' => array('COUNTRY'),
+    'FILTER_PROPERTY_CODE' => array('COUNTRY', 'DIRECTION'),
     'MESSAGE_404' => '',
     'META_DESCRIPTION' => '-',
     'META_KEYWORDS' => '-',
