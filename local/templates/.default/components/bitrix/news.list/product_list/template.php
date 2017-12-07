@@ -25,7 +25,7 @@ $data = new \WM\Template\TemplateHelper($this);
         <div class="container-fluid">
             <div class="row">
                 <? if(empty($arResult['ITEMS'])): ?>
-                    <div><?=Loc::getMessage('LEMA_NO_PRODUCTS_FOUND');?></div>
+                    <div><? ShowNote(Loc::getMessage("SEARCH_NOTHING_TO_FOUND")); ?></div>
                 <? else: ?>
                     <? foreach($data->items() as $item): ?>
                         <div class="products-block__wrap-item" <?=$item->editId();?>>

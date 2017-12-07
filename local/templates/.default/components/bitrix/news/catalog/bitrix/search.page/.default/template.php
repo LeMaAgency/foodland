@@ -11,24 +11,6 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 ?>
-
-    <form action="" method="get">
-        <div class="container">
-            <div class="element">
-                <h1 class="h1 h1_mt-35"><? $APPLICATION->ShowTitle(false); ?></h1>
-            </div>
-            <? $APPLICATION->IncludeComponent(
-                "bitrix:search.form",
-                "flat",
-                Array(
-                    "PAGE" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["search"],
-                    'REQUEST_QUERY' => $arResult['REQUEST']['QUERY'],
-                ),
-                $component
-            ); ?>
-        </div>
-    </form>
-
 <? if(isset($arResult["REQUEST"]["ORIGINAL_QUERY"])): ?>
 
     <div class="container">

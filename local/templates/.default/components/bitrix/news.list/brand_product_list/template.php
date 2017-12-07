@@ -26,7 +26,7 @@ $data = new \WM\Template\TemplateHelper($this);
             <div class="row">
                 <h2 class="products-block__title">Продукция</h2>
                 <? if(empty($arResult['ITEMS'])): ?>
-                    <div><?=Loc::getMessage('LEMA_NO_PRODUCTS_FOUND');?></div>
+                    <div><? ShowNote(Loc::getMessage("SEARCH_NOTHING_TO_FOUND")); ?></div>
                 <? else: ?>
                     <? foreach($data->items() as $item): ?>
 

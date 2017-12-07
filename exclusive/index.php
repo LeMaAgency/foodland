@@ -99,7 +99,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
                 "news" => "",
                 "section" => "",
                 "detail" => "#SECTION_CODE#/#ELEMENT_CODE#/",
-                "search" => "/search/",
+                "search" => "search/",
             )
         ),
         false

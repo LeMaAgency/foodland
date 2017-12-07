@@ -200,7 +200,7 @@ $this->setFrameMode(true);
                         "FIELD_CODE" => $arParams["LIST_FIELD_CODE"],
                         "PROPERTY_CODE" => $arParams["LIST_PROPERTY_CODE"],
                         "DISPLAY_PANEL" => $arParams["DISPLAY_PANEL"],
-                        "SET_TITLE" => $arParams["SET_TITLE"],
+                        "SET_TITLE" => 'N',
                         "SET_LAST_MODIFIED" => $arParams["SET_LAST_MODIFIED"],
                         "MESSAGE_404" => $arParams["MESSAGE_404"],
                         "SET_STATUS_404" => $arParams["SET_STATUS_404"],
