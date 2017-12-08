@@ -57,6 +57,7 @@ $this->setFrameMode(true);
         'CACHE_NOTES' => '',
         'CACHE_GROUPS' => 'Y',
     )); ?>
+
     <div class="container">
         <div class="row">
             <? if($arParams["USE_FILTER"] == "Y"): ?>
@@ -84,7 +85,7 @@ $this->setFrameMode(true);
             <div class="container-main">
                 <? $APPLICATION->IncludeComponent(
                     "bitrix:news.list",
-                    "brand_list",
+                    "recipes_list_main",
                     Array(
                         "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
                         "IBLOCK_ID" => $arParams["IBLOCK_ID"],
@@ -143,9 +144,9 @@ $this->setFrameMode(true);
             </div>
         </div>
     </div>
-    <div class="background-page__tomat_brand"></div>
-    <div class="background-page__block-left-top_brand"></div>
-    <div class="background-page__block-left-middle_brand"></div>
-    <div class="background-page__block-right_brand"></div>
-    <div class="background-page__cheese-right_brand"></div>
+    <div class="background-page__cheese-left_recipe"></div>
+    <div class="background-page__block-left-top_recipe"></div>
+    <div class="background-page__block-left-middle_recipe"></div>
+    <div class="background-page__cow-right"></div>
+    <div class="background-page__block-right-top_recipe"></div>
 </div>
