@@ -42,7 +42,7 @@ $APPLICATION->SetTitle("Рецепты");
     'INCLUDE_IBLOCK_INTO_CHAIN' => 'N',
     'LIST_ACTIVE_DATE_FORMAT' => 'd.m.Y',
     'LIST_FIELD_CODE' => array('', ''),
-    'LIST_PROPERTY_CODE' => array(''),
+    'LIST_PROPERTY_CODE' => array('TIME', 'COMPLEXITY'),
     'FILTER_FIELD_CODE' => array('', ''),
     'FILTER_PROPERTY_CODE' => array(),
     'MESSAGE_404' => '',

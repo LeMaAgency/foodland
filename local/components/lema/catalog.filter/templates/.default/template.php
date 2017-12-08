@@ -20,10 +20,11 @@ use \Bitrix\Main\Localization\Loc;
 Loc::loadMessages(__FILE__);
 
 $formUrl = isset($arParams['FORM_ACTION']) ? $arParams['FORM_ACTION'] : $arResult['FORM_ACTION'];
+$additionalClass = isset($arParams['ADDITIONAL_CLASS']) ? $arParams['ADDITIONAL_CLASS'] : null;
 
 $this->setFrameMode(true);
 ?>
-<div class="filter">
+<div class="filter <?=$additionalClass;?>">
     <div class="filter__title"><span><?=Loc::getMessage('LEMA_CATALOG_FILTER_TITLE');?></span></div>
     <form name="<? echo $arResult["FILTER_NAME"] . "_form" ?>" action="<?=$formUrl;?>" method="get">
         <? foreach($arResult["ITEMS"] as $arItem):

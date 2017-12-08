@@ -26,6 +26,8 @@ $strEditLink = \CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'ELEMENT_EDIT');
 $strDeleteLink = \CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'ELEMENT_DELETE');
 $confirmDelete = array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM'));
 
+$maxStars = 3;
+
 ?>
     <section class="product-use-carousel_recipes">
         <div class="container-fluid">
@@ -49,16 +51,21 @@ $confirmDelete = array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')
                                     </div>
                                     <div class="product-use-carousel__carousel__item__info">
                                         <div class="product-use-carousel__carousel__item__info__time">
-                                            <span><?=Helper::propvalue('COMPLEXITY', $arItem);?></span> мин.
+                                            <span><?=Helper::propvalue('TIME', $arItem);?></span> мин.
                                         </div>
                                         <div class="product-use-carousel__carousel__item__info__rating">
-                                            <span class="rating-star_active"></span>
-                                            <span class="rating-star_active"></span>
-                                            <span class="rating-star"></span>
+                                            <? $complexity = (int) $arItem['PROPERTIES']['COMPLEXITY']['VALUE_XML_ID'];
+                                            if($complexity > $maxStars)
+                                                $complexity = $maxStars; ?>
+                                            <? for($i = 0; $i < $maxStars; ++$i): ?>
+                                                <span class="rating-star<? if($i < $complexity) { ?>_active<? } ?>"></span>
+                                            <? endfor; ?>
                                         </div>
                                     </div>
                                     <div class="product-use-carousel__carousel__item__block-link">
-                                        <a href="<?=$arItem['DETAIL_PAGE_URL'];?>" title=""><span>Подробней</span></a>
+                                        <a href="<?=$arItem['DETAIL_PAGE_URL'];?>" title="<?=$arItem['NAME'];?>">
+                                            <span><?=Loc::getMessage('LEMA_RECIPES_MORE_TEXT');?></span>
+                                        </a>
                                     </div>
                                 </div>
                             <? endforeach; ?>

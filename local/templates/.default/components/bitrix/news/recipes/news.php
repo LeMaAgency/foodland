@@ -76,6 +76,7 @@ $this->setFrameMode(true);
                             "CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
                             "PAGER_PARAMS_NAME" => $arParams["PAGER_PARAMS_NAME"],
                             'FORM_ACTION' => $arParams['SEF_FOLDER'],
+                            'ADDITIONAL_CLASS' => 'filter_mb-30',
                         ),
                         $component
                     );
