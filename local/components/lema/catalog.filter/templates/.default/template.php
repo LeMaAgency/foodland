@@ -12,6 +12,9 @@
 
 /** @var CBitrixComponent $component */
 
+if(!$arResult['HAS_ELEMENTS'])
+    return ;
+
 use \Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
