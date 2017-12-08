@@ -4,17 +4,20 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 use \WM\Common\Helper;
 
-if(Helper::propFilled('URL', $arResult))
+if(Helper::propFilled('INGREDIENTS', $arResult))
 {
-    $url = Helper::propValue('URL', $arResult);
-    if(preg_match('~^https?://(.+)$~iu', $url, $m))
-    {
-        $arResult['PROPERTIES']['URL']['VALUE'] = $m[0];
-    }
-    else
-    {
-        $arResult['PROPERTIES']['URL']['VALUE'] = '//' . $url;
-    }
-    if(empty($arResult['PROPERTIES']['URL']['DESCRIPTION']))
-        $arResult['PROPERTIES']['URL']['DESCRIPTION'] = empty($m[1]) ? $url : $m[1];
+    $elements = array();
+    $res = \CIBlockElement::GetProperty(
+        $arParams['IBLOCK_ID'],
+        $arResult['ID'],
+        '',
+        '',
+        array('CODE' => 'INGREDIENTS')
+    );
+    while($row = $res->Fetch())
+        $elements[$row['VALUE']] = array();
+    $arResult['INGREDIENTS'] = \WM\IBlock\Element::getAll($arResult['PROPERTIES']['INGREDIENTS']['LINK_IBLOCK_ID'], array(
+        'filter' => array('ID' => array_keys($elements)),
+        'arSelect' => array('ID', 'NAME', 'PROPERTY_MEASURE', 'PROPERTY_PRODUCT', 'PROPERTY_COUNT'),
+    ));
 }

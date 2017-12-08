@@ -103,11 +103,11 @@ $this->setFrameMode(true);
         ),
         $component
     ); ?>
-    <?
+    <?/*
     global $brandProductFilter;
     $brandProductFilter = array('PROPERTY_BRAND' => $ElementID);
-    ?>
-    <? $APPLICATION->IncludeComponent("bitrix:news.list", "brand_product_list", array(
+    */?><!--
+    <?/* $APPLICATION->IncludeComponent("bitrix:news.list", "brand_product_list", array(
         'IBLOCK_TYPE' => 'catalog',
         'IBLOCK_ID' => '3',
         'NEWS_COUNT' => '20',
@@ -167,12 +167,12 @@ $this->setFrameMode(true);
         'DETAIL_URL' => '/recipes/#SECTION_CODE#/#ELEMENT_CODE#/',
         'SECTION_URL' => '/recipes/#SECTION_CODE#/',
         'IBLOCK_URL' => '/recipes/',
-    )); ?>
+    )); */?>
     <div class="container">
         <div class="row">
             <div class="container-aside">
-                <? if($arParams["USE_FILTER"] == "Y"): ?>
-                    <? $APPLICATION->IncludeComponent(
+                <?/* if($arParams["USE_FILTER"] == "Y"): */?>
+                    <?/* $APPLICATION->IncludeComponent(
                         "lema:catalog.filter",
                         "",
                         Array(
@@ -189,16 +189,16 @@ $this->setFrameMode(true);
                         ),
                         $component
                     );
-                    ?>
-                <? endif; ?>
-                <?
+                    */?>
+                <?/* endif; */?>
+                <?/*
                 global $analogFilter;
                 $analogFilter = array(
                     '!=CODE' => $arResult['VARIABLES']['ELEMENT_CODE'],
                     '!=ID' => $arResult['VARIABLES']['ELEMENT_ID'],
                 );
-                ?>
-                <? $APPLICATION->IncludeComponent('bitrix:news.list', 'analog_carousel', array(
+                */?>
+                <?/* $APPLICATION->IncludeComponent('bitrix:news.list', 'analog_carousel', array(
                     'DISPLAY_DATE' => 'Y',
                     'DISPLAY_NAME' => 'Y',
                     'DISPLAY_PICTURE' => 'Y',
@@ -251,11 +251,11 @@ $this->setFrameMode(true);
                     'AJAX_OPTION_STYLE' => 'Y',
                     'AJAX_OPTION_HISTORY' => 'N',
                     'AJAX_OPTION_ADDITIONAL' => '',
-                )); ?>
+                )); */?>
             </div>
             <div class="container-main">
 
-            </div>
+            </div>-->
 
             <div class="col-24">
                 <div class="product-use-carousel">

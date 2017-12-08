@@ -29,44 +29,21 @@ $item = $data->item();
                 <h1 class="one-recipe__h1"><?=$arResult['NAME'];?></h1>
                 <div class="one-recipe__ingredients">
                     <div class="block-product-img__description">
-                        <h2 class="block-product-img__description__h2">Ингредиенты:</h2>
-                        <div class="block-product-img__description__line block-product-img__description__line_full">
-                            <div class="block-product-img__description__line__name">Брынза</div>
-                            <div class="block-product-img__description__line__dots"></div>
-                            <div class="block-product-img__description__line__val"><span>100</span>г</div>
-                        </div>
-                        <div class="block-product-img__description__line block-product-img__description__line_full">
-                            <div class="block-product-img__description__line__name">Помидоры</div>
-                            <div class="block-product-img__description__line__dots"></div>
-                            <div class="block-product-img__description__line__val"><span>1</span>шт.</div>
-                        </div>
-                        <div class="block-product-img__description__line block-product-img__description__line_full">
-                            <div class="block-product-img__description__line__name">Сливочное растительное масло</div>
-                            <div class="block-product-img__description__line__dots"></div>
-                            <div class="block-product-img__description__line__val"><span>20</span>г</div>
-                        </div>
-                        <div class="block-product-img__description__line block-product-img__description__line_full">
-                            <div class="block-product-img__description__line__name">Яйца</div>
-                            <div class="block-product-img__description__line__dots"></div>
-                            <div class="block-product-img__description__line__val"><span>2</span>шт.</div>
-                        </div>
-                        <div class="block-product-img__description__line block-product-img__description__line_full">
-                            <div class="block-product-img__description__line__name">Болгарский перец</div>
-                            <div class="block-product-img__description__line__dots"></div>
-                            <div class="block-product-img__description__line__val"><span>1-2</span>шт.</div>
-                        </div>
-                        <div class="block-product-img__description__line block-product-img__description__line_full">
-                            <div class="block-product-img__description__line__name">Базилик</div>
-                        </div>
-                        <div class="block-product-img__description__line block-product-img__description__line_full">
-                            <div class="block-product-img__description__line__name">Сельдерей сушеный</div>
-                        </div>
-                        <div class="block-product-img__description__line block-product-img__description__line_full">
-                            <div class="block-product-img__description__line__name">Петрушка (зелень)</div>
-                        </div>
-                        <div class="block-product-img__description__line block-product-img__description__line_full">
-                            <div class="block-product-img__description__line__name">Укроп (зелень)</div>
-                        </div>
+                        <? if(!empty($arResult['INGREDIENTS'])): ?>
+                            <h2 class="block-product-img__description__h2">Ингредиенты:</h2>
+                            <? foreach($arResult['INGREDIENTS'] as $ingredient): ?>
+                                <div class="block-product-img__description__line block-product-img__description__line_full">
+                                    <div class="block-product-img__description__line__name"><?=$ingredient['PROPERTY_PRODUCT_VALUE'];?></div>
+                                    <? if(!empty($ingredient['PROPERTY_MEASURE_VALUE']) && !empty($ingredient['PROPERTY_COUNT_VALUE'])): ?>
+                                        <div class="block-product-img__description__line__dots"></div>
+                                        <div class="block-product-img__description__line__val">
+                                            <span><?=$ingredient['PROPERTY_COUNT_VALUE']?></span>
+                                            <?=$ingredient['PROPERTY_MEASURE_VALUE']?>
+                                        </div>
+                                    <? endif; ?>
+                                </div>
+                            <? endforeach; ?>
+                        <? endif; ?>
                     </div>
                 </div>
             </div>
@@ -94,17 +71,12 @@ $item = $data->item();
 <div class="container">
     <div class="row">
         <div class="col-17 col-md-24">
-            <div class="text-one-recipe">
-                <h3 class="text-one-recipe__h3">Приготовление</h3>
-                <p>На дно кокотниц выложить по кусочку сливочного масла, либо капнуть по паре капелек растительного. Помидор нарезать маленькими кубиками. Из половинки перца вырезать ножом или выемкой для печенья 4 сердечка, остатки мелко порубить и смешать с помидорами.</p>
-                <p>Кусок брынзы разделить пополам, отщипнуть от каждой по небольшому кусочку (мы будем посыпать этими крошками блюдо сверху).</p>
-                <p>Брынзу выложить на дно кокотниц. Накрыть сыр смесью помидоров и перца, в каждую из кокотниц влить по яйцу. Сверху присыпать сухими травами и крошками брынзы. На них выложить по 2 сердечка из перца и украсить свежей зеленью. При желании, слои можно начать с помидорных кубиков, потом брынза, снова помидоры, яйцо, травы, посыпка брынзой и перец.</p>
-                <p>При желании, слои можно начать с помидорных кубиков, потом брынза, снова помидоры, яйцо, травы, посыпка брынзой и перец. Так - тоже очень вкусно.</p>
-                <p>Поместить кокотницы в духовку, довести до температуры в 200 С, запекать в течение нескольких минут, до момента, когда брынза подплавится и появится характерный запах готового блюда.</p>
-                <p>Подавать горячим.</p>
-                <p>Блюдо получается очень эффектным, ярким, с неожиданным вкусом и начинкой: получается густым, творожно-сырным, солоноватым, с легкой кислинкой и радостными вкраплениями сочных овощей и зелени. Яйцо смягчает остроту брынзы и объединяет блюдо в очень вкусную запеканку.</p>
-                <p>Приятного Вам аппетита!</p>
-            </div>
+            <? if($item->detailText()): ?>
+                <div class="text-one-recipe">
+                    <h3 class="text-one-recipe__h3">Приготовление</h3>
+                    <?=$item->detailText();?>
+                </div>
+            <? endif; ?>
         </div>
         <div class="col-7 col-md-24">
             <div class="photo-product-recipe">
