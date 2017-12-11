@@ -70,7 +70,7 @@ Loc::loadMessages(__FILE__);
             <div class="footer__parsley-right col-xs-none col-lg-none"></div>
         <? endif; ?>
         <?
-        $sections = array('events', 'catalog', 'exclusive', 'brands');
+        $sections = array('events', 'catalog', 'exclusive', 'brands', 'recipes');
 
         if(preg_match('~^' . SITE_DIR . '(?:' . join($sections, '|') . ')/~iu', $APPLICATION->GetCurDir())) : ?>
             <div class="footer__parsley-left col-xs-none"></div>

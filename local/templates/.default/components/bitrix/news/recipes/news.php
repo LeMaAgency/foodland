@@ -47,7 +47,7 @@ $this->setFrameMode(true);
         'SECTION_ID' => '',
         'SECTION_CODE' => '',
         'SECTION_URL' => '',
-        'COUNT_ELEMENTS' => 'Y',
+        'COUNT_ELEMENTS' => 'N',
         'TOP_DEPTH' => '2',
         'SECTION_FIELDS' => array('CODE', 'PICTURE'),
         'SECTION_USER_FIELDS' => '',
