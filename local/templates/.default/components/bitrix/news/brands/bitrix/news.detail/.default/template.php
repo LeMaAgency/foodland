@@ -34,4 +34,4 @@ $item = $data->item();
     <? endif; ?>
 </article>
 <?php
-$this->SetViewTarget('brand_logo_detail');?><img src="/assets/images/slider/1-logo.png" alt="<?=$item->getName();?>"><?$this->EndViewTarget();
+$this->SetViewTarget('brand_logo_detail');?><img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>"><?$this->EndViewTarget();

@@ -12,6 +12,10 @@
 
 /** @var CBitrixComponent $component */
 
+use \Bitrix\Main\Localization\Loc;
+
+Loc::loadMessages(__FILE__);
+
 $this->setFrameMode(true);
 
 if(empty($arResult['ITEMS']))
@@ -21,7 +25,7 @@ $data = new \WM\Template\TemplateHelper($this);
 
 ?>
 <div class="analog-carousel">
-    <div class="analog-carousel__title"><span>Аналоги</span></div>
+    <div class="analog-carousel__title"><span><?=Loc::getMessage('LEMA_ANALOGS_TITLE');?></span></div>
     <div class="analog-carousel__carousel">
         <? foreach($data->items() as $item): ?>
             <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">

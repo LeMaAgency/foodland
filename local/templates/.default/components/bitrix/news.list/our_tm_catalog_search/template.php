@@ -12,6 +12,10 @@
 
 /** @var CBitrixComponent $component */
 
+use \Bitrix\Main\Localization\Loc;
+
+Loc::loadMessages(__FILE__);
+
 $this->setFrameMode(true);
 
 if(empty($arResult['ITEMS']))
@@ -21,7 +25,7 @@ $data = new \WM\Template\TemplateHelper($this);
 
 ?>
 <div class="container">
-    <div class="tm-carousel__title"><span>Выбрать ТМ</span></div>
+    <div class="tm-carousel__title"><span><?=Loc::getMessage('LEMA_CHOOSE_TM');?></span></div>
     <div class="tm-carousel__carousel">
         <? foreach($data->items() as $item): ?>
             <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">

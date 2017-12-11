@@ -24,7 +24,7 @@ $data = new \WM\Template\TemplateHelper($this);
     <section class="products-block">
         <div class="container-fluid">
             <div class="row">
-                <h2 class="products-block__title">Продукция</h2>
+                <h2 class="products-block__title"><?=Loc::getMessage('LEMA_BRAND_PRODUCTS_TITLE');?></h2>
                 <? if(empty($arResult['ITEMS'])): ?>
                     <div><? ShowNote(Loc::getMessage("SEARCH_NOTHING_TO_FOUND")); ?></div>
                 <? else: ?>
@@ -45,8 +45,7 @@ $data = new \WM\Template\TemplateHelper($this);
                                     <? endif; ?>
                                     <div class="products-block__item__description">
                                         <? if($item->propFilled('BRAND')): ?>
-                                            <p class="products-block__item__sort"><?=$item->prop('BRAND', 'LINKED_NAME');?>
-                                            </p>
+                                            <p class="products-block__item__sort"><?=$item->prop('BRAND', 'LINKED_NAME');?></p>
                                         <? endif; ?>
                                         <? if($item->propFilled('FATNESS')): ?>
                                             <p class="products-block__item__sort-fat">

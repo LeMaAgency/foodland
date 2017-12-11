@@ -20,7 +20,7 @@ $data = new \WM\Template\TemplateHelper($this);
 ?>
 <div class="category-carousel">
     <? foreach($data->items() as $item): ?>
-        <a href="<?=$item->sectionUrl();?>" title="<?=$item->getName();?>" class="category-carousel__item">
+        <a href="<?=$item->sectionUrl();?>" <?=$item->editId();?> title="<?=$item->getName();?>" class="category-carousel__item">
             <div class="category-carousel__item__images">
                 <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
                 <img src="<?=$item->detailPicture();?>" alt="<?=$item->getName();?>" class="category-carousel__item__images_hover">

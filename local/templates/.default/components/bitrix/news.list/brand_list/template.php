@@ -20,7 +20,6 @@ if(empty($arResult['ITEMS']))
 $data = new \WM\Template\TemplateHelper($this);
 
 ?>
-
     <section class="trade-marks">
         <? foreach($data->items() as $item): ?>
             <div class="trade-marks__item" <?=$item->editId();?>>

@@ -12,8 +12,6 @@
 
 /** @var CBitrixComponent $component */
 
-use \WM\Common\Helper;
-
 $this->setFrameMode(true);
 
 if(empty($arResult['ITEMS']))

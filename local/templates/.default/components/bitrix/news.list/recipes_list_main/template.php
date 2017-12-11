@@ -51,7 +51,7 @@ $maxStars = 3;
                                     </div>
                                     <div class="product-use-carousel__carousel__item__info">
                                         <div class="product-use-carousel__carousel__item__info__time">
-                                            <span><?=Helper::propvalue('TIME', $arItem);?></span> мин.
+                                            <span><?=Helper::propvalue('TIME', $arItem);?></span> <?=Loc::getMessage('LEMA_RECIPES_TIME');?>
                                         </div>
                                         <div class="product-use-carousel__carousel__item__info__rating">
                                             <? $complexity = (int) $arItem['PROPERTIES']['COMPLEXITY']['VALUE_XML_ID'];

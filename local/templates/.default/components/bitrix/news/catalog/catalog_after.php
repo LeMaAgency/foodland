@@ -1,3 +1,11 @@
+<?php
+if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
+    die();
+
+use \Bitrix\Main\Localization\Loc;
+
+Loc::loadMessages(__FILE__);
+?>
 <div class="structure-company structure-company_catalog">
     <div class="container">
         <div class="row">
@@ -88,7 +96,7 @@
 
 <div class="popular popular_pb">
     <div class="container">
-        <div class="h2 h2_catalog-popular">Самые популярные<br>продукты</div>
+        <div class="h2 h2_catalog-popular"><?=Loc::getMessage('LEMA_CATALOG_MOST_POPULAR_TITLE');?></div>
         <? $APPLICATION->IncludeComponent('bitrix:news.list', 'popular_about', array(
             'DISPLAY_DATE' => 'Y',
             'DISPLAY_NAME' => 'Y',

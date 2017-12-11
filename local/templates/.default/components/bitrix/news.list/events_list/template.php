@@ -12,6 +12,10 @@
 
 /** @var CBitrixComponent $component */
 
+use \Bitrix\Main\Localization\Loc;
+
+Loc::loadMessages(__FILE__);
+
 $this->setFrameMode(true);
 
 if(empty($arResult['ITEMS']))
@@ -35,13 +39,14 @@ $data = new \WM\Template\TemplateHelper($this);
                     </p>
                     <div class="events__event__content__time-more">
                         <time><?=$item->get('DATE_CREATE_FORMATTED');?></time>
-                        <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>" class="css-right"><span>Подробней</span></a>
+                        <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>"
+                           class="css-right"><span><?=Loc::getMessage('LEMA_EVENTS_MORE_LINK');?></span></a>
                     </div>
                 </div>
             </article>
         <? endforeach; ?>
     </div>
 </section>
-<?if($arParams['DISPLAY_BOTTOM_PAGER'] == 'Y'):?>
+<? if($arParams['DISPLAY_BOTTOM_PAGER'] == 'Y'): ?>
     <?=$arResult['NAV_STRING'];?>
-<?endif;?>
+<? endif; ?>

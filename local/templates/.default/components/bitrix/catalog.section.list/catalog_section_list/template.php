@@ -22,7 +22,7 @@ $data = new \WM\Template\TemplateHelper($this);
 <div class="col-20 col-lg-18 col-md-16 col-sm-24">
     <div class="product__category">
         <? foreach($data->items() as $item):?>
-            <a href="<?=$item->sectionUrl();?>" title="<?=$item->getName();?>" class="product__category__item">
+            <a href="<?=$item->sectionUrl();?>" <?=$item->editId();?> title="<?=$item->getName();?>" class="product__category__item">
                 <div class="product__category__item__images">
                     <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
                     <img src="<?=$item->detailPicture();?>" alt="<?=$item->getName();?>" class="product__category__item__images_hover">

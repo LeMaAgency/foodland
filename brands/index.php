@@ -23,7 +23,7 @@ $APPLICATION->SetTitle("Торговые марки");
     'DETAIL_ACTIVE_DATE_FORMAT' => 'd.m.Y',
     'DETAIL_DISPLAY_BOTTOM_PAGER' => 'Y',
     'DETAIL_DISPLAY_TOP_PAGER' => 'N',
-    'DETAIL_FIELD_CODE' => array('', ''),
+    'DETAIL_FIELD_CODE' => array('PREVIEW_PICTURE', ''),
     'DETAIL_PAGER_SHOW_ALL' => 'Y',
     'DETAIL_PAGER_TEMPLATE' => '',
     'DETAIL_PAGER_TITLE' => 'Страница',
