@@ -38,7 +38,7 @@ $data = new \WM\Template\TemplateHelper($this);
                     <? endif; ?>
                     <a href="<?=$item->propValue('URL');?>"
                        class="recommendation__block__title-mini recommendation__block__line <?=$item->get('ITEM_CLASS');?>">
-                        <?=$item->getName();?>
+                        <p><?=$item->getName();?></p>
                     </a>
                 </div>
             </div>
@@ -53,7 +53,7 @@ $data = new \WM\Template\TemplateHelper($this);
                         <? endif; ?>
                         <a href="<?=$item->propValue('URL');?>" class="recommendation__block__title-mini
                             recommendation__block__line <?=$item->get('ITEM_CLASS');?>">
-                            <?=$item->getName();?>
+                            <p><?=$item->getName();?></p>
                         </a>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ $data = new \WM\Template\TemplateHelper($this);
                     <div class="recommendation__block" style="background-image: url('<?=$item->detailPicture();?>')">
                         <a href="<?=$item->propValue('URL_2');?>"
                            class="recommendation__block__title-mini recommendation__block__line <?=$data->get('ITEM_CLASS');?>">
-                            <?=$item->getName();?>
+                            <p><?=$item->getName();?></p>
                         </a>
                     </div>
                 </div>
