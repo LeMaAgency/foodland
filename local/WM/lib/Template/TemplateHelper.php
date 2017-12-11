@@ -97,7 +97,7 @@ class TemplateHelper
     }
 
     /**
-     * @return mixed
+     * @return Item
      */
     public function item()
     {
