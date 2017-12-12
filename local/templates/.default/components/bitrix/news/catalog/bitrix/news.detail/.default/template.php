@@ -42,7 +42,7 @@ $item = $data->item();
         <div class="block-product-img__description">
             <h2 class="block-product-img__description__h2"><?=Loc::getMessage('LEMA_CATALOG_DETAIL_CHARACTERS_100_TITLE');?></h2>
             <?
-            $props = array('CALORIES', 'PROTEINS', 'FATS', 'CARBOHYDRATES', 'DIETARY_FIBER', 'WATER');
+            $props = array('FATNESS', 'SHELF_LIFE', 'NETTO', 'COUNT_ATTACHMENTS', 'COUNT_IN_PALLET', 'BARCODE', 'PACKING_OR_WEIGHT');
             foreach($props as $prop): ?>
                 <div class="block-product-img__description__line">
                     <div class="block-product-img__description__line__name"><?=$item->propName($prop);?></div>
