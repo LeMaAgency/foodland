@@ -15,3 +15,18 @@ a.recommendation__block__title-mini {
 .product-use-carousel__carousel {
     padding: 20px 15px 30px;
 }
+
+/* 404 */
+
+.page404 {
+    margin: 200px 0;
+    text-align: center;
+}
+.page404__title {
+    font-size: 60px;
+    line-height: 66px;
+    margin-bottom: 10px;
+}
+.page404__text {
+
+}
