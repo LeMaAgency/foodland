@@ -17,7 +17,7 @@ if (!empty($_GET['arrFilter_pf'])) {
     return;
 }
 $GLOBALS['arrFilter'] = array('PROPERTY_IS_EXCLUSIVE_VALUE'=>'Y');
-$GLOBALS['arrFilter_popular'] = array('PROPERTY_IS_EXCLUSIVE_VALUE'=>'Y', 'PROPERTY_IS_POPULAR_VALUE'=>'Y');
+$GLOBALS['arrFilterPopular'] = array('PROPERTY_IS_POPULAR_VALUE'=>'Y');
 $this->setFrameMode(true);
 
 ?>
@@ -142,7 +142,7 @@ $this->setFrameMode(true);
             "ACTIVE_DATE_FORMAT" => $arParams["LIST_ACTIVE_DATE_FORMAT"],
             "USE_PERMISSIONS" => $arParams["USE_PERMISSIONS"],
             "GROUP_PERMISSIONS" => $arParams["GROUP_PERMISSIONS"],
-            "FILTER_NAME" => "arrFilter_popular",
+            "FILTER_NAME" => "arrFilterPopular",
             "HIDE_LINK_WHEN_NO_DETAIL" => $arParams["HIDE_LINK_WHEN_NO_DETAIL"],
             "CHECK_DATES" => $arParams["CHECK_DATES"],
             "STRICT_SECTION_CHECK" => $arParams["STRICT_SECTION_CHECK"],
