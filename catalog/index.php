@@ -26,7 +26,7 @@ $APPLICATION->SetTitle("Каталог продукции");
     'DETAIL_PAGER_SHOW_ALL' => 'Y',
     'DETAIL_PAGER_TEMPLATE' => '',
     'DETAIL_PAGER_TITLE' => 'Страница',
-    'DETAIL_PROPERTY_CODE' => array('MORE_PHOTO', ''),
+    'DETAIL_PROPERTY_CODE' => array('MORE_PHOTO', 'IS_NEW'),
     'DETAIL_SET_CANONICAL_URL' => 'N',
     'DISPLAY_BOTTOM_PAGER' => 'Y',
     'DISPLAY_DATE' => 'Y',

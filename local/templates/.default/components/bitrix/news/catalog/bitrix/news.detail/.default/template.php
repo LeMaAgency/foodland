@@ -25,7 +25,7 @@ $item = $data->item();
 ?>
 <div class="col-12 col-xl-24">
     <div class="block-product-img">
-        <div class="block-product-img__img">
+        <div class="block-product-img__img<?if($item->propValue('IS_NEW') == 'Y'){?> new<?}?>">
             <img src="<?=$item->detailPicture();?>" alt="<?=$item->getName();?>">
         </div>
         <? if($item->propFilled('MORE_PHOTO')): ?>
