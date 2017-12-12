@@ -25,7 +25,7 @@ $arResult['SECTIONS_WITH_ITEMS'] = \WM\IBlock\Section::getAllD7($arParams['IBLOC
 foreach($arResult['SECTIONS_WITH_ITEMS'] as $sectionId => $data)
 {
     $sectionItems = \WM\IBlock\Element::getAll($arParams['IBLOCK_ID'], array(
-        'filter' => array('IBLOCK_SECTION' => $sectionId),
+        'filter' => array('SECTION_ID' => $sectionId),
         'select' => array('ID'),
     ));
     foreach($sectionItems as $itemId => $itemInfo)
