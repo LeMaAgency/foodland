@@ -18,6 +18,8 @@ if(!empty($_GET['arrFilter_pf']))
     return;
 }
 
+$APPLICATION->AddViewContent('header_class', 'product-page-header');
+
 $this->setFrameMode(true);
 ?>
 <? $APPLICATION->IncludeComponent('bitrix:news.list', 'brands_top_slider', array(

@@ -18,7 +18,6 @@ Loc::loadMessages(__FILE__);
 
 $this->setFrameMode(true);
 
-$APPLICATION->AddViewContent('header_class', 'product-page-header');
 ?>
 <div class="slider container-fluid">
     <? $APPLICATION->IncludeComponent('bitrix:news.list', 'brands_detail_top_slider', array(
