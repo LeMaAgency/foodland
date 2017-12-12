@@ -40,6 +40,7 @@ $APPLICATION->SetTitle("Каталог продукции");
         'COUNT_IN_PALLET',
         'BARCODE',
         'PACKING_OR_WEIGHT',
+        'SHOPS'
     ),
     'DETAIL_SET_CANONICAL_URL' => 'N',
     'DISPLAY_BOTTOM_PAGER' => 'Y',
