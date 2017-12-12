@@ -68,8 +68,8 @@ $APPLICATION->SetTitle("Рецепты");
 			1 => "",
 		),
 		"FILTER_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "TIME",
+			1 => "COMPLEXITY",
 		),
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
