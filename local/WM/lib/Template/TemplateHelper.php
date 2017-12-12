@@ -80,7 +80,7 @@ class TemplateHelper
 
     /**
      * @param bool $objectData
-     * @return mixed
+     * @return Item[]
      */
     public function items($objectData = true)
     {
@@ -89,7 +89,7 @@ class TemplateHelper
 
     /**
      * @param bool $objectData
-     * @return mixed
+     * @return Section[]
      */
     public function sections($objectData = true)
     {
