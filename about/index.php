@@ -148,6 +148,10 @@ $APPLICATION->SetTitle("О компании");
         </div>
         <div class="popular popular_pb">
             <div class="container">
+<?php
+global $popularItemsFilter;
+$popularItemsFilter = array('PROPERTY_IS_POPULAR_VALUE' => 'Y');
+?>
                 <? $APPLICATION->IncludeComponent('bitrix:news.list', 'popular_about', array(
                     'DISPLAY_DATE' => 'Y',
                     'DISPLAY_NAME' => 'Y',
@@ -156,7 +160,7 @@ $APPLICATION->SetTitle("О компании");
                     'AJAX_MODE' => 'N',
                     'IBLOCK_TYPE' => 'content',
                     'IBLOCK_ID' => '3',
-                    'NEWS_COUNT' => '3',
+                    'NEWS_COUNT' => '20',
                     'SORT_BY1' => 'ID',
                     'SORT_ORDER1' => 'ASC',
                     'SORT_BY2' => 'SORT',
