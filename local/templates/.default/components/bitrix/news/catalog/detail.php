@@ -25,11 +25,11 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
         <div class="row">
             <div class="col-19 col-md-24 css-right">
                 <div class="bread-crumbs">
-                    <?$APPLICATION->IncludeComponent('bitrix:breadcrumb', 'breadcrumbs', array(
+                    <? $APPLICATION->IncludeComponent('bitrix:breadcrumb', 'breadcrumbs', array(
                         'START_FROM' => '0',
                         'PATH' => '',
                         'SITE_ID' => SITE_ID,
-                    ));?>
+                    )); ?>
                 </div>
                 <? if($arParams["USE_SEARCH"] == "Y"): ?>
                     <div class="container">
@@ -82,13 +82,40 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
                     ?>
                 <? endif; ?>
                 <?
+                //get analog elements from element
                 global $analogFilter;
-                $analogFilter = array(
-                    '!=CODE' => $arResult['VARIABLES']['ELEMENT_CODE'],
-                    '!=ID' => $arResult['VARIABLES']['ELEMENT_ID'],
-                );
+                $analogFilter = array();
+
+                \Bitrix\Main\Loader::includeModule('iblock');
+                //get id of current element by code
+                $elements = \WM\IBlock\Element::getListD7($arParams['IBLOCK_ID'], array(
+                    'filter' => array('CODE' => $arResult['VARIABLES']['ELEMENT_CODE']),
+                    'select' => array('ID'),
+                ));
+                //id found
+                if(!empty($elements))
+                {
+                    //get all property values
+                    $res = \CIBlockElement::GetProperty(
+                        $arParams['IBLOCK_ID'],
+                        current(array_keys($elements)),
+                        '',
+                        '',
+                        array('CODE' => 'ANALOGS', 'VALUE')
+                    );
+                    $elements = array();
+                    while($row = $res->Fetch())
+                    {
+                        if(!empty($row['VALUE']))
+                            $elements[$row['VALUE']] = array();
+                    }
+                }
                 ?>
-                <? $APPLICATION->IncludeComponent('bitrix:news.list', 'analog_carousel', array(
+                <? if(!empty($elements)):
+                    //set filter
+                    $analogFilter = array('=ID' => array_keys($elements));
+                    ?>
+                    <? $APPLICATION->IncludeComponent('bitrix:news.list', 'analog_carousel', array(
                     'DISPLAY_DATE' => 'Y',
                     'DISPLAY_NAME' => 'Y',
                     'DISPLAY_PICTURE' => 'Y',
@@ -142,6 +169,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
                     'AJAX_OPTION_HISTORY' => 'N',
                     'AJAX_OPTION_ADDITIONAL' => '',
                 )); ?>
+                <? endif; ?>
             </div>
             <div class="container-main">
                 <div class="row">
