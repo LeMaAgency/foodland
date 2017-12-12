@@ -38,3 +38,21 @@ a.recommendation__block__title-mini {
 .products-block__item  {
     width: 100%;
 }
+
+/* new */
+
+.block-product-img__img {
+    background: none;
+    position: relative;
+    background: #f0efe8;
+    border-radius: 5px;
+}
+.block-product-img__img.new:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 147px;
+    height: 151px;
+    background: url("/assets/images/product/product-page/new.png") no-repeat;
+    background-size: cover;
+}
