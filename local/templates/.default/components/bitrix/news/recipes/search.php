@@ -11,6 +11,8 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 
+$APPLICATION->AddViewContent('header_class', 'product-page-header');
+
 $this->setFrameMode(true);
 ?>
 
