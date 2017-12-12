@@ -30,3 +30,11 @@ a.recommendation__block__title-mini {
 .page404__text {
 
 }
+
+/* Custom */
+/*
+    * Дергание контента
+*/
+.products-block__item  {
+    width: 100%;
+}
