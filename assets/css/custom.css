@@ -71,7 +71,8 @@ a.recommendation__block__title-mini {
 /* text */
 .production-spinner .text,
 .block-product-img__description__line__name,
-.text-one-recipe {
+.text-one-recipe,
+.block-product-img__description {
     color: #000;
     font-family: 'MyriadPro', sans-serif;
     font-size: 19px;
@@ -90,4 +91,12 @@ a.recommendation__block__title-mini {
 
 .header.fixed {
     background: rgba(255,255,255,0.5);
+}
+
+/* border-radius */
+
+.one-recipe__img img {
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 0 #aaa;
+    overflow: hidden;
 }
