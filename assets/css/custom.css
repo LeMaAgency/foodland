@@ -68,7 +68,7 @@ a.recommendation__block__title-mini {
     top: 38.5px;
 }
 
-
+/* text */
 .production-spinner .text,
 .block-product-img__description__line__name,
 .text-one-recipe {
@@ -85,4 +85,9 @@ a.recommendation__block__title-mini {
     .production-spinner .text {
         padding-right: 50px;
     }
+}
+/* head */
+
+.header.fixed {
+    background: rgba(255,255,255,0.5);
 }
