@@ -229,6 +229,10 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
                         ),
                         $component
                     ); ?>
+                    <?/*
+                        * Времменко убираем
+                        *
+                        *
                     <div class="col-24">
                         <div class="product-use-carousel">
                             <div class="container">
@@ -291,10 +295,79 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
                             </div>
                         </div>
                     </div>
+                    */?>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="product-use-carousel product-use-carousel_m-0-50">
+        <div class="container">
+            <div class="row product-use-carousel_4__carousel">
+                <!-- Item  -->
+                <div class="product-use-carousel__wrap">
+                    <div class="product-use-carousel__carousel">
+                        <div class="product-use-carousel__carousel__item">
+                            <img src="/assets/images/product/product-page/product-use-2.png" alt="">
+                            <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
+                            <div class="product-use-carousel__carousel__item__block-link">
+                                <a href="" title=""><span>Подробней</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item  -->
+                <div class="product-use-carousel__wrap">
+                    <div class="product-use-carousel__carousel">
+                        <div class="product-use-carousel__carousel__item">
+                            <img src="/assets/images/product/product-page/product-use-2.png" alt="">
+                            <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
+                            <div class="product-use-carousel__carousel__item__block-link">
+                                <a href="" title=""><span>Подробней</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item  -->
+                <div class="product-use-carousel__wrap">
+                    <div class="product-use-carousel__carousel">
+                        <div class="product-use-carousel__carousel__item">
+                            <img src="/assets/images/product/product-page/product-use-2.png" alt="">
+                            <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
+                            <div class="product-use-carousel__carousel__item__block-link">
+                                <a href="" title=""><span>Подробней</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item  -->
+                <div class="product-use-carousel__wrap">
+                    <div class="product-use-carousel__carousel">
+                        <div class="product-use-carousel__carousel__item">
+                            <img src="/assets/images/product/product-page/product-use-2.png" alt="">
+                            <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
+                            <div class="product-use-carousel__carousel__item__block-link">
+                                <a href="" title=""><span>Подробней</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item  -->
+                <div class="product-use-carousel__wrap">
+                    <div class="product-use-carousel__carousel">
+                        <div class="product-use-carousel__carousel__item">
+                            <img src="/assets/images/product/product-page/product-use-2.png" alt="">
+                            <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
+                            <div class="product-use-carousel__carousel__item__block-link">
+                                <a href="" title=""><span>Подробней</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <?
         global $productShopSliderFilter;
