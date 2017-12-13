@@ -61,3 +61,28 @@ a.recommendation__block__title-mini {
 .footer .button-cheese span * {
     display: inline;
 }
+
+/* logo */
+
+.header__logo {
+    top: 38.5px;
+}
+
+
+.production-spinner .text,
+.block-product-img__description__line__name,
+.text-one-recipe {
+    color: #000;
+    font-family: 'MyriadPro', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: .2px;
+}
+
+@media (min-width: 1000px) {
+    .production-spinner .text {
+        padding-right: 50px;
+    }
+}
