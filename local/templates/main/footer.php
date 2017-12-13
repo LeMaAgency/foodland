@@ -14,7 +14,7 @@ Loc::loadMessages(__FILE__);
                 <div class="col-14 col-lg-24 col-lg-table-none table__cell">
                     <div class="footer__title"><? $APPLICATION->IncludeFile(SITE_DIR . 'include/footer/how_to_get_us_title.php'); ?></div>
                     <div class="footer__button">
-                        <a href="" title="" class="button-cheese"><span>
+                        <a href="/contacts/" title="Схема проезда" class="button-cheese"><span>
                                     <svg class="svg" width="27" height="37" viewBox="0 0 27 37">
                                         <g transform="translate(-1857 -16)">
                                             <path d="M1884 29.5c0 7.46-12.82 23.5-13.5 23.5-.98 0-13.5-16.04-13.5-23.5a13.5 13.5 0 1 1 27 0zm-19 0a5.5 5.5 0 1 0 11 0 5.5 5.5 0 0 0-11 0z"></path>

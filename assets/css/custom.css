@@ -56,3 +56,8 @@ a.recommendation__block__title-mini {
     background: url("/assets/images/product/product-page/new.png") no-repeat;
     background-size: cover;
 }
+
+
+.footer .button-cheese span * {
+    display: inline;
+}

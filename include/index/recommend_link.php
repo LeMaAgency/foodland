@@ -1,3 +1,3 @@
-<a href="#" title="" class="button-white">
+<a href="/exclusive/" title="" class="button-white">
     <span>Все эксклюзивы</span>
 </a>
