@@ -9,7 +9,7 @@ $aMenuLinks = array(
     ),
     array(
         'рецепты',
-        '#',
+        '/recipes/',
         array(),
         array(),
         ''
@@ -22,8 +22,8 @@ $aMenuLinks = array(
         ''
     ),
     array(
-        'товары для разницы',
-        '#',
+        'товары для розницы',
+        '/catalog/?arrFilter_pf%5BDIRECTION%5D=10&set_filter=Y',
         array(),
         array(),
         ''
@@ -37,7 +37,7 @@ $aMenuLinks = array(
     ),
     array(
         'события',
-        '#',
+        '/events/',
         array(),
         array(),
         ''
@@ -58,14 +58,14 @@ $aMenuLinks = array(
     ),
     array(
         'для сегмента HoReCa',
-        '#',
+        '/catalog/?arrFilter_pf%5BDIRECTION%5D=11&set_filter=Y',
         array(),
         array(),
         ''
     ),
     array(
         'торговые марки',
-        '#',
+        '/brands/',
         array(),
         array(),
         ''
@@ -86,14 +86,14 @@ $aMenuLinks = array(
     ),
     array(
         'что прозводим',
-        '#',
+        '/catalog/',
         array(),
         array(),
         ''
     ),
     array(
         'для производства',
-        '#',
+        '/catalog/?arrFilter_pf%5BDIRECTION%5D=12&set_filter=Y',
         array(),
         array(),
         ''
