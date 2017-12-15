@@ -32,7 +32,7 @@ $confirmDelete = array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')
         <div class="row">
             <div class="col-12 col-lg-24">
                 <div data-resize-after="cheese"></div>
-                <? foreach($arResult['ITEMS'] as $arItem):
+                <? $arItem = array_shift($arResult['ITEMS']);
                     $this->AddEditAction('default_' . $arItem['ID'], $arItem['EDIT_LINK'], $strEditLink);
                     $this->AddDeleteAction('default_' . $arItem['ID'], $arItem['DELETE_LINK'], $strDeleteLink, $confirmDelete);
                     ?>
@@ -60,10 +60,7 @@ $confirmDelete = array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')
                             <span><?=Loc::getMessage('LEMA_CATALOG_MORE_TEXT');?></span>
                         </a>
                     </div>
-                    <?
-                    break;
-                endforeach;
-                ?>
+
                 <?
                 $i = 0;
                 foreach($arResult["ITEMS"] as $arItem):
