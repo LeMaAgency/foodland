@@ -636,7 +636,9 @@ foreach($arResult["arrProp"] as $prop_id => $arProp)
 				$value_left = $value["LEFT"];
 			else
 				$value_left = "";
-			$res .= '<div class="price"><p>'.GetMessage("CC_BCF_FROM").'</p><div class="left"><input type="text" name="'.$name_left.'" size="'.$arParams["NUMBER_WIDTH"].'" value="'.htmlspecialcharsbx($value_left).'" /></div>';
+			$res .= '<div class="price"><div class="left">
+            <p class="price__text">'.GetMessage("CC_BCF_FROM").'</p>
+            <input type="text" name="'.$name_left.'" size="'.$arParams["NUMBER_WIDTH"].'" value="'.htmlspecialcharsbx($value_left).'" placeholder="0 мин" /></div>';
 
 			if (strlen($value_left) > 0)
 				${$FILTER_NAME}["PROPERTY"][">=".$arProp["CODE"]] = doubleval($value_left);
@@ -646,7 +648,12 @@ foreach($arResult["arrProp"] as $prop_id => $arProp)
 				$value_right = $value["RIGHT"];
 			else
 				$value_right = "";
-			$res .= '<p>'.GetMessage("CC_BCF_BEFORE").'</p><div class="right"><input type="text" name="'.$name_right.'" size="'.$arParams["NUMBER_WIDTH"].'" value="'.htmlspecialcharsbx($value_right).'" /></div></div>';
+			$res .= '
+            <div class="right">
+            <p>'.GetMessage("CC_BCF_BEFORE").'</p>
+            <input type="text" name="'.$name_right.'" size="'.$arParams["NUMBER_WIDTH"].'" value="'.htmlspecialcharsbx($value_right).'" placeholder="60 мин" />
+            </div>
+            </div>';
 
 			if (strlen($value_right) > 0)
 				${$FILTER_NAME}["PROPERTY"]["<=".$arProp["CODE"]] = doubleval($value_right);

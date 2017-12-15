@@ -1,3 +1,6 @@
+.recommendation__block__title-mini p {
+    color: #fff;
+}
 a.recommendation__block__title-mini {
     display: block;
 }
@@ -72,7 +75,8 @@ a.recommendation__block__title-mini {
 .production-spinner .text,
 .block-product-img__description__line__name,
 .text-one-recipe,
-.block-product-img__description {
+.block-product-img__description,
+.contacts__item {
     color: #000;
     font-family: 'MyriadPro', sans-serif;
     font-size: 19px;
@@ -99,4 +103,33 @@ a.recommendation__block__title-mini {
     border-radius: 10px;
     box-shadow: 0 5px 20px 0 #aaa;
     overflow: hidden;
+}
+
+/* contact */
+
+.filter__item__select .price {
+    display: table;
+    width: 100%;
+}
+.filter__item__select .price .right ,
+.filter__item__select .price .left {
+    display: table-cell;
+    width: 50%;
+    padding-right: 10px;
+}
+.filter__item__select .price .right {}
+.filter__item__select .price .left {  }
+.filter__item__select .price input {
+    background: #fff;
+    border: 0;
+    padding: 5px 10px;
+    box-shadow: 0 0 16px 2px rgba(68,68,68,0.25);
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    font-family: "PFBeauSansPro",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
 }
