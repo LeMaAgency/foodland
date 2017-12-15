@@ -133,3 +133,7 @@ a.recommendation__block__title-mini {
     font-weight: 400;
     width: 100%;
 }
+.cheese__text * ,
+.production-spinner .text {
+    font-family: "PFBeauSansPro",sans-serif;
+}
