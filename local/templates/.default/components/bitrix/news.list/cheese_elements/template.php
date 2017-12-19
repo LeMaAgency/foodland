@@ -56,7 +56,7 @@ $confirmDelete = array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')
                                 </ul>
                             <? endif; ?>
                         </div>
-                        <a href="<?=SITE_DIR;?>catalog/" title="" class="button button-cheese">
+                        <a href="<?=SITE_DIR;?>direction/" title="" class="button button-cheese">
                             <span><?=Loc::getMessage('LEMA_CATALOG_MORE_TEXT');?></span>
                         </a>
                     </div>
@@ -89,7 +89,7 @@ $confirmDelete = array('CONFIRM' => \GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')
                                 </ul>
                             <? endif; ?>
                         </div>
-                        <a href="<?=SITE_DIR;?>catalog/" title="" class="button button-cheese">
+                        <a href="<?=SITE_DIR;?>direction/" title="" class="button button-cheese">
                             <span><?=Loc::getMessage('LEMA_CATALOG_MORE_TEXT');?></span>
                         </a>
                     </div>
