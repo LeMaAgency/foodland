@@ -46,7 +46,7 @@ $data = new \WM\Template\TemplateHelper($this);
                     <div class="random__button">
                         <a href="<?=$item->listUrl();?>" title="" class="button-orange">
                             <span>
-                                <?=Loc::getMessage('LEMA_ALL_EVENTS_TEXT');?>
+                                <?=Loc::getMessage('LEMA_ALL_RECIPES_TEXT');?>
                             </span>
                         </a>
                     </div>
