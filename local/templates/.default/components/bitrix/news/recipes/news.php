@@ -88,7 +88,7 @@ $this->setFrameMode(true);
             <div class="container-main">
                 <? $APPLICATION->IncludeComponent(
                     "bitrix:news.list",
-                    "recipes_list_main",
+                    "recipes_list_main_without_slider",
                     Array(
                         "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
                         "IBLOCK_ID" => $arParams["IBLOCK_ID"],

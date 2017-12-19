@@ -80,7 +80,7 @@ $APPLICATION->SetTitle("Рецепты");
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "Y",
 		"PAGER_SHOW_ALWAYS" => "N",
-		"PAGER_TEMPLATE" => "catalog",
+		"PAGER_TEMPLATE" => "events",
 		"PAGER_TITLE" => "Рецепты",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"SEF_FOLDER" => "/recipes/",
