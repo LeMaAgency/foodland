@@ -97,7 +97,11 @@ Loc::loadMessages(__FILE__);
 <div class="popular popular_pb">
     <div class="container">
         <div class="h2 h2_catalog-popular"><?=Loc::getMessage('LEMA_CATALOG_MOST_POPULAR_TITLE');?></div>
-        <? $APPLICATION->IncludeComponent(
+        <?
+global $popularItemsFilter;
+$popularItemsFilter = array('PROPERTY_IS_POPULAR_VALUE' => 'Y');
+
+        $APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
 	"popular_about", 
 	array(
