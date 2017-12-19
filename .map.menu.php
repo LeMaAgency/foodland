@@ -23,7 +23,7 @@ $aMenuLinks = array(
     ),
     array(
         'товары для розницы',
-        '/catalog/?arrFilter_pf%5BDIRECTION%5D=10&set_filter=Y',
+        '/direction/tovary-dlya-roznitsy/',
         array(),
         array(),
         ''
@@ -43,8 +43,8 @@ $aMenuLinks = array(
         ''
     ),
     array(
-        'упаковка',
-        '#',
+        'эксклюзивы',
+        '/exclusive/',
         array(),
         array(),
         ''
@@ -58,7 +58,7 @@ $aMenuLinks = array(
     ),
     array(
         'для сегмента HoReCa',
-        '/catalog/?arrFilter_pf%5BDIRECTION%5D=11&set_filter=Y',
+        '/direction/produkty-dlya-horeca/',
         array(),
         array(),
         ''
@@ -93,7 +93,7 @@ $aMenuLinks = array(
     ),
     array(
         'для производства',
-        '/catalog/?arrFilter_pf%5BDIRECTION%5D=12&set_filter=Y',
+        '/direction/syre-dlya-proizvodstva/',
         array(),
         array(),
         ''
