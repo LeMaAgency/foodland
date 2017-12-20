@@ -67,8 +67,8 @@ a.recommendation__block__title-mini {
 
 /* logo */
 
-.header__logo {
-    top: 38.5px;
+.header__logo::after {
+    top: 71.4444444px;
 }
 
 /* text */
@@ -141,4 +141,28 @@ a.recommendation__block__title-mini {
 .structure-company__img_size img {
     width: auto;
     height: auto;
+}
+.block-product-text,
+.cheese__link {
+    font-family: "PFBeauSansPro",sans-serif;
+}
+
+.production-spinner .text {
+    margin-bottom: 30px;
+}
+
+.products-block__item__image img {
+    max-height: 165px;
+}
+
+.block-product-img__img {
+    background: transparent;
+}
+.block-product-img__img img {
+    border-radius: 0;
+    box-shadow: none;
+}
+.text-brand,
+.block-product-text {
+    font-weight: 400;
 }
