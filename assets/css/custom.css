@@ -137,3 +137,8 @@ a.recommendation__block__title-mini {
 .production-spinner .text {
     font-family: "PFBeauSansPro",sans-serif;
 }
+
+.structure-company__img_size img {
+    width: auto;
+    height: auto;
+}
