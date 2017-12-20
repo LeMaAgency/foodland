@@ -22,7 +22,6 @@ if(empty($arResult['ITEMS']))
     return;
 
 $data = new \WM\Template\TemplateHelper($this);
-
 ?>
 <div class="random random_about container">
     <div class="row">
@@ -47,10 +46,10 @@ $data = new \WM\Template\TemplateHelper($this);
                                     </a>
                                 </div>
                                 <div class="random__button">
-                                    <a href="<?=$item->listUrl();?>" title="" class="button-orange">
-                            <span>
-                                <?=Loc::getMessage('LEMA_ALL_EVENTS_TEXT');?>
-                            </span>
+                                    <a href="/events/" title="" class="button-orange">
+                                        <span>
+                                            <?=Loc::getMessage('LEMA_ALL_EVENTS_TEXT');?>
+                                        </span>
                                     </a>
                                 </div>
                             </div>
