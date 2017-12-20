@@ -36,7 +36,7 @@ $maxStars = 3;
                             <div class="product-use-carousel__carousel__item" <?=$item->editId()?>>
                                 <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
                                 <div class="product-use-carousel__carousel__item__name product-use-carousel__carousel__item__name_recipes">
-                                    <?=$item->getName();?>
+                                    <?=mb_strimwidth(htmlspecialcharsback($item->getName()), 0, 50, "...");?>
                                 </div>
                                 <div class="product-use-carousel__carousel__item__info">
                                     <div class="product-use-carousel__carousel__item__info__time">
