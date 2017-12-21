@@ -101,7 +101,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
                         current(array_keys($elements)),
                         '',
                         '',
-                        array('CODE' => 'ANALOGS', 'VALUE')
+                        array('CODE' => 'ANALOGS')
                     );
                     $elements = array();
                     while($row = $res->Fetch())
@@ -229,144 +229,100 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
                         ),
                         $component
                     ); ?>
-                    <?/*
-                        * Времменко убираем
-                        *
-                        *
-                    <div class="col-24">
-                        <div class="product-use-carousel">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-8 col-xl-12 col-lg-24">
-                                        <div class="product-use-carousel__carousel">
-                                            <div class="product-use-carousel__carousel__item">
-                                                <img src="/assets/images/product/product-page/product-use-2.png" alt="">
-                                                <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                                <div class="product-use-carousel__carousel__item__block-link">
-                                                    <a href="" title=""><span>Подробней</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-use-carousel__carousel__item"><img
-                                                        src="/assets/images/product/product-page/product-use-1.png" alt="">
-                                                <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                                <div class="product-use-carousel__carousel__item__block-link">
-                                                    <a href="" title=""><span>Подробней</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-8 col-xl-12 col-lg-24">
-                                        <div class="product-use-carousel__carousel">
-                                            <div class="product-use-carousel__carousel__item">
-                                                <img src="/assets/images/product/product-page/product-use-1.png" alt="">
-                                                <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                                <div class="product-use-carousel__carousel__item__block-link">
-                                                    <a href="" title=""><span>Подробней</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-use-carousel__carousel__item"><img
-                                                        src="/assets/images/product/product-page/product-use-2.png" alt="">
-                                                <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                                <div class="product-use-carousel__carousel__item__block-link">
-                                                    <a href="" title=""><span>Подробней</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-8 col-xl-12 col-lg-24">
-                                        <div class="product-use-carousel__carousel">
-                                            <div class="product-use-carousel__carousel__item">
-                                                <img src="/assets/images/product/product-page/product-use-2.png" alt="">
-                                                <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                                <div class="product-use-carousel__carousel__item__block-link">
-                                                    <a href="" title=""><span>Подробней</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-use-carousel__carousel__item"><img
-                                                        src="/assets/images/product/product-page/product-use-1.png" alt="">
-                                                <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                                <div class="product-use-carousel__carousel__item__block-link">
-                                                    <a href="" title=""><span>Подробней</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    */?>
                 </div>
             </div>
         </div>
     </div>
+    <?
+    //get analog elements from element
+    global $analogFilter;
+    $analogFilter = array();
 
-    <div class="product-use-carousel product-use-carousel_m-0-50">
-        <div class="container">
-            <div class="row product-use-carousel_4__carousel">
-                <!-- Item  -->
-                <div class="product-use-carousel__wrap">
-                    <div class="product-use-carousel__carousel">
-                        <div class="product-use-carousel__carousel__item">
-                            <img src="/assets/images/product/product-page/product-use-2.png" alt="">
-                            <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                            <div class="product-use-carousel__carousel__item__block-link">
-                                <a href="" title=""><span>Подробней</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Item  -->
-                <div class="product-use-carousel__wrap">
-                    <div class="product-use-carousel__carousel">
-                        <div class="product-use-carousel__carousel__item">
-                            <img src="/assets/images/product/product-page/product-use-2.png" alt="">
-                            <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                            <div class="product-use-carousel__carousel__item__block-link">
-                                <a href="" title=""><span>Подробней</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Item  -->
-                <div class="product-use-carousel__wrap">
-                    <div class="product-use-carousel__carousel">
-                        <div class="product-use-carousel__carousel__item">
-                            <img src="/assets/images/product/product-page/product-use-2.png" alt="">
-                            <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                            <div class="product-use-carousel__carousel__item__block-link">
-                                <a href="" title=""><span>Подробней</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Item  -->
-                <div class="product-use-carousel__wrap">
-                    <div class="product-use-carousel__carousel">
-                        <div class="product-use-carousel__carousel__item">
-                            <img src="/assets/images/product/product-page/product-use-2.png" alt="">
-                            <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                            <div class="product-use-carousel__carousel__item__block-link">
-                                <a href="" title=""><span>Подробней</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Item  -->
-                <div class="product-use-carousel__wrap">
-                    <div class="product-use-carousel__carousel">
-                        <div class="product-use-carousel__carousel__item">
-                            <img src="/assets/images/product/product-page/product-use-2.png" alt="">
-                            <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                            <div class="product-use-carousel__carousel__item__block-link">
-                                <a href="" title=""><span>Подробней</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    \Bitrix\Main\Loader::includeModule('iblock');
+    //get id of current element by code
+    $elements = \WM\IBlock\Element::getListD7($arParams['IBLOCK_ID'], array(
+        'filter' => array('CODE' => $arResult['VARIABLES']['ELEMENT_CODE']),
+        'select' => array('ID'),
+    ));
+    //id found
+    if(!empty($elements))
+    {
+        //get all property values
+        $res = \CIBlockElement::GetProperty(
+            $arParams['IBLOCK_ID'],
+            current(array_keys($elements)),
+            '',
+            '',
+            array('CODE' => 'RECIPES')
+        );
+        $elements = array();
+        while($row = $res->Fetch())
+        {
+            if(!empty($row['VALUE']))
+                $elements[$row['VALUE']] = array();
+        }
+    }
+    ?>
+    <? if(!empty($elements)):
+        global $recipesFilter;
+        //set filter
+        $recipesFilter = array('=ID' => array_keys($elements));
+        ?>
+        <? $APPLICATION->IncludeComponent('bitrix:news.list', 'events_slider', array(
+        'DISPLAY_DATE' => 'Y',
+        'DISPLAY_NAME' => 'Y',
+        'DISPLAY_PICTURE' => 'Y',
+        'DISPLAY_PREVIEW_TEXT' => 'Y',
+        'AJAX_MODE' => 'N',
+        'IBLOCK_TYPE' => 'catalog',
+        'IBLOCK_ID' => 19,
+        'NEWS_COUNT' => '20',
+        'SORT_BY1' => 'ACTIVE_FROM',
+        'SORT_ORDER1' => 'DESC',
+        'SORT_BY2' => 'SORT',
+        'SORT_ORDER2' => 'ASC',
+        'FILTER_NAME' => 'recipesFilter',
+        'FIELD_CODE' => array(),
+        'PROPERTY_CODE' => array(),
+        'CHECK_DATES' => 'Y',
+        'DETAIL_URL' => '',
+        'PREVIEW_TRUNCATE_LEN' => '',
+        'ACTIVE_DATE_FORMAT' => 'd.m.Y',
+        'SET_TITLE' => 'N',
+        'SET_BROWSER_TITLE' => 'N',
+        'SET_META_KEYWORDS' => 'N',
+        'SET_META_DESCRIPTION' => 'N',
+        'SET_LAST_MODIFIED' => 'N',
+        'INCLUDE_IBLOCK_INTO_CHAIN' => 'N',
+        'ADD_SECTIONS_CHAIN' => 'N',
+        'HIDE_LINK_WHEN_NO_DETAIL' => 'Y',
+        'PARENT_SECTION' => $arResult['VARIABLES']['SECTION_ID'],
+        'PARENT_SECTION_CODE' => $arResult['VARIABLES']['SECTION_CODE'],
+        'INCLUDE_SUBSECTIONS' => 'Y',
+        'CACHE_TYPE' => 'A',
+        'CACHE_TIME' => '36000000',
+        'CACHE_FILTER' => 'Y',
+        'CACHE_GROUPS' => 'N',
+        'DISPLAY_TOP_PAGER' => 'N',
+        'DISPLAY_BOTTOM_PAGER' => 'N',
+        'PAGER_TITLE' => 'Элементы',
+        'PAGER_SHOW_ALWAYS' => 'N',
+        'PAGER_TEMPLATE' => '',
+        'PAGER_DESC_NUMBERING' => 'N',
+        'PAGER_DESC_NUMBERING_CACHE_TIME' => '36000',
+        'PAGER_SHOW_ALL' => 'N',
+        'PAGER_BASE_LINK_ENABLE' => 'N',
+        'SET_STATUS_404' => 'N',
+        'SHOW_404' => 'N',
+        'MESSAGE_404' => '',
+        'PAGER_BASE_LINK' => '',
+        'PAGER_PARAMS_NAME' => 'arrPager',
+        'AJAX_OPTION_JUMP' => 'N',
+        'AJAX_OPTION_STYLE' => 'Y',
+        'AJAX_OPTION_HISTORY' => 'N',
+        'AJAX_OPTION_ADDITIONAL' => '',
+    )); ?>
+    <? endif; ?>
 
     <div class="container">
         <?
