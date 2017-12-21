@@ -380,69 +380,6 @@ $this->setFrameMode(true);
                 'AJAX_OPTION_HISTORY' => 'N',
                 'AJAX_OPTION_ADDITIONAL' => '',
             )); ?>
-            <div class="col-24">
-                <div class="product-use-carousel">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-8 col-xl-12 col-lg-24">
-                                <div class="product-use-carousel__carousel">
-                                    <div class="product-use-carousel__carousel__item">
-                                        <img src="/assets/images/product/product-page/product-use-2.png" alt="">
-                                        <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                        <div class="product-use-carousel__carousel__item__block-link">
-                                            <a href="" title=""><span>Подробней</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-use-carousel__carousel__item"><img
-                                                src="/assets/images/product/product-page/product-use-1.png" alt="">
-                                        <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                        <div class="product-use-carousel__carousel__item__block-link">
-                                            <a href="" title=""><span>Подробней</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-8 col-xl-12 col-lg-24">
-                                <div class="product-use-carousel__carousel">
-                                    <div class="product-use-carousel__carousel__item">
-                                        <img src="/assets/images/product/product-page/product-use-1.png" alt="">
-                                        <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                        <div class="product-use-carousel__carousel__item__block-link">
-                                            <a href="" title=""><span>Подробней</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-use-carousel__carousel__item"><img
-                                                src="/assets/images/product/product-page/product-use-2.png" alt="">
-                                        <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                        <div class="product-use-carousel__carousel__item__block-link">
-                                            <a href="" title=""><span>Подробней</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-8 col-xl-12 col-lg-24">
-                                <div class="product-use-carousel__carousel">
-                                    <div class="product-use-carousel__carousel__item">
-                                        <img src="/assets/images/product/product-page/product-use-2.png" alt="">
-                                        <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                        <div class="product-use-carousel__carousel__item__block-link">
-                                            <a href="" title=""><span>Подробней</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-use-carousel__carousel__item"><img
-                                                src="/assets/images/product/product-page/product-use-1.png" alt="">
-                                        <div class="product-use-carousel__carousel__item__name">Паста Сицилиана</div>
-                                        <div class="product-use-carousel__carousel__item__block-link">
-                                            <a href="" title=""><span>Подробней</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
         </div>
     </div>
