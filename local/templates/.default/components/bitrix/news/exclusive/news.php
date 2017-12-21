@@ -157,7 +157,7 @@ $this->setFrameMode(true);
     ); ?>
     <?$APPLICATION->IncludeComponent(
         "bitrix:news.list",
-        "exclusive_product_slider",
+        "events_slider",
         Array(
             "ACTIVE_DATE_FORMAT" => "d.m.Y",
             "ADD_SECTIONS_CHAIN" => "N",
