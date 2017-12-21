@@ -1,6 +1,5 @@
 .ide*
 /bitrix
-!/bitrix/modules/ws.migrations/*
 /upload
 /*.txt
 !/robots.txt
