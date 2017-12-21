@@ -72,7 +72,7 @@ endif; ?>
         'AJAX_MODE' => 'N',
         'IBLOCK_TYPE' => $arParams['IBLOCK_TYPE'],
         'IBLOCK_ID' => $arParams['IBLOCK_ID'],
-        'NEWS_COUNT' => '1',
+        'NEWS_COUNT' => '10',
         'SORT_BY1' => 'NAME',
         'SORT_ORDER1' => 'DESC',
         'SORT_BY2' => 'SORT',
