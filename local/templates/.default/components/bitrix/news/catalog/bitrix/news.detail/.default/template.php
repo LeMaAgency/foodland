@@ -25,7 +25,7 @@ $item = $data->item();
 ?>
 <div class="col-12 col-xl-24">
     <div class="block-product-img">
-        <div class="block-product-img__img<?if($item->propValue('IS_NEW') == 'Y'){?> new<?}?>">
+        <div class="block-product-img__img<? if($item->propValue('IS_NEW') == 'Y') { ?> new<? } ?>">
             <img src="<?=$item->detailPicture();?>" alt="<?=$item->getName();?>">
         </div>
         <? if($item->propFilled('MORE_PHOTO')): ?>
@@ -39,18 +39,18 @@ $item = $data->item();
                 <? endforeach; ?>
             </div>
         <? endif; ?>
-        <div class="block-product-img__description">
-            <h2 class="block-product-img__description__h2"><?=Loc::getMessage('LEMA_CATALOG_DETAIL_CHARACTERS_100_TITLE');?></h2>
-            <?
-            $props = array('FATNESS', 'SHELF_LIFE', 'NETTO', 'COUNT_ATTACHMENTS', 'COUNT_IN_PALLET', 'BARCODE', 'PACKING_OR_WEIGHT');
-            foreach($props as $prop): ?>
-                <div class="block-product-img__description__line">
-                    <div class="block-product-img__description__line__name"><?=$item->propName($prop);?></div>
-                    <div class="block-product-img__description__line__dots"></div>
-                    <div class="block-product-img__description__line__val"><?=$item->propValue($prop);?></div>
-                </div>
-            <? endforeach; ?>
-        </div>
+        <? if(!empty($arResult['CONTAINS_PROPERTIES'])): ?>
+            <div class="block-product-img__description">
+                <h2 class="block-product-img__description__h2"><?=Loc::getMessage('LEMA_CATALOG_DETAIL_CHARACTERS_100_TITLE');?></h2>
+                <? foreach($arResult['CONTAINS_PROPERTIES'] as $prop): ?>
+                    <div class="block-product-img__description__line">
+                        <div class="block-product-img__description__line__name"><?=$item->propName($prop);?></div>
+                        <div class="block-product-img__description__line__dots"></div>
+                        <div class="block-product-img__description__line__val"><?=$item->propValue($prop);?></div>
+                    </div>
+                <? endforeach; ?>
+            </div>
+        <? endif; ?>
     </div>
 </div>
 <div class="col-12 col-xl-24">
