@@ -235,8 +235,8 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
     </div>
     <?
     //get analog elements from element
-    global $analogFilter;
-    $analogFilter = array();
+    global $recipesFilter;
+    $recipesFilter = array();
 
     \Bitrix\Main\Loader::includeModule('iblock');
     //get id of current element by code
@@ -264,7 +264,6 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
     }
     ?>
     <? if(!empty($elements)):
-        global $recipesFilter;
         //set filter
         $recipesFilter = array('=ID' => array_keys($elements));
         ?>
