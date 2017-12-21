@@ -234,7 +234,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
         </div>
     </div>
     <?
-    //get analog elements from element
+    //get recipes from element
     global $recipesFilter;
     $recipesFilter = array();
 
