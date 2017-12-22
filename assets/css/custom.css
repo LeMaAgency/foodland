@@ -49,6 +49,7 @@ a.recommendation__block__title-mini {
     position: relative;
     background: #f0efe8;
     border-radius: 5px;
+    width: auto;
 }
 .block-product-img__img.new:before {
     content: '';
@@ -161,8 +162,30 @@ a.recommendation__block__title-mini {
 .block-product-img__img img {
     border-radius: 0;
     box-shadow: none;
+    width: auto;
+    height: auto;
+    max-width: 80%;
 }
 .text-brand,
 .block-product-text {
     font-weight: 400;
+}
+
+/**/
+
+.clients__carousel__item {
+    display: table-cell;
+    vertical-align: middle;
+}
+.clients__carousel__item img {
+    max-width: 80%;
+}
+
+/**/
+.tm-carousel__carousel__item {
+    width: 100%;
+    text-align: center;
+}
+.tm-carousel__carousel__item img {
+    max-height: 80px;
 }
