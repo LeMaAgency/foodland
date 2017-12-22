@@ -56,7 +56,7 @@ $item = $data->item();
 <div class="col-12 col-xl-24">
     <div class="block-product-text">
         <h2 class="block-product-text__h2"><?=Loc::getMessage('LEMA_CATALOG_DETAIL_PRODUCT_TITLE');?></h2>
-        <?=$item->previewText();?>
+        <?=$item->detailPicture();?>
         <h2 class="block-product-text__h2-info"><?=Loc::getMessage('LEMA_CATALOG_DETAIL_PRODUCT_INFO');?></h2>
         <? if($item->propFilled('COMPOSITION')): ?>
             <h3 class="block-product-text__h3-composition"><?=Loc::getMessage('LEMA_CATALOG_DETAIL_COMPOSITION');?></h3>
