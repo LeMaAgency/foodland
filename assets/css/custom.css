@@ -165,6 +165,8 @@ a.recommendation__block__title-mini {
     width: auto;
     height: auto;
     max-width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
 }
 .text-brand,
 .block-product-text {
