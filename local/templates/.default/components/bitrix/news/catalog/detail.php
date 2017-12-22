@@ -19,6 +19,15 @@ Loc::loadMessages(__FILE__);
 $this->setFrameMode(true);
 
 $APPLICATION->AddViewContent('header_class', 'product-page-header');
+
+$res = CIBlockElement::GetList(Array(), Array("CODE"=>$arResult['VARIABLES']['ELEMENT_CODE'], "ID" => $arResult['VARIABLES']['ELEMENT_ID']), false, Array(), Array("PROPERTY_BRAND"));
+if($row = $res->Fetch()){
+    $iBrandId = $row['PROPERTY_BRAND_VALUE'];
+}
+$resBrand = CIBlockElement::GetList(Array(), Array("IBLOCK_ID"=>11,"ID"=>$iBrandId), false, Array(), Array("NAME"));
+if($rowBrand = $resBrand->Fetch()){
+    $sBrand = $rowBrand;
+}
 ?>
 <div class="wrap-search">
     <div class="container">
@@ -55,6 +64,7 @@ $APPLICATION->AddViewContent('header_class', 'product-page-header');
             <div class="container-aside"></div>
             <div class="container-main">
                 <h1 class="h1-product-page"><? $APPLICATION->ShowTitle(); ?></h1>
+                <h2><?=$sBrand['NAME'];?></h2>
             </div>
         </div>
     </div>
