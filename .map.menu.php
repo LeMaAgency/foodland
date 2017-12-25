@@ -14,13 +14,7 @@ $aMenuLinks = array(
         array(),
         ''
     ),
-    array(
-        'возможности',
-        '#',
-        array(),
-        array(),
-        ''
-    ),
+
     array(
         'товары для розницы',
         '/direction/tovary-dlya-roznitsy/',
@@ -28,13 +22,7 @@ $aMenuLinks = array(
         array(),
         ''
     ),
-    array(
-        'топ-10 продукции',
-        '#',
-        array(),
-        array(),
-        ''
-    ),
+
     array(
         'события',
         '/events/',
@@ -49,13 +37,7 @@ $aMenuLinks = array(
         array(),
         ''
     ),
-    array(
-        'преимущества',
-        '#',
-        array(),
-        array(),
-        ''
-    ),
+
     array(
         'для сегмента HoReCa',
         '/direction/produkty-dlya-horeca/',
@@ -70,20 +52,7 @@ $aMenuLinks = array(
         array(),
         ''
     ),
-    array(
-        'предложения',
-        '#',
-        array(),
-        array(),
-        ''
-    ),
-    array(
-        'новинки',
-        '#',
-        array(),
-        array(),
-        ''
-    ),
+
     array(
         'что прозводим',
         '/catalog/',
