@@ -319,7 +319,7 @@ $this->setFrameMode(true);
         'DISPLAY_PREVIEW_TEXT' => 'Y',
         'AJAX_MODE' => 'N',
         'IBLOCK_TYPE' => 'content',
-        'IBLOCK_ID' => '20',
+        'IBLOCK_ID' => '19',
         'NEWS_COUNT' => '20',
         'SORT_BY1' => 'ACTIVE_FROM',
         'SORT_ORDER1' => 'DESC',
