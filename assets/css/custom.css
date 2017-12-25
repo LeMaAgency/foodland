@@ -161,7 +161,6 @@ a.recommendation__block__title-mini {
     background: transparent;
 }
 .block-product-img__img img {
-    border-radius: 0;
     box-shadow: none;
     width: auto;
     height: auto;
@@ -175,11 +174,18 @@ a.recommendation__block__title-mini {
 }
 
 /**/
-
+.tm-carousel-horizontal__carousel__item {
+    position: relative;
+    height: 95px;
+    margin: auto;
+    text-align: center;
+}
+.tm-carousel-horizontal__carousel__item,
 .clients__carousel__item {
     display: table-cell;
     vertical-align: middle;
 }
+.tm-carousel-horizontal__carousel__item,
 .clients__carousel__item img {
     max-width: 80%;
 }

@@ -21,7 +21,7 @@ $data = new \WM\Template\TemplateHelper($this);
 
 ?>
 <div class="container">
-    <h2 class="h2_about-company"><?=$arResult['NAME'];?></h2>
+	<h2 class="h2_about-company"><?//=$arResult['NAME'];?></h2>
     <div class="tm-carousel-horizontal__carousel">
         <? foreach($data->items() as $item): ?>
             <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
