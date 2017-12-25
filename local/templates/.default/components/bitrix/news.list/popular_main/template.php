@@ -33,7 +33,12 @@ $data = new \WM\Template\TemplateHelper($this);
                 <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
                     <div class="popular__item" <?=$item->editId();?>>
                         <div class="popular__item__image">
-                            <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
+                            <img src="<? if (!empty($item->previewPicture())) {
+                                echo $item->previewPicture();
+                            } else {
+                                echo "/assets/images/cheese_gag.png";
+                            } ?>"
+                                 alt="<?=$item->getName();?>">
                         </div>
                         <div class="popular__item__name"><b><?=$item->getName();?></b></div>
                         <div class="popular__item__text">

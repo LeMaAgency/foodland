@@ -32,7 +32,11 @@ $data = new \WM\Template\TemplateHelper($this);
                             <a href="<?=$item->detailUrl();?>" title="<?=$item->getName();?>">
                                 <div class="products-block__item">
                                     <div class="products-block__item__image">
-                                        <img src="<?=$item->previewPicture();?>" alt="<?=$item->getName();?>">
+                                        <img src="<? if (!empty($item->previewPicture())) {
+                                            echo $item->previewPicture();
+                                        } else {
+                                            echo "/assets/images/cheese_gag.png";
+                                        } ?>" alt="<?=$item->getName();?>">
                                     </div>
                                     <div class="products-block__item__name"><?=$item->getName();?></div>
                                     <? if($item->propFilled('ARTICLE')): ?>

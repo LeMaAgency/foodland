@@ -26,7 +26,11 @@ $item = $data->item();
 <div class="col-12 col-xl-24">
     <div class="block-product-img">
         <div class="block-product-img__img<? if($item->propValue('IS_NEW') == 'Y') { ?> new<? } ?>">
-            <img src="<?=$item->detailPicture();?>" alt="<?=$item->getName();?>">
+            <img src="<? if (!empty($item->detailPicture())) {
+                echo $item->detailPicture();
+            } else {
+                echo "/assets/images/cheese_gag.png";
+            } ?>" alt="<?=$item->getName();?>">
         </div>
         <? if($item->propFilled('MORE_PHOTO')): ?>
             <div class="block-product-img__carousel">
