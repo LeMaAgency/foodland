@@ -59,6 +59,7 @@ a.recommendation__block__title-mini {
     height: 151px;
     background: url("/assets/images/product/product-page/new.png") no-repeat;
     background-size: cover;
+	z-index: 1;
 }
 
 
