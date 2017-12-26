@@ -64,7 +64,7 @@ if($rowBrand = $resBrand->Fetch()){
             <div class="container-aside"></div>
             <div class="container-main">
                 <h1 class="h1-product-page"><? $APPLICATION->ShowTitle(); ?></h1>
-                <h2><?=$sBrand['NAME'];?></h2>
+                <h2 class="h2-product-page"><?=$sBrand['NAME'];?></h2>
             </div>
         </div>
     </div>
