@@ -54,7 +54,7 @@ $aMenuLinks = array(
     ),
 
     array(
-        'что прозводим',
+        'что производим',
         '/catalog/',
         array(),
         array(),
