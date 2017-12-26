@@ -164,7 +164,7 @@ a.recommendation__block__title-mini {
     box-shadow: none;
     width: auto;
     height: auto;
-    max-width: 80%;
+    max-width: 100%;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -197,4 +197,24 @@ a.recommendation__block__title-mini {
 }
 .tm-carousel__carousel__item img {
     max-height: 80px;
+}
+
+@media (min-width: 1200px) {
+    .text-brand, .block-product-text {
+        padding-left: 20px;
+    }
+    .block-product-img__description__h2 {
+        margin-top: 60px;
+    }
+}
+
+.background-page-product h2 {
+    margin: 0 auto 34px;
+    color: #292929;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.h1-product-page {
+    margin-bottom: 9px;
 }
