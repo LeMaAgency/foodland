@@ -41,15 +41,17 @@ $data = new \WM\Template\TemplateHelper($this);
                                         } ?>" alt="<?=$item->getName();?>">
                                     </div>
                                     <div class="products-block__item__name"><?=$item->getName();?></div>
-                                    <? if($item->propFilled('ARTICLE')): ?>
+                                    <? if($item->propFilled('BRAND')): ?>
                                         <p class="products-block__item__art">
-                                            <?=$item->propName('ARTICLE');?>
-                                            <?=$item->propValue('ARTICLE');?>
+                                            <?=$item->prop('BRAND', 'LINKED_NAME');?>
                                         </p>
                                     <? endif; ?>
                                     <div class="products-block__item__description">
-                                        <? if($item->propFilled('BRAND')): ?>
-                                            <p class="products-block__item__sort"><?=$item->prop('BRAND', 'LINKED_NAME');?></p>
+                                        <? if($item->propFilled('ARTICLE')): ?>
+                                            <p class="products-block__item__sort">
+                                                <?=$item->propName('ARTICLE');?>
+                                                <?=$item->propValue('ARTICLE');?>
+                                            </p>
                                         <? endif; ?>
                                         <? if($item->propFilled('FATNESS')): ?>
                                             <p class="products-block__item__sort-fat">
