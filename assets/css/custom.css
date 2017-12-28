@@ -218,3 +218,10 @@ a.recommendation__block__title-mini {
 .h1-product-page {
     margin-bottom: 9px;
 }
+
+.analog-carousel__carousel__item img {
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+}
