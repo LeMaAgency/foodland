@@ -1,7 +1,7 @@
 <?
-$MESS['LEMA_FOOTER_VK_URL'] = '#vk';
+$MESS['LEMA_FOOTER_VK_URL'] = 'https://vk.com/publicfoodland';
 $MESS['LEMA_FOOTER_VK_TITLE'] = 'VKontakte';
-$MESS['LEMA_FOOTER_FACEBOOK_URL'] = '#facebook';
+$MESS['LEMA_FOOTER_FACEBOOK_URL'] = 'https://www.facebook.com/groups/676944302492699/';
 $MESS['LEMA_FOOTER_FACEBOOK_TITLE'] = 'FaceBook';
-$MESS['LEMA_FOOTER_TWITTER_URL'] = '#twitter';
-$MESS['LEMA_FOOTER_TWITTER_TITLE'] = 'Twitter';
+$MESS['LEMA_FOOTER_INSTAGRAM_URL'] = 'https://www.instagram.com/foodland_russia/';
+$MESS['LEMA_FOOTER_INSTAGRAM_TITLE'] = 'Instagram';
